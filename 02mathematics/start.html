@@ -1,0 +1,407 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>ISKALIX</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<link rel="icon" type="vector" href="vectors/sphere/sphere.svg">
+
+<!--<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">>-->
+<link rel="stylesheet" href="../style.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+body,h1,h2,h3,h4,h5,h6 {font-family: "Raleway", sans-serif}
+
+body, html {
+  height: 100%;
+  line-height: 1.8;
+}
+
+/* Full height image header */
+.bgimg-1 {
+  background-position: center;
+  background-size: cover;
+  background-image: url("/w3images/mac.jpg");
+  min-height: 100%;
+}
+
+.w3-bar .w3-button {
+  padding: 16px;
+}
+
+#contador {
+  font-size: 24px;
+  font-weight: bold;
+  color: #333;
+  padding: 20px;
+  background-color: #f5f5f5;
+  border: 2px solid #ccc;
+  border-radius: 5px;
+  text-align: center;
+}
+
+let segundos = 0;
+let minutos = 0;
+let horas = 0;
+
+function actualizarContador() {
+  segundos++;
+  if (segundos == 60) {
+    segundos = 0;
+    minutos++;
+  }
+  if (minutos == 60) {
+    minutos = 0;
+    horas++;
+  }
+  document.getElementById("contador").innerHTML = horas.toString().padStart(2, '0') + ":" + minutos.toString().padStart(2, '0') + ":" + segundos.toString().padStart(2, '0');
+}
+
+setInterval(actualizarContador, 1000);
+
+
+</style>
+</head>
+
+<body>
+
+  
+
+<!-- Navbar (sit on top) -->
+<!-- Navbar (sit on top) -->
+<!-- Navbar (sit on top) -->
+<div class="w3-top">
+  <div class="w3-bar w3-green w3-card" id="myNavbar">
+    <a href="../sklx.html" class="w3-bar-item w3-button w3-wide"><b>SKLX</b></a>
+    <!-- Right-sided navbar links -->
+    <div class="w3-right w3-hide-small">
+
+      <div id="contador"></div><script src="new.js"></script>
+
+      <a href="#sec1" class="w3-bar-item w3-button"> 1 - 10 </a>
+      <a href="#sec2" class="w3-bar-item w3-button"><i class="fa fa-user"></i> 11 - 20 </a>
+      <a href="#sec3" class="w3-bar-item w3-button"><i class="fa fa-th"></i> 21 - 30 </a>
+      <a href="#sec4" class="w3-bar-item w3-button"><i class="fa fa-usd"></i> 31 - 40 </a>
+      <a href="#sec5" class="w3-bar-item w3-button"><i class="fa fa-envelope"></i> 40 + </a>
+    </div>
+    <!-- Hide right-floated links on small screens and replace them with a menu icon -->
+    <br>
+    <a href="javascript:void(0)" class="w3-bar-item w3-button w3-right w3-hide-large w3-hide-medium" onclick="w3_open()">
+      <i class="fa fa-bars"></i>
+    </a>
+  </div>
+</div>
+
+
+
+
+<!-- Sidebar on small screens when clicking the menu icon -->
+<!-- Sidebar on small screens when clicking the menu icon -->
+<!-- Sidebar on small screens when clicking the menu icon -->
+<nav class="w3-sidebar w3-bar-block w3-black w3-card w3-animate-left w3-hide-medium w3-hide-large" style="display:none" id="mySidebar">
+  <a href="javascript:void(0)" onclick="w3_close()" class="w3-bar-item w3-button w3-large w3-padding-16">Close ×</a>
+  
+
+  <a href="#sec1" onclick="w3_close()" class="w3-bar-item w3-button">1 - 10</a>
+  <a href="#sec2" onclick="w3_close()" class="w3-bar-item w3-button">11 - 20</a>
+  <a href="#sec3" onclick="w3_close()" class="w3-bar-item w3-button">21 - 30</a>
+  <a href="#sec4" onclick="w3_close()" class="w3-bar-item w3-button">31 - 40</a>
+  <a href="#sec5" onclick="w3_close()" class="w3-bar-item w3-button">40+</a>
+</nav>
+
+
+
+
+<!-- Header with full-height image -->
+<!-- Header with full-height image -->
+<!-- Header with full-height image -->
+<header class="bgimg-1 w3-display-container w3-grayscale-min" id="home">
+  <div class="w3-display-left w3-text-white" style="padding:48px">
+    <span class="w3-jumbo w3-hide-small">Start something that matters</span><br>
+    <span class="w3-xxlarge w3-hide-large w3-hide-medium">Start something that matters</span><br>
+    <span class="w3-large">Stop wasting valuable time with projects that just isn't you.</span>
+    <p><a href="#about" class="w3-button w3-white w3-padding-large w3-large w3-margin-top w3-opacity w3-hover-opacity-off">Learn more and start today</a></p>
+  </div> 
+
+
+  <div class="w3-display-bottomleft w3-text-grey w3-large" style="padding:24px 48px">
+    <i class="fa fa-facebook-official w3-hover-opacity"></i>
+    <i class="fa fa-instagram w3-hover-opacity"></i>
+    <i class="fa fa-snapchat w3-hover-opacity"></i>
+    <i class="fa fa-pinterest-p w3-hover-opacity"></i>
+    <i class="fa fa-twitter w3-hover-opacity"></i>
+    <i class="fa fa-linkedin w3-hover-opacity"></i>
+  </div>
+</header>
+
+
+
+<!-- About Section -->
+<!-- About Section -->
+<!-- About Section -->
+<div class="w3-container" style="padding:128px 16px" id="about">
+  <h3 class="w3-center">SOBRE LAS MATEMÁTICAS</h3>
+  <p class="w3-center w3-large">Key features of our company</p>
+  <div class="w3-row-padding w3-center" style="margin-top:64px">
+    <div class="w3-quarter">
+      <i class="fa fa-desktop w3-margin-bottom w3-jumbo w3-center"></i>
+      <p class="w3-large">Responsive</p>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore.</p>
+    </div>
+    <div class="w3-quarter">
+      <i class="fa fa-heart w3-margin-bottom w3-jumbo"></i>
+      <p class="w3-large">Passion</p>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore.</p>
+    </div>
+    <div class="w3-quarter">
+      <i class="fa fa-diamond w3-margin-bottom w3-jumbo"></i>
+      <p class="w3-large">Design</p>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore.</p>
+    </div>
+    <div class="w3-quarter">
+      <i class="fa fa-cog w3-margin-bottom w3-jumbo"></i>
+      <p class="w3-large">Support</p>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore.</p>
+    </div>
+  </div>
+</div>
+
+
+
+<!-- Promo Section - "We know design" -->
+<!-- Promo Section - "We know design" -->
+<!-- Promo Section - "We know design" -->
+<div class="w3-container w3-blue" style="padding:128px 16px" id="sec1"><div class="w3-row-padding"><div class="w3-col m6"><h3>MECÁNICA 1. UNIDADES, CANTIDADES FÍSICAS Y VECTORES</h3><p>Primer renglón de contenido<br>Segundo renglón.</p><p><a href="../physics/physics.html" class="w3-button w3-black"><i class="fa fa-th"> </i> Comenzar</a></p></div><div class="w3-col m6"><img class="w3-image w3-round-large" src="../images/physic01.svg" alt="Buildings" width="700" height="394"></div></div>          <br> <div class="w3-center w3-padding-32"><a href="#home" class="w3-button w3-black w3-text-light-gray "><i class="fa fa-arrow-up w3-margin-right"></i>Volver</a></div> </div>
+<div class="w3-container w3-light-grey" style="padding:128px 16px"><div class="w3-row-padding"><div class="w3-col m6"><h3>2. MOVIMIENTO EN LÍNEA RECTA</h3><p>Primer renglón de contenido<br>Segundo renglón.</p><p><a href="../physics/physics.html" class="w3-button w3-black"><i class="fa fa-th"> </i> Comenzar</a></p></div><div class="w3-col m6"><img class="w3-image w3-round-large" src="../images/physic01.svg" alt="Buildings" width="700" height="394"></div></div>              <br> <div class="w3-center w3-padding-32"><a href="#home" class="w3-button w3-black w3-text-light-gray "><i class="fa fa-arrow-up w3-margin-right"></i>Volver</a></div> </div>
+<div class="w3-container w3-blue" style="padding:128px 16px"><div class="w3-row-padding"><div class="w3-col m6"><h3>3. MOVIMIENTO EN DOS O EN TRES DIMENSIONES</h3><p>Primer renglón de contenido<br>Segundo renglón.</p><p><a href="../physics/physics.html" class="w3-button w3-black"><i class="fa fa-th"> </i> Comenzar</a></p></div><div class="w3-col m6"><img class="w3-image w3-round-large" src="../images/physic01.svg" alt="Buildings" width="700" height="394"></div></div>                    <br> <div class="w3-center w3-padding-32"><a href="#home" class="w3-button w3-black w3-text-light-gray "><i class="fa fa-arrow-up w3-margin-right"></i>Volver</a></div> </div>
+<div class="w3-container w3-light-grey" style="padding:128px 16px"><div class="w3-row-padding"><div class="w3-col m6"><h3>4. LEYES DEL MOVIMIENTO DE NEWTON</h3><p>Primer renglón de contenido<br>Segundo renglón.</p><p><a href="../physics/physics.html" class="w3-button w3-black"><i class="fa fa-th"> </i> Comenzar</a></p></div><div class="w3-col m6"><img class="w3-image w3-round-large" src="../images/physic01.svg" alt="Buildings" width="700" height="394"></div></div>              <br> <div class="w3-center w3-padding-32"><a href="#home" class="w3-button w3-black w3-text-light-gray "><i class="fa fa-arrow-up w3-margin-right"></i>Volver</a></div> </div>
+<div class="w3-container w3-blue" style="padding:128px 16px"><div class="w3-row-padding"><div class="w3-col m6"><h3>5. APLICACIÓN DE LAS LEYER DE NEWTON</h3><p>Primer renglón de contenido<br>Segundo renglón.</p><p><a href="../physics/physics.html" class="w3-button w3-black"><i class="fa fa-th"> </i> Comenzar</a></p></div><div class="w3-col m6"><img class="w3-image w3-round-large" src="../images/physic01.svg" alt="Buildings" width="700" height="394"></div></div>                    <br> <div class="w3-center w3-padding-32"><a href="#home" class="w3-button w3-black w3-text-light-gray "><i class="fa fa-arrow-up w3-margin-right"></i>Volver</a></div> </div>
+<div class="w3-container w3-light-grey" style="padding:128px 16px"><div class="w3-row-padding"><div class="w3-col m6"><h3>6. TRABAJO Y ENERGÍA CINÉTICA</h3><p>Primer renglón de contenido<br>Segundo renglón.</p><p><a href="../physics/physics.html" class="w3-button w3-black"><i class="fa fa-th"> </i> Comenzar</a></p></div><div class="w3-col m6"><img class="w3-image w3-round-large" src="../images/physic01.svg" alt="Buildings" width="700" height="394"></div></div>              <br> <div class="w3-center w3-padding-32"><a href="#home" class="w3-button w3-black w3-text-light-gray "><i class="fa fa-arrow-up w3-margin-right"></i>Volver</a></div> </div>
+<div class="w3-container w3-blue" style="padding:128px 16px"><div class="w3-row-padding"><div class="w3-col m6"><h3>7. ENERGÍA POTENCIAL Y CONSERVACIÓN DE LA ENERGÍA</h3><p>Primer renglón de contenido<br>Segundo renglón.</p><p><a href="../physics/physics.html" class="w3-button w3-black"><i class="fa fa-th"> </i> Comenzar</a></p></div><div class="w3-col m6"><img class="w3-image w3-round-large" src="../images/physic01.svg" alt="Buildings" width="700" height="394"></div></div>                    <br> <div class="w3-center w3-padding-32"><a href="#home" class="w3-button w3-black w3-text-light-gray "><i class="fa fa-arrow-up w3-margin-right"></i>Volver</a></div> </div>
+<div class="w3-container w3-light-grey" style="padding:128px 16px"><div class="w3-row-padding"><div class="w3-col m6"><h3>8. MOMENTO LINEAL, IMPULSO Y CHOQUES</h3><p>Primer renglón de contenido<br>Segundo renglón.</p><p><a href="../physics/physics.html" class="w3-button w3-black"><i class="fa fa-th"> </i> Comenzar</a></p></div><div class="w3-col m6"><img class="w3-image w3-round-large" src="../images/physic01.svg" alt="Buildings" width="700" height="394"></div></div>              <br> <div class="w3-center w3-padding-32"><a href="#home" class="w3-button w3-black w3-text-light-gray "><i class="fa fa-arrow-up w3-margin-right"></i>Volver</a></div> </div>
+<div class="w3-container w3-blue" style="padding:128px 16px"><div class="w3-row-padding"><div class="w3-col m6"><h3>9. ROTACIÓN DE CUERPOS RÍGIDOS</h3><p>Primer renglón de contenido<br>Segundo renglón.</p><p><a href="../physics/physics.html" class="w3-button w3-black"><i class="fa fa-th"> </i> Comenzar</a></p></div><div class="w3-col m6"><img class="w3-image w3-round-large" src="../images/physic01.svg" alt="Buildings" width="700" height="394"></div></div>                    <br> <div class="w3-center w3-padding-32"><a href="#home" class="w3-button w3-black w3-text-light-gray "><i class="fa fa-arrow-up w3-margin-right"></i>Volver</a></div> </div>
+<div class="w3-container w3-light-grey" style="padding:128px 16px" id="sec2"><div class="w3-row-padding"><div class="w3-col m6"><h3>10. DINÁMICA DEL MOVIMIENTO ROTACIONAL</h3><p>Primer renglón de contenido<br>Segundo renglón.</p><p><a href="../physics/physics.html" class="w3-button w3-black"><i class="fa fa-th"> </i> Comenzar</a></p></div><div class="w3-col m6"><img class="w3-image w3-round-large" src="../images/physic01.svg" alt="Buildings" width="700" height="394"></div></div>   <br> <div class="w3-center w3-padding-32"><a href="#home" class="w3-button w3-black w3-text-light-gray "><i class="fa fa-arrow-up w3-margin-right"></i>Volver</a></div> </div>
+<div class="w3-container w3-blue" style="padding:128px 16px"><div class="w3-row-padding"><div class="w3-col m6"><h3>11. EQUILIBRIO Y ELASTICIDAD</h3><p>Primer renglón de contenido<br>Segundo renglón.</p><p><a href="../physics/physics.html" class="w3-button w3-black"><i class="fa fa-th"> </i> Comenzar</a></p></div><div class="w3-col m6"><img class="w3-image w3-round-large" src="../images/physic01.svg" alt="Buildings" width="700" height="394"></div></div>                   <br> <div class="w3-center w3-padding-32"><a href="#home" class="w3-button w3-black w3-text-light-gray "><i class="fa fa-arrow-up w3-margin-right"></i>Volver</a></div> </div>
+<div class="w3-container w3-light-grey" style="padding:128px 16px"><div class="w3-row-padding"><div class="w3-col m6"><h3>12. GRAVITACIÓN</h3><p>Primer renglón de contenido<br>Segundo renglón.</p><p><a href="../physics/physics.html" class="w3-button w3-black"><i class="fa fa-th"> </i> Comenzar</a></p></div><div class="w3-col m6"><img class="w3-image w3-round-large" src="../images/physic01.svg" alt="Buildings" width="700" height="394"></div></div>             <br> <div class="w3-center w3-padding-32"><a href="#home" class="w3-button w3-black w3-text-light-gray "><i class="fa fa-arrow-up w3-margin-right"></i>Volver</a></div> </div>
+<div class="w3-container w3-blue" style="padding:128px 16px"><div class="w3-row-padding"><div class="w3-col m6"><h3>13. MOVIMIENTO PERIÓDICO</h3><p>Primer renglón de contenido<br>Segundo renglón.</p><p><a href="../physics/physics.html" class="w3-button w3-black"><i class="fa fa-th"> </i> Comenzar</a></p></div><div class="w3-col m6"><img class="w3-image w3-round-large" src="../images/physic01.svg" alt="Buildings" width="700" height="394"></div></div>                   <br> <div class="w3-center w3-padding-32"><a href="#home" class="w3-button w3-black w3-text-light-gray "><i class="fa fa-arrow-up w3-margin-right"></i>Volver</a></div> </div>
+<div class="w3-container w3-light-grey" style="padding:128px 16px"><div class="w3-row-padding"><div class="w3-col m6"><h3>14. MECÁNICA DE FLUIDOS</h3><p>Primer renglón de contenido<br>Segundo renglón.</p><p><a href="../physics/physics.html" class="w3-button w3-black"><i class="fa fa-th"> </i> Comenzar</a></p></div><div class="w3-col m6"><img class="w3-image w3-round-large" src="../images/physic01.svg" alt="Buildings" width="700" height="394"></div></div>             <br> <div class="w3-center w3-padding-32"><a href="#home" class="w3-button w3-black w3-text-light-gray "><i class="fa fa-arrow-up w3-margin-right"></i>Volver</a></div> </div>
+<div class="w3-container w3-blue" style="padding:128px 16px"><div class="w3-row-padding"><div class="w3-col m6"><h3>ONDAS Y ACÚSTICA 15. ONDAS MECÁNICAS</h3><p>Primer renglón de contenido<br>Segundo renglón.</p><p><a href="../physics/physics.html" class="w3-button w3-black"><i class="fa fa-th"> </i> Comenzar</a></p></div><div class="w3-col m6"><img class="w3-image w3-round-large" src="../images/physic01.svg" alt="Buildings" width="700" height="394"></div></div>                   <br> <div class="w3-center w3-padding-32"><a href="#home" class="w3-button w3-black w3-text-light-gray "><i class="fa fa-arrow-up w3-margin-right"></i>Volver</a></div> </div>
+<div class="w3-container w3-light-grey" style="padding:128px 16px"><div class="w3-row-padding"><div class="w3-col m6"><h3>16. SONIDO Y EL OÍDO</h3><p>Primer renglón de contenido<br>Segundo renglón.</p><p><a href="../physics/physics.html" class="w3-button w3-black"><i class="fa fa-th"> </i> Comenzar</a></p></div><div class="w3-col m6"><img class="w3-image w3-round-large" src="../images/physic01.svg" alt="Buildings" width="700" height="394"></div></div>             <br> <div class="w3-center w3-padding-32"><a href="#home" class="w3-button w3-black w3-text-light-gray "><i class="fa fa-arrow-up w3-margin-right"></i>Volver</a></div> </div>
+<div class="w3-container w3-blue" style="padding:128px 16px"><div class="w3-row-padding"><div class="w3-col m6"><h3>TERMODINÁMICA 17. TEMPERATURA Y CALOR</h3><p>Primer renglón de contenido<br>Segundo renglón.</p><p><a href="../physics/physics.html" class="w3-button w3-black"><i class="fa fa-th"> </i> Comenzar</a></p></div><div class="w3-col m6"><img class="w3-image w3-round-large" src="../images/physic01.svg" alt="Buildings" width="700" height="394"></div></div>                   <br> <div class="w3-center w3-padding-32"><a href="#home" class="w3-button w3-black w3-text-light-gray "><i class="fa fa-arrow-up w3-margin-right"></i>Volver</a></div> </div>
+<div class="w3-container w3-light-grey" style="padding:128px 16px"><div class="w3-row-padding"><div class="w3-col m6"><h3>18. PROPIEDADES TÉRMICAS DE LA MATERIA</h3><p>Primer renglón de contenido<br>Segundo renglón.</p><p><a href="../physics/physics.html" class="w3-button w3-black"><i class="fa fa-th"> </i> Comenzar</a></p></div><div class="w3-col m6"><img class="w3-image w3-round-large" src="../images/physic01.svg" alt="Buildings" width="700" height="394"></div></div>             <br> <div class="w3-center w3-padding-32"><a href="#home" class="w3-button w3-black w3-text-light-gray "><i class="fa fa-arrow-up w3-margin-right"></i>Volver</a></div> </div>
+<div class="w3-container w3-blue" style="padding:128px 16px"><div class="w3-row-padding"><div class="w3-col m6"><h3>19. LA PRIMERA LEY DE LA TERMODINÁMICA</h3><p>Primer renglón de contenido<br>Segundo renglón.</p><p><a href="../physics/physics.html" class="w3-button w3-black"><i class="fa fa-th"> </i> Comenzar</a></p></div><div class="w3-col m6"><img class="w3-image w3-round-large" src="../images/physic01.svg" alt="Buildings" width="700" height="394"></div></div>                   <br> <div class="w3-center w3-padding-32"><a href="#home" class="w3-button w3-black w3-text-light-gray "><i class="fa fa-arrow-up w3-margin-right"></i>Volver</a></div> </div>
+<div class="w3-container w3-light-grey" style="padding:128px 16px" id="sec3"><div class="w3-row-padding"><div class="w3-col m6"><h3>20. LA SEGUNDA LEY DE LA TERMODINÁMICA</h3><p>Primer renglón de contenido<br>Segundo renglón.</p><p><a href="../physics/physics.html" class="w3-button w3-black"><i class="fa fa-th"> </i> Comenzar</a></p></div><div class="w3-col m6"><img class="w3-image w3-round-large" src="../images/physic01.svg" alt="Buildings" width="700" height="394"></div></div>   <br> <div class="w3-center w3-padding-32"><a href="#home" class="w3-button w3-black w3-text-light-gray "><i class="fa fa-arrow-up w3-margin-right"></i>Volver</a></div> </div>
+<div class="w3-container w3-blue" style="padding:128px 16px"><div class="w3-row-padding"><div class="w3-col m6"><h3>ELECTROMAGNETISMO 21. CARGA ELÉCTRICA Y CAMPO ELÉCTRICO</h3><p>Primer renglón de contenido<br>Segundo renglón.</p><p><a href="../physics/physics.html" class="w3-button w3-black"><i class="fa fa-th"> </i> Comenzar</a></p></div><div class="w3-col m6"><img class="w3-image w3-round-large" src="../images/physic01.svg" alt="Buildings" width="700" height="394"></div></div>                   <br> <div class="w3-center w3-padding-32"><a href="#home" class="w3-button w3-black w3-text-light-gray "><i class="fa fa-arrow-up w3-margin-right"></i>Volver</a></div> </div>
+<div class="w3-container w3-light-grey" style="padding:128px 16px"><div class="w3-row-padding"><div class="w3-col m6"><h3>22. LEY DE GAUSS</h3><p>Primer renglón de contenido<br>Segundo renglón.</p><p><a href="../physics/physics.html" class="w3-button w3-black"><i class="fa fa-th"> </i> Comenzar</a></p></div><div class="w3-col m6"><img class="w3-image w3-round-large" src="../images/physic01.svg" alt="Buildings" width="700" height="394"></div></div>             <br> <div class="w3-center w3-padding-32"><a href="#home" class="w3-button w3-black w3-text-light-gray "><i class="fa fa-arrow-up w3-margin-right"></i>Volver</a></div> </div>
+<div class="w3-container w3-blue" style="padding:128px 16px"><div class="w3-row-padding"><div class="w3-col m6"><h3>23. POTENCIAL ELÉCTRICO</h3><p>Primer renglón de contenido<br>Segundo renglón.</p><p><a href="../physics/physics.html" class="w3-button w3-black"><i class="fa fa-th"> </i> Comenzar</a></p></div><div class="w3-col m6"><img class="w3-image w3-round-large" src="../images/physic01.svg" alt="Buildings" width="700" height="394"></div></div>                   <br> <div class="w3-center w3-padding-32"><a href="#home" class="w3-button w3-black w3-text-light-gray "><i class="fa fa-arrow-up w3-margin-right"></i>Volver</a></div> </div>
+<div class="w3-container w3-light-grey" style="padding:128px 16px"><div class="w3-row-padding"><div class="w3-col m6"><h3>24. CAPACITANCIA Y DIELÉCTRICOS</h3><p>Primer renglón de contenido<br>Segundo renglón.</p><p><a href="../physics/physics.html" class="w3-button w3-black"><i class="fa fa-th"> </i> Comenzar</a></p></div><div class="w3-col m6"><img class="w3-image w3-round-large" src="../images/physic01.svg" alt="Buildings" width="700" height="394"></div></div>             <br> <div class="w3-center w3-padding-32"><a href="#home" class="w3-button w3-black w3-text-light-gray "><i class="fa fa-arrow-up w3-margin-right"></i>Volver</a></div> </div>
+<div class="w3-container w3-blue" style="padding:128px 16px"><div class="w3-row-padding"><div class="w3-col m6"><h3>25. CORRIENTE, RESISTENCIA Y FUERZA ELECTROMOTRIZ</h3><p>Primer renglón de contenido<br>Segundo renglón.</p><p><a href="../physics/physics.html" class="w3-button w3-black"><i class="fa fa-th"> </i> Comenzar</a></p></div><div class="w3-col m6"><img class="w3-image w3-round-large" src="../images/physic01.svg" alt="Buildings" width="700" height="394"></div></div>                   <br> <div class="w3-center w3-padding-32"><a href="#home" class="w3-button w3-black w3-text-light-gray "><i class="fa fa-arrow-up w3-margin-right"></i>Volver</a></div> </div>
+<div class="w3-container w3-light-grey" style="padding:128px 16px"><div class="w3-row-padding"><div class="w3-col m6"><h3>26. CIRCUITOS DE CORRIENTE DIRECTA</h3><p>Primer renglón de contenido<br>Segundo renglón.</p><p><a href="../physics/physics.html" class="w3-button w3-black"><i class="fa fa-th"> </i> Comenzar</a></p></div><div class="w3-col m6"><img class="w3-image w3-round-large" src="../images/physic01.svg" alt="Buildings" width="700" height="394"></div></div>             <br> <div class="w3-center w3-padding-32"><a href="#home" class="w3-button w3-black w3-text-light-gray "><i class="fa fa-arrow-up w3-margin-right"></i>Volver</a></div> </div>
+<div class="w3-container w3-blue" style="padding:128px 16px"><div class="w3-row-padding"><div class="w3-col m6"><h3>27. CAMPO MAGNÉTICO Y FUERZAS MAGNÉTICAS</h3><p>Primer renglón de contenido<br>Segundo renglón.</p><p><a href="../physics/physics.html" class="w3-button w3-black"><i class="fa fa-th"> </i> Comenzar</a></p></div><div class="w3-col m6"><img class="w3-image w3-round-large" src="../images/physic01.svg" alt="Buildings" width="700" height="394"></div></div>                   <br> <div class="w3-center w3-padding-32"><a href="#home" class="w3-button w3-black w3-text-light-gray "><i class="fa fa-arrow-up w3-margin-right"></i>Volver</a></div> </div>
+<div class="w3-container w3-light-grey" style="padding:128px 16px"><div class="w3-row-padding"><div class="w3-col m6"><h3>28. FUENTES DE CAMPO MAGNÉTICO</h3><p>Primer renglón de contenido<br>Segundo renglón.</p><p><a href="../physics/physics.html" class="w3-button w3-black"><i class="fa fa-th"> </i> Comenzar</a></p></div><div class="w3-col m6"><img class="w3-image w3-round-large" src="../images/physic01.svg" alt="Buildings" width="700" height="394"></div></div>             <br> <div class="w3-center w3-padding-32"><a href="#home" class="w3-button w3-black w3-text-light-gray "><i class="fa fa-arrow-up w3-margin-right"></i>Volver</a></div> </div>
+<div class="w3-container w3-blue" style="padding:128px 16px"><div class="w3-row-padding"><div class="w3-col m6"><h3>29. INDUCCIÓN ELECTROMAGNÉTICA</h3><p>Primer renglón de contenido<br>Segundo renglón.</p><p><a href="../physics/physics.html" class="w3-button w3-black"><i class="fa fa-th"> </i> Comenzar</a></p></div><div class="w3-col m6"><img class="w3-image w3-round-large" src="../images/physic01.svg" alt="Buildings" width="700" height="394"></div></div>                   <br> <div class="w3-center w3-padding-32"><a href="#home" class="w3-button w3-black w3-text-light-gray "><i class="fa fa-arrow-up w3-margin-right"></i>Volver</a></div> </div>
+<div class="w3-container w3-light-grey" style="padding:128px 16px" id="sec4"><div class="w3-row-padding"><div class="w3-col m6"><h3>30. INDUCTANCIA</h3><p>Primer renglón de contenido<br>Segundo renglón.</p><p><a href="../physics/physics.html" class="w3-button w3-black"><i class="fa fa-th"> </i> Comenzar</a></p></div><div class="w3-col m6"><img class="w3-image w3-round-large" src="../images/physic01.svg" alt="Buildings" width="700" height="394"></div></div>   <br> <div class="w3-center w3-padding-32"><a href="#home" class="w3-button w3-black w3-text-light-gray "><i class="fa fa-arrow-up w3-margin-right"></i>Volver</a></div> </div>
+<div class="w3-container w3-blue" style="padding:128px 16px"><div class="w3-row-padding"><div class="w3-col m6"><h3>31. CORRIENTE ALTERNA</h3><p>Primer renglón de contenido<br>Segundo renglón.</p><p><a href="../physics/physics.html" class="w3-button w3-black"><i class="fa fa-th"> </i> Comenzar</a></p></div><div class="w3-col m6"><img class="w3-image w3-round-large" src="../images/physic01.svg" alt="Buildings" width="700" height="394"></div></div>                   <br> <div class="w3-center w3-padding-32"><a href="#home" class="w3-button w3-black w3-text-light-gray "><i class="fa fa-arrow-up w3-margin-right"></i>Volver</a></div> </div>
+<div class="w3-container w3-light-grey" style="padding:128px 16px"><div class="w3-row-padding"><div class="w3-col m6"><h3>32. ONDAS ELECTROMAGNÉTICAS</h3><p>Primer renglón de contenido<br>Segundo renglón.</p><p><a href="../physics/physics.html" class="w3-button w3-black"><i class="fa fa-th"> </i> Comenzar</a></p></div><div class="w3-col m6"><img class="w3-image w3-round-large" src="../images/physic01.svg" alt="Buildings" width="700" height="394"></div></div>             <br> <div class="w3-center w3-padding-32"><a href="#home" class="w3-button w3-black w3-text-light-gray "><i class="fa fa-arrow-up w3-margin-right"></i>Volver</a></div> </div>
+<div class="w3-container w3-blue" style="padding:128px 16px"><div class="w3-row-padding"><div class="w3-col m6"><h3>ÓPTICA 33. NATURALEZA Y PROPAGACIÓN DE LA LUZ</h3><p>Primer renglón de contenido<br>Segundo renglón.</p><p><a href="../physics/physics.html" class="w3-button w3-black"><i class="fa fa-th"> </i> Comenzar</a></p></div><div class="w3-col m6"><img class="w3-image w3-round-large" src="../images/physic01.svg" alt="Buildings" width="700" height="394"></div></div>                   <br> <div class="w3-center w3-padding-32"><a href="#home" class="w3-button w3-black w3-text-light-gray "><i class="fa fa-arrow-up w3-margin-right"></i>Volver</a></div> </div>
+<div class="w3-container w3-light-grey" style="padding:128px 16px"><div class="w3-row-padding"><div class="w3-col m6"><h3>34. ÓPTICA GEOMÉTRICA</h3><p>Primer renglón de contenido<br>Segundo renglón.</p><p><a href="../physics/physics.html" class="w3-button w3-black"><i class="fa fa-th"> </i> Comenzar</a></p></div><div class="w3-col m6"><img class="w3-image w3-round-large" src="../images/physic01.svg" alt="Buildings" width="700" height="394"></div></div>             <br> <div class="w3-center w3-padding-32"><a href="#home" class="w3-button w3-black w3-text-light-gray "><i class="fa fa-arrow-up w3-margin-right"></i>Volver</a></div> </div>
+<div class="w3-container w3-blue" style="padding:128px 16px"><div class="w3-row-padding"><div class="w3-col m6"><h3>35. INTERFERENCIA</h3><p>Primer renglón de contenido<br>Segundo renglón.</p><p><a href="../physics/physics.html" class="w3-button w3-black"><i class="fa fa-th"> </i> Comenzar</a></p></div><div class="w3-col m6"><img class="w3-image w3-round-large" src="../images/physic01.svg" alt="Buildings" width="700" height="394"></div></div>                   <br> <div class="w3-center w3-padding-32"><a href="#home" class="w3-button w3-black w3-text-light-gray "><i class="fa fa-arrow-up w3-margin-right"></i>Volver</a></div> </div>
+<div class="w3-container w3-light-grey" style="padding:128px 16px"><div class="w3-row-padding"><div class="w3-col m6"><h3>36. DIFRACCIÓN</h3><p>Primer renglón de contenido<br>Segundo renglón.</p><p><a href="../physics/physics.html" class="w3-button w3-black"><i class="fa fa-th"> </i> Comenzar</a></p></div><div class="w3-col m6"><img class="w3-image w3-round-large" src="../images/physic01.svg" alt="Buildings" width="700" height="394"></div></div>             <br> <div class="w3-center w3-padding-32"><a href="#home" class="w3-button w3-black w3-text-light-gray "><i class="fa fa-arrow-up w3-margin-right"></i>Volver</a></div> </div>
+<div class="w3-container w3-blue" style="padding:128px 16px"><div class="w3-row-padding"><div class="w3-col m6"><h3>FÍSICA MODERNA 37. RELATIVIDAD</h3><p>Primer renglón de contenido<br>Segundo renglón.</p><p><a href="../physics/physics.html" class="w3-button w3-black"><i class="fa fa-th"> </i> Comenzar</a></p></div><div class="w3-col m6"><img class="w3-image w3-round-large" src="../images/physic01.svg" alt="Buildings" width="700" height="394"></div></div>                   <br> <div class="w3-center w3-padding-32"><a href="#home" class="w3-button w3-black w3-text-light-gray "><i class="fa fa-arrow-up w3-margin-right"></i>Volver</a></div> </div>
+<div class="w3-container w3-light-grey" style="padding:128px 16px"><div class="w3-row-padding"><div class="w3-col m6"><h3>38. FOTONES, ELECTRONES Y ÁTOMOS</h3><p>Primer renglón de contenido<br>Segundo renglón.</p><p><a href="../physics/physics.html" class="w3-button w3-black"><i class="fa fa-th"> </i> Comenzar</a></p></div><div class="w3-col m6"><img class="w3-image w3-round-large" src="../images/physic01.svg" alt="Buildings" width="700" height="394"></div></div>             <br> <div class="w3-center w3-padding-32"><a href="#home" class="w3-button w3-black w3-text-light-gray "><i class="fa fa-arrow-up w3-margin-right"></i>Volver</a></div> </div>
+<div class="w3-container w3-blue" style="padding:128px 16px"><div class="w3-row-padding"><div class="w3-col m6"><h3>39. LA NATURALEZA ONDULATORIA DE LAS PARTÍCULAS</h3><p>Primer renglón de contenido<br>Segundo renglón.</p><p><a href="../physics/physics.html" class="w3-button w3-black"><i class="fa fa-th"> </i> Comenzar</a></p></div><div class="w3-col m6"><img class="w3-image w3-round-large" src="../images/physic01.svg" alt="Buildings" width="700" height="394"></div></div>                   <br> <div class="w3-center w3-padding-32"><a href="#home" class="w3-button w3-black w3-text-light-gray "><i class="fa fa-arrow-up w3-margin-right"></i>Volver</a></div> </div>
+<div class="w3-container w3-light-grey" style="padding:128px 16px" id="sec5"><div class="w3-row-padding"><div class="w3-col m6"><h3>40. MECÁNICA CUÁNTICA</h3><p>Primer renglón de contenido<br>Segundo renglón.</p><p><a href="../physics/physics.html" class="w3-button w3-black"><i class="fa fa-th"> </i> Comenzar</a></p></div><div class="w3-col m6"><img class="w3-image w3-round-large" src="../images/physic01.svg" alt="Buildings" width="700" height="394"></div></div>   <br> <div class="w3-center w3-padding-32"><a href="#home" class="w3-button w3-black w3-text-light-gray "><i class="fa fa-arrow-up w3-margin-right"></i>Volver</a></div> </div>
+<div class="w3-container w3-blue" style="padding:128px 16px"><div class="w3-row-padding"><div class="w3-col m6"><h3>41. ESTRUCTURA ATÓMICA</h3><p>Primer renglón de contenido<br>Segundo renglón.</p><p><a href="../physics/physics.html" class="w3-button w3-black"><i class="fa fa-th"> </i> Comenzar</a></p></div><div class="w3-col m6"><img class="w3-image w3-round-large" src="../images/physic01.svg" alt="Buildings" width="700" height="394"></div></div>                   <br> <div class="w3-center w3-padding-32"><a href="#home" class="w3-button w3-black w3-text-light-gray "><i class="fa fa-arrow-up w3-margin-right"></i>Volver</a></div> </div>
+<div class="w3-container w3-light-grey" style="padding:128px 16px"><div class="w3-row-padding"><div class="w3-col m6"><h3>42. MOLÉCULAS Y MATERIA CONDENSADA</h3><p>Primer renglón de contenido<br>Segundo renglón.</p><p><a href="../physics/physics.html" class="w3-button w3-black"><i class="fa fa-th"> </i> Comenzar</a></p></div><div class="w3-col m6"><img class="w3-image w3-round-large" src="../images/physic01.svg" alt="Buildings" width="700" height="394"></div></div>             <br> <div class="w3-center w3-padding-32"><a href="#home" class="w3-button w3-black w3-text-light-gray "><i class="fa fa-arrow-up w3-margin-right"></i>Volver</a></div> </div>
+<div class="w3-container w3-blue" style="padding:128px 16px"><div class="w3-row-padding"><div class="w3-col m6"><h3>43. FÍSICA NUCLEAR</h3><p>Primer renglón de contenido<br>Segundo renglón.</p><p><a href="../physics/physics.html" class="w3-button w3-black"><i class="fa fa-th"> </i> Comenzar</a></p></div><div class="w3-col m6"><img class="w3-image w3-round-large" src="../images/physic01.svg" alt="Buildings" width="700" height="394"></div></div>                   <br> <div class="w3-center w3-padding-32"><a href="#home" class="w3-button w3-black w3-text-light-gray "><i class="fa fa-arrow-up w3-margin-right"></i>Volver</a></div> </div>
+<div class="w3-container w3-light-grey" style="padding:128px 16px"><div class="w3-row-padding"><div class="w3-col m6"><h3>44. FÍSICA DE PARTÍCULAS Y COSMOLOGÍA</h3><p>Primer renglón de contenido<br>Segundo renglón.</p><p><a href="../physics/physics.html" class="w3-button w3-black"><i class="fa fa-th"> </i> Comenzar</a></p></div><div class="w3-col m6"><img class="w3-image w3-round-large" src="../images/physic01.svg" alt="Buildings" width="700" height="394"></div></div>             <br> <div class="w3-center w3-padding-32"><a href="#home" class="w3-button w3-black w3-text-light-gray "><i class="fa fa-arrow-up w3-margin-right"></i>Volver</a></div> </div>
+
+
+
+
+<!-- Team Section -->
+<div class="w3-container" style="padding:128px 16px" id="team">
+  <h3 class="w3-center">EL EQUIPO</h3>
+  <p class="w3-center w3-large">The ones who runs this company</p>
+
+    <div class="w3-row-padding w3-grayscale" style="margin-top:64px">
+        
+        <div class="w3-col l3 m6 w3-margin-bottom">
+        <div class="w3-card">
+            <img src="/w3images/team2.jpg" alt="John" style="width:100%">
+            <div class="w3-container">
+            <h3>César Hernández</h3>
+            <p class="w3-opacity">CEO & Founder</p>
+            <p>Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque elementum.</p>
+            <p><button class="w3-button w3-light-grey w3-block"><i class="fa fa-envelope"></i> Contact</button></p>
+            </div>
+        </div>
+        </div>
+
+
+        <div class="w3-col l3 m6 w3-margin-bottom">
+        <div class="w3-card">
+            <img src="/w3images/team1.jpg" alt="Jane" style="width:100%">
+            <div class="w3-container">
+            <h3>Anja Doe</h3>
+            <p class="w3-opacity">Art Director</p>
+            <p>Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque elementum.</p>
+            <p><button class="w3-button w3-light-grey w3-block"><i class="fa fa-envelope"></i> Contact</button></p>
+            </div>
+        </div>
+        </div>
+
+
+        <div class="w3-col l3 m6 w3-margin-bottom">
+        <div class="w3-card">
+            <img src="/w3images/team3.jpg" alt="Mike" style="width:100%">
+            <div class="w3-container">
+            <h3>Mike Ross</h3>
+            <p class="w3-opacity">Web Designer</p>
+            <p>Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque elementum.</p>
+            <p><button class="w3-button w3-light-grey w3-block"><i class="fa fa-envelope"></i> Contact</button></p>
+            </div>
+        </div>
+        </div>
+
+
+        <div class="w3-col l3 m6 w3-margin-bottom">
+        <div class="w3-card">
+            <img src="/w3images/team4.jpg" alt="Dan" style="width:100%">
+            <div class="w3-container">
+            <h3>Dan Star</h3>
+            <p class="w3-opacity">Designer</p>
+            <p>Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque elementum.</p>
+            <p><button class="w3-button w3-light-grey w3-block"><i class="fa fa-envelope"></i> Contact</button></p>
+            </div>
+        </div>
+        </div>
+
+
+        <div class="w3-col l3 m6 w3-margin-bottom">
+          <div class="w3-card">
+              <img src="/w3images/team2.jpg" alt="John" style="width:100%">
+              <div class="w3-container">
+              <h3>César Hernández</h3>
+              <p class="w3-opacity">CEO & Founder</p>
+              <p>Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque elementum.</p>
+              <p><button class="w3-button w3-light-grey w3-block"><i class="fa fa-envelope"></i> Contact</button></p>
+              </div>
+          </div>
+          </div>
+  
+  
+          <div class="w3-col l3 m6 w3-margin-bottom">
+          <div class="w3-card">
+              <img src="/w3images/team1.jpg" alt="Jane" style="width:100%">
+              <div class="w3-container">
+              <h3>Anja Doe</h3>
+              <p class="w3-opacity">Art Director</p>
+              <p>Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque elementum.</p>
+              <p><button class="w3-button w3-light-grey w3-block"><i class="fa fa-envelope"></i> Contact</button></p>
+              </div>
+          </div>
+          </div>
+  
+  
+          <div class="w3-col l3 m6 w3-margin-bottom">
+          <div class="w3-card">
+              <img src="/w3images/team3.jpg" alt="Mike" style="width:100%">
+              <div class="w3-container">
+              <h3>Mike Ross</h3>
+              <p class="w3-opacity">Web Designer</p>
+              <p>Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque elementum.</p>
+              <p><button class="w3-button w3-light-grey w3-block"><i class="fa fa-envelope"></i> Contact</button></p>
+              </div>
+          </div>
+          </div>
+    </div>
+
+</div>
+
+
+
+<!-- Promo Section "Statistics" -->
+<!-- Promo Section "Statistics" -->
+<div class="w3-container w3-row w3-center w3-dark-grey w3-padding-64">
+  <div class="w3-quarter">
+    <span class="w3-xxlarge">14+</span>
+    <br>Partners
+  </div>
+  <div class="w3-quarter">
+    <span class="w3-xxlarge">55+</span>
+    <br>Projects Done
+  </div>
+  <div class="w3-quarter">
+    <span class="w3-xxlarge">89+</span>
+    <br>Happy Clients
+  </div>
+  <div class="w3-quarter">
+    <span class="w3-xxlarge">150+</span>
+    <br>Meetings
+  </div>
+</div>
+
+
+
+
+
+<!-- Modal for full size images on click-->
+<div id="modal01" class="w3-modal w3-black" onclick="this.style.display='none'">
+  <span class="w3-button w3-xxlarge w3-black w3-padding-large w3-display-topright" title="Close Modal Image">×</span>
+  <div class="w3-modal-content w3-animate-zoom w3-center w3-transparent w3-padding-64">
+    <img id="img01" class="w3-image">
+    <p id="caption" class="w3-opacity w3-large"></p>
+  </div>
+</div>
+
+    <!-- Image of location/map -->
+    <img src="/w3images/map.jpg" class="w3-image w3-greyscale" style="width:100%;margin-top:48px">
+  </div>
+</div>
+
+<!-- Footer -->
+<footer class="w3-center w3-black w3-padding-64">
+  <a href="#home" class="w3-button w3-light-grey"><i class="fa fa-arrow-up w3-margin-right"></i>Volver</a>
+  <div class="w3-xlarge w3-section">
+    <i class="fa fa-facebook-official w3-hover-opacity"></i>
+    <i class="fa fa-instagram w3-hover-opacity"></i>
+    <i class="fa fa-snapchat w3-hover-opacity"></i>
+    <i class="fa fa-pinterest-p w3-hover-opacity"></i>
+    <i class="fa fa-twitter w3-hover-opacity"></i>
+    <i class="fa fa-linkedin w3-hover-opacity"></i>
+  </div>
+  <p>Coded by <a href="https://www.hemicesar.com" title="W3.CSS" target="_blank" class="w3-hover-text-green">hemicesar</a></p>
+</footer>
+ 
+<script>
+// Modal Image Gallery
+function onClick(element) {
+  document.getElementById("img01").src = element.src;
+  document.getElementById("modal01").style.display = "block";
+  var captionText = document.getElementById("caption");
+  captionText.innerHTML = element.alt;
+}
+
+
+// Toggle between showing and hiding the sidebar when clicking the menu icon
+var mySidebar = document.getElementById("mySidebar");
+
+function w3_open() {
+  if (mySidebar.style.display === 'block') {
+    mySidebar.style.display = 'none';
+  } else {
+    mySidebar.style.display = 'block';
+  }
+}
+
+// Close the sidebar with the close button
+function w3_close() {
+    mySidebar.style.display = "none";
+}
+</script>
+
+</body>
+</html>

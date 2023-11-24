@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Cuestionario sobre Características del Conocimiento Científico: Química</title>
+</head>
+
+<body>
+    <h1>Cuestionario sobre Características del Conocimiento Científico: Química</h1>
+
+    <form id="quizForm">
+        <!-- Pregunta 1 -->
+        <p>1. ¿Cuál es el objetivo principal de la ciencia química?</p>
+        <input type="radio" name="pregunta1" value="a"> a) Estudiar los seres vivos<br>
+        <input type="radio" name="pregunta1" value="b"> b) Analizar el comportamiento de los planetas<br>
+        <input type="radio" name="pregunta1" value="c"> c) Investigar la composición y transformación de la materia<br>
+        <input type="radio" name="pregunta1" value="d"> d) Estudiar el clima<br>
+        <input type="radio" name="pregunta1" value="e"> e) Explorar el espacio exterior<br>
+
+        <!-- Pregunta 2 -->
+        <p>2. ¿Qué es una hipótesis en el contexto de la investigación química?</p>
+        <input type="radio" name="pregunta2" value="a"> a) Un resultado confirmado<br>
+        <input type="radio" name="pregunta2" value="b"> b) Una observación casual<br>
+        <input type="radio" name="pregunta2" value="c"> c) Una explicación tentativa basada en observaciones<br>
+        <input type="radio" name="pregunta2" value="d"> d) Una teoría bien establecida<br>
+        <input type="radio" name="pregunta2" value="e"> e) Un hecho comprobado<br>
+
+        <!-- Pregunta 3 -->
+        <p>3. ¿Cuál es una característica fundamental del método científico en Química?</p>
+        <input type="radio" name="pregunta3" value="a"> a) Uso de intuición<br>
+        <input type="radio" name="pregunta3" value="b"> b) Experimentación y observación sistemáticas<br>
+        <input type="radio" name="pregunta3" value="c"> c) Fe ciega en la autoridad<br>
+        <input type="radio" name="pregunta3" value="d"> d) Exclusión de datos anecdóticos<br>
+        <input type="radio" name="pregunta3" value="e"> e) Conclusión sin evidencia<br>
+
+        <!-- Pregunta 4 -->
+        <p>4. ¿Cuál es la unidad básica de la materia en Química?</p>
+        <input type="radio" name="pregunta4" value="a"> a) Átomo<br>
+        <input type="radio" name="pregunta4" value="b"> b) Molécula<br>
+        <input type="radio" name="pregunta4" value="c"> c) Electrón<br>
+        <input type="radio" name="pregunta4" value="d"> d) Protones<br>
+        <input type="radio" name="pregunta4" value="e"> e) Neutrón<br>
+
+        <!-- Pregunta 5 -->
+        <p>5. ¿Cuál es la importancia de la replicación en la investigación química?</p>
+        <input type="radio" name="pregunta5" value="a"> a) No tiene importancia<br>
+        <input type="radio" name="pregunta5" value="b"> b) Aumenta la variabilidad<br>
+        <input type="radio" name="pregunta5" value="c"> c) Permite verificar resultados y confirmar hallazgos<br>
+        <input type="radio" name="pregunta5" value="d"> d) Causa contradicciones<br>
+        <input type="radio" name="pregunta5" value="e"> e) Reduce la precisión<br>
+
+        <!-- Pregunta 6 -->
+        <p>6. ¿Qué característica define a una teoría científica en Química?</p>
+        <input type="radio" name="pregunta6" value="a"> a) Una explicación no comprobada<br>
+        <input type="radio" name="pregunta6" value="b"> b) Una explicación bien fundamentada y respaldada por evidencia<br>
+        <input type="radio" name="pregunta6" value="c"> c) Una idea sin base en la observación<br>
+        <input type="radio" name="pregunta6" value="d"> d) Una creencia sin evidencia<br>
+        <input type="radio" name="pregunta6" value="e"> e) Una conjetura sin base<br>
+
+        <!-- Pregunta 7 -->
+        <p>7. ¿Qué proceso químico implica la combinación de dos o más elementos para formar una nueva sustancia?</p>
+        <input type="radio" name="pregunta7" value="a"> a) Descomposición<br>
+        <input type="radio" name="pregunta7" value="b"> b) Evaporación<br>
+        <input type="radio" name="pregunta7" value="c"> c) Reacción química<br>
+        <input type="radio" name="pregunta7" value="d"> d) Sublimación<br>
+        <input type="radio" name="pregunta7" value="e"> e) Ionización<br>
+
+        <br><br>
+        <button type="button" onclick="calificarRespuestas()">Calificar respuestas</button>
+    </form>
+
+    <p id="resultado"></p>
+
+    <script>
+        function calificarRespuestas() {
+            const respuestasCorrectas = {
+                pregunta1: "c",
+                pregunta2: "c",
+                pregunta3: "b",
+                pregunta4: "a",
+                pregunta5: "c",
+                pregunta6: "b",
+                pregunta7: "c",
+            };
+
+            const formulario = document.getElementById("quizForm");
+            let puntuacion = 0;
+
+            for (let pregunta in respuestasCorrectas) {
+                const respuestaSeleccionada = formulario.elements[pregunta].value;
+                if (respuestaSeleccionada === respuestasCorrectas[pregunta]) {
+                    puntuacion++;
+                }
+            }
+
+            const resultado = document.getElementById("resultado");
+            resultado.innerHTML = "Puntuación: " + puntuacion + " de 7 respuestas correctas.";
+        }
+    </script>
+
+</body>
+
+</html>

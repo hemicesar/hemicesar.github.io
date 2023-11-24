@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Derivadas</title>
+    <script type="text/x-mathjax-config">
+        MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}});
+    </script>
+    <script type="text/javascript" async
+        src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+    </script>
+</head>
+<body>
+
+
+
+<h1>Las 30 Primeras Derivadas Inmediatas</h1>
+<ol>
+  <li>$$\frac{d}{dx} (c) = 0$$</li>
+  <li>$$\frac{d}{dx} (x^n) = nx^{n-1}$$</li>
+  <li>$$\frac{d}{dx} (e^x) = e^x$$</li>
+  <li>$$\frac{d}{dx} (\ln |x|) = \frac{1}{x}$$</li>
+  <li>$$\frac{d}{dx} (\sin x) = \cos x$$</li>
+  <li>$$\frac{d}{dx} (\cos x) = -\sin x$$</li>
+  <li>$$\frac{d}{dx} (\tan x) = \sec^2 x$$</li>
+  <li>$$\frac{d}{dx} (\arcsin x) = \frac{1}{\sqrt{1-x^2}}$$</li>
+  <li>$$\frac{d}{dx} (\arccos x) = -\frac{1}{\sqrt{1-x^2}}$$</li>
+  <li>$$\frac{d}{dx} (\arctan x) = \frac{1}{1+x^2}$$</li>
+  <li>$$\frac{d}{dx} (\sinh x) = \cosh x$$</li>
+  <li>$$\frac{d}{dx} (\cosh x) = \sinh x$$</li>
+  <li>$$\frac{d}{dx} (\tanh x) = \text{sech}^2 x$$</li>
+  <li>$$\frac{d}{dx} (\text{csch} x) = -\text{csch} x \coth x$$</li>
+  <li>$$\frac{d}{dx} (\text{sech} x) = -\text{sech} x \tanh x$$</li>
+  <li>$$\frac{d}{dx} (\coth x) = -\text{csch}^2 x$$</li>
+  <li>$$\frac{d}{dx} (a^x) = \ln(a) \cdot a^x$$</li>
+  <li>$$\frac{d}{dx} (\log_a x) = \frac{1}{x \ln(a)}$$</li>
+  <li>$$\frac{d}{dx} (\sin^{-1} x) = \frac{1}{\sqrt{1-x^2}}$$</li>
+  <li>$$\frac{d}{dx} (\cos^{-1} x) = -\frac{1}{\sqrt{1-x^2}}$$</li>
+  <li>$$\frac{d}{dx} (\tan^{-1} x) = \frac{1}{1+x^2}$$</li>
+  <li>$$\frac{d}{dx} (\sinh^{-1} x) = \frac{1}{\sqrt{1+x^2}}$$</li>
+  <li>$$\frac{d}{dx} (\cosh^{-1} x) = \frac{1}{\sqrt{x^2-1}}$$</li>
+  <li>$$\frac{d}{dx} (\tanh^{-1} x) = \frac{1}{1-x^2}$$</li>
+  <li>$$\frac{d}{dx} (\sec x) = \sec x \tan x$$</li>
+  <li>$$\frac{d}{dx} (\csc x) = -\csc x \cot x$$</li>
+  <li>$$\frac{d}{dx} (\text{arcsec} x) = \frac{1}{|x| \sqrt{x^2-1}}$$</li>
+  <li>$$\frac{d}{dx} (\text{arccsc} x) = -\frac{1}{|x| \sqrt{x^2-1}}$$</li>
+  <li>$$\frac{d}{dx} (\text{cot} x) = -\csc^2 x$$</li>
+</ol>
+
+
+<h1>Ecuaciones de la Parábola</h1>
+<h2>Forma Canónica</h2>
+<ul>
+  <li>$$y = ax^2$$</li>
+  <li>$$x = ay^2$$</li>
+</ul>
+<h2>Forma Principal</h2>
+<ul>
+  <li>$$y^2 = 4ax$$</li>
+  <li>$$x^2 = 4ay$$</li>
+</ul>
+<h2>Variante con el Vértice en el Punto (h, k)</h2>
+<ul>
+  <li>$$y - k = a(x - h)^2$$</li>
+  <li>$$x - h = a(y - k)^2$$</li>
+</ul>
+<h2>Ecuación General</h2>
+<ul>
+  <li>$$Ax^2 + Bxy + Cy^2 + Dx + Ey + F = 0$$</li>
+</ul>
+<h2>Otras Variantes</h2>
+<ul>
+  <li>$$y = ax^2 + bx + c$$</li>
+  <li>$$x = ay^2 + by + c$$</li>
+  <li>$$y^2 = 4ax + 2bx + c$$</li>
+  <li>$$x^2 = 4ay + 2by + c$$</li>
+</ul>
+
+<!--
+\begin{array}{c}
+\begin{tikzpicture}
+\draw[step=1,gray,very thin] (-3.5,-3.5) grid (3.5,3.5);
+\draw[thick,->] (0,-3.5) -- (0,3.5) node[anchor=south] {Y};
+\draw[thick,->] (-3.5,0) -- (3.5,0) node[anchor=west] {X};
+\draw (0,0) circle (2);
+\end{tikzpicture}
+\end{array}
+-->
+
+
+
+<p>Circunferencia con centro en (h,k):</p>
+\begin{equation}
+ (x - h)^2 + (y - k)^2 = r^2 
+\end{equation} <br>
+
+
+<p>Hipérbola con centro en (h,k):</p>
+\begin{equation}
+\frac{{(x - h)^2}}{{a^2}} - \frac{{(y - k)^2}}{{b^2}} = 1  
+\end{equation} <br>
+
+
+
+
+
+
+
+
+
+
+    
+</body>
+</html>

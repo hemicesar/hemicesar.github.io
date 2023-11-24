@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    
+    <meta name="description" content="hemicesar">
+    <meta name="keywords" content="ML, DS, Data Science, Machine Learning, English, Mathematics">
+    <meta name="author" content="hemicesar">
+    <!--<meta http-equiv="refresh" content="30">-->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- normalize -->
+    <link rel="stylesheet" href="necolas.github.io/normalize.css/">
+    <!-- Personalized Styles -->
+    <link rel="stylesheet" href="../style.css">
+    <!-- icons -->
+    <link rel="stylesheet" href="https://unpkg.com/jam-icons/css/jam.min.css">
+    <!-- <script src="https://unpkg.com/jam-icons/js/jam.min.js"></script> -->
+
+    <link rel="stylesheet" href="../cv_.css">
+
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+    body, h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif}
+    .w3-row-padding img {margin-bottom: 12px}
+    /* Set the width of the sidebar to 120px */
+    .w3-sidebar {width: 120px;background: #238;}
+    /* Add a left margin to the "page content" that matches the width of the sidebar (120px) */
+    #main {margin-left: 120px}
+    /* Remove margins from "page content" on small screens */
+    @media only screen and (max-width: 600px) {#main {margin-left: 0}}
+
+    .texto-invertido {
+    transform: scaleY(-1);
+    -webkit-transform: scaleY(-1);
+  }
+  .texto-rotado {
+  transform: rotate(180deg);
+  -webkit-transform: rotate(180deg);
+}
+    </style>
+
+    <title>FÍSICA</title>
+    <link rel="shortcut icon" href="/images/logo.ico" type="image/x-icon">
+
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script type="text/javascript" id="MathJax-script" async
+    src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js">
+    </script>
+    
+</head>
+
+<body class="w3-blue">
+    <!-- ICON BAR (Sidebar - hidden on small screens) -->
+    <nav class="w3-sidebar w3-bar-block w3-small w3-hide-small w3-center">
+        <!-- Avatar image in top left corner -->
+        <img src="cv_photo.jpeg" alt="personal photo" style="max-width:100%; height:fit-content"> 
+        <a href="../start.html" class="w3-bar-item w3-button w3-padding-large w3-black">
+        <i class="fa fa-home w3-xxlarge"></i>
+        <p>ISKALIX</p>
+        </a>
+        <a href="#about" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
+        <i class="fa fa-user w3-xxlarge"></i>
+        <p>PERFIL</p>
+        </a>
+        <a href="#projects" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
+        <i class="fa fa-eye w3-xxlarge"></i>
+        <p>MÁS</p>
+        </a>
+        <a href="#contact" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
+        <i class="fa fa-envelope w3-xxlarge"></i>
+        <p>CLASES</p>
+        </a>
+
+        <a class="w3-bar-item w3-button w3-light-grey w3-padding-large w3-section printPage">
+        <i class="fa fa-download"></i>  PDF </a>        
+
+        <script>
+            document.querySelectorAll('.printPage').forEach(function(element) {
+                element.addEventListener('click', function() {
+                    print();
+                });
+            });
+        </script>
+
+    </nav>
+    
+    <!-- Navbar on small screens (Hidden on medium and large screens) -->
+    <div class="w3-top w3-hide-large w3-hide-medium" id="myNavbar">
+        <div class="w3-bar w3-blue-gray w3-opacity w3-hover-opacity-off w3-center w3-small">
+        <a href="hemicesarSpa.html" class="w3-bar-item w3-button" style="width:25% !important">ISKALIX</a>
+        <a href="#about" class="w3-bar-item w3-button" style="width:25% !important">PERFIL</a>
+        <a href="#projects" class="w3-bar-item w3-button" style="width:25% !important">MÁS</a>
+        <a href="#contact" class="w3-bar-item w3-button" style="width:25% !important">CLASES</a>
+        <a class="w3-button w3-light-grey w3-padding-large w3-section printPage">
+            <i class="fa fa-download"></i> PDF </a>
+            <script>
+                document.querySelectorAll('.printPage').forEach(function(element) {
+                    element.addEventListener('click', function() {
+                        print();
+                    });
+                });
+            </script>
+        </div>
+        
+    </div>
+    
+    <!-- Page Content -->
+    <div class="w3-padding-large" id="main">
+        <!-- Header/Home -->
+        <header class="w3-container w3-padding-32 w3-center w3-pale-blue" id="home">
+        <h1 class="w3-jumbo"><span class="w3-hide-small"></span> Ecuaciones de Maxwell en el vacío:</h1>
+       
+        <!--<p>Una forma fácil de comprender las Matemáticas</p>-->
+         
+        <ol>
+            <li style="font-size: xx-large;" width="80%">Ley de Gauss<p style="font-size: xx-large;" width="80%">
+                \begin{equation}
+                \begin{split}
+                  \vec{\nabla} \cdot \vec{E} = {{\rho} \over {\epsilon_0}}\\
+                \end{split}
+    
+                \quad\leftrightarrow\quad
+    
+                \begin{split}
+                    \oint_S \vec{E} \cdot \,d \vec{S} = {{q} \over {\epsilon_0}}\\
+                \end{split}
+                \end{equation}<br></p></li>
+            <li style="font-size: xx-large;" width="80%">Ley de Gauss para el Campo Magnético<p style="font-size: xx-large;" width="80%">
+                \begin{equation}
+            \begin{split}
+            \vec{\nabla} \cdot \vec{B} = {0}\\
+            \end{split}
+
+            \quad\leftrightarrow\quad
+
+            \begin{split}
+            \oint_S \vec{B} \cdot \,d \vec{S} = {0}\\
+            \end{split}
+            \end{equation} <br></p></li>
+
+            <li  style="font-size: xx-large;" width="80%"> Ley de Faraday<p>
+                \begin{equation}
+            \begin{split}
+            \vec{\nabla} \times \vec{E} = -{{\partial\vec{B}} \over {\partial t}}\\
+            \end{split}
+
+            \quad\leftrightarrow\quad
+
+            \begin{split}
+            \oint_C \vec{E} \cdot \,d \vec{l} = -{{\,d} \over {\,d(t)}}\int_S \vec{B} \cdot \,d \vec{S}\\
+            \end{split}
+            \end{equation} <br>
+            </p></li>
+
+            <li  style="font-size: xx-large;" width="80%"> Ley de Ampére generalizada <p>
+                \begin{equation}
+            \begin{split}
+            \vec{\nabla} \times \vec{B} = \mu_0 \vec{J} + \mu_0 \epsilon_0 {{\partial\vec{E}} \over {\partial t}}\\
+            \end{split}
+
+            \quad\leftrightarrow\quad
+
+            \begin{split}
+            \oint_C \vec{B} \cdot \,d \vec{l} = \mu_0 \int_S \vec{J} \cdot \,d \vec{S} + \mu_0 \epsilon_0 {{\,d} \over {\,d(t)}}\int_S \vec{E} \cdot \,d \vec{S}\\
+            \end{split}
+            \end{equation}
+
+            </p> </li>
+        </ol>
+            
+            
+             <br></>
+
+            <!---->
+            <!---->
+            <!---->
+            <!---->
+            
+
+        <img src="../images/physic01.svg" alt="photo" class="w3-image" width="80%"> <!-- width="992" height="1108">-->
+        </header>
+    
+        <!-- First Section -->
+
+           
+
+        <!--End of the first section-->
+        <div class="w3-content w3-justify w3-text-grey w3-padding-64" id="about">
+
+            <section style="font-size: x-large;">
+
+                <p>La teoría electromagnética es una de las construcciones científicas más importantes de la Física. Esta teoría explica la relación entre la electricidad y el magnetismo y se basa en las ecuaciones de Maxwell, que describen por completo los fenómenos electromagnéticos[2].</p>
+
+                <p>Desarrollo histórico de la teoría electromagnética</p>
+
+                <p>La teoría electromagnética se desarrolló a lo largo de varios siglos gracias a los trabajos de físicos como Oersted, Coulomb, Gauss y Faraday[1]. En 1865, James Clerk Maxwell publicó su obra "A Dynamical Theory of the Electromagnetic Field", en la que unificó los campos eléctricos y magnéticos en un solo concepto: el campo electromagnético[2]. Maxwell introdujo los conceptos de campo y corriente de desplazamiento y modificó la versión de la ley de Ampère, lo que permitió predecir la existencia de ondas electromagnéticas propagándose a la velocidad de la luz[2]. De esta forma, Maxwell identificó la luz como una onda electromagnética, unificando así la óptica con elelectromagnetismo[2].</p>
+
+                <p>Las ecuaciones de Maxwell en forma integral</p> 
+                <p>Las ecuaciones de Maxwell en forma integral son cuatro ecuaciones que describen los fenómenos electromagnéticos[1]. Estas ecuaciones son:</p>
+                <p>1. Ley de Gauss: Esta ley establece que el flujo eléctrico a través de una superficie cerrada es proporcional a la carga eléctrica encerrada en dicha superficie[1].</p>
+                <p>2. Ley de Gauss para el magnetismo: Esta ley establece que el flujo magnético a través de una superficie cerrada es siempre cero[1].</p>
+                <p>3. Ley de Faraday: Esta ley establece que un cambio en el flujo magnético a través de una superficie cerrada induce una fuerza electromotriz en cualquier circuito que atraviese dicha superficie[1].</p>
+                <p>4. Ley de Ampère-Maxwell: Esta ley establece que la circulación del campo eléctrico alrededor de una curva cerrada es proporcional a la suma de la corriente eléctrica que atraviesa dicha curva y la variación temporal del flujo magnético a través de la superficie encerrada por dicha curva[1].</p>
+
+
+                        <p>Las ecuaciones de Maxwell en forma diferencial</p>
+
+                        <p>Las ecuaciones de Maxwell en forma diferencial son una versión refinada de las ecuaciones en forma integral[5]. Estas ecuaciones describen los campos eléctricos y magnéticos en términos de sus derivadas parciales[5]. Las ecuaciones de Maxwell en forma diferencial son:</p>
+<p>1. Ley de Gauss: Esta ley establece que el campo eléctrico es proporcional a la densidad de carga eléctrica en un punto dado[5].
+</p>
+<p>2. Ley de Gauss para el magnetismo: Esta ley establece que el campo magnético es siempre divergente[5].</p>
+<p>3. Ley de Faraday: Esta ley establece que la variación temporal del campo magnético es proporcional al rotacional del campo eléctrico[5].</p>
+<p>4. Ley de Ampère-Maxwell: Esta ley establece que la variación temporal del campo eléctrico es proporcional al rotacional del campo magnético y a la densidad de corriente eléctrica en un punto dado[5].</p>
+                   <!---->
+                   <!---->
+                   <!--     <p>Conclusiones</p>
+                        <p>En conclusión, la teoría electromagnética es una de las construcciones científicas más importantes de la física. Esta teoría se basa en las ecuaciones de Maxwell, que describen por completo los fenómenos electromagnéticos. Las ecuaciones de Maxwell en forma integral y forma diferencial son cuatro ecuaciones que describen los campos eléctricos y magnéticos en términos de sus derivadas parciales. Estas ecuaciones son fundamentales para entender la naturaleza de la luz y otros fenómenos electromagnéticos.</p>
+
+<p>Citations:
+        <ol>
+            <li><a href="https://openstax.org/books/f%C3%ADsica-universitaria-volumen-2/pages/16-1-ecuaciones-de-maxwell-y-ondas-electromagneticas" style="text-decoration: none;">https://openstax.org/books/f%C3%ADsica-universitaria-volumen-2/pages/16-1-ecuaciones-de-maxwell-y-ondas-electromagneticas</a>
+                </li>
+                <li>https://es.wikipedia.org/wiki/Ecuaciones_de_Maxwell
+                </li>
+                <li>https://www.scielo.br/j/rbef/a/9wzLbC7smz6qvnwvqqgzTCx/?lang=es
+                </li>
+                <li>https://arbor.revistas.csic.es/index.php/arbor/article/view/2068/
+                2628
+                </li>
+                <li>https://youtube.com/watch?v=_OGCR9JLWMQ&t=30
+                </li>
+                <li>https://youtube.com/watch?v=yijtzSTEIoc</li>
+        </ol>
+        -->
+                   <!---->
+                   <!---->
+        
+    </p><br> </div>
+            </section><br>
+
+        <h2 class="w3-text-light-grey">¡Ponte a prueba!</h2>
+        <hr style="width:200px" class="w3-opacity">
+        <section style="font-size: large;">
+            <ol><li><p>Resuelve el siguiente problema considerando la ley de Gauss en su forma diferencial: 
+
+                \begin{equation}
+                    \begin{split}
+                      \vec{\nabla} \cdot \vec{E} = {{\rho} \over {\epsilon_0}}\\
+                    \end{split}
+        
+                    \quad\leftrightarrow\quad
+        
+                    \begin{split}
+                    \oint_S \vec{E} \cdot \,d \vec{S} = {{q} \over {\epsilon_0}}\\
+                    \end{split}
+                    \end{equation} <br>                 
+                        <div class="texto-rotado"><p>n=18; a=35</p></div><br>
+                </p></li><br> 
+            </ol><br>
+        </section>
+        <!-- Contact Section -->
+        <div class="w3-padding-64 w3-content w3-text-grey" id="contact">
+            <h2 class="w3-text-light-grey">Contact</h2>
+            <hr style="width:200px" class="w3-opacity">
+        
+            <nav class="menu">
+                <div class="w3-section">
+                    <a href="mailto:hemicesar@outlook.es"><i class="fa fa-envelope fa-fw w3-text-white w3-xxlarge w3-margin-right w3-hover-text-green"> </i></a>
+                    <a href="https://wa.me/525544984457?text=¡Hola!"><i class="fa jam jam-whatsapp fa-fw w3-text-white w3-xxlarge w3-margin-right w3-hover-text-green" style="text-decoration: none;"></i></a> 
+                    <a href="#"><i class="fa fa-instagram fa-fw w3-text-white w3-xxlarge w3-margin-right w3-hover-text-green"></i></a>    
+                </div>
+            </nav><br>
+        </div>
+            
+        <!-- End Contact Section -->
+                 
+        <!-- Footer -->
+        <footer class="w3-content w3-padding-64 w3-text-grey w3-xlarge">
+            <p class="w3-medium"><h2>Visit <a href="https://www.iskalix.com" target="_blank" class="w3-hover-text-green" style="text-decoration: none;"> ISKALIX.COM </a></h2></p>
+            <a href="#" target="_blank" style="text-decoration: none;"></a>
+            
+            <!-- <pre>All rights reserved 2023</pre>-->
+            <!--Powered by <a href="#" style = "text-decoration: none; font-size: medium;" target="_blank">hemicesar</a>-->
+        
+        <!-- End footer -->
+        </footer>
+    <!-- END PAGE CONTENT -->
+    </div>
+    </body>
+</html>

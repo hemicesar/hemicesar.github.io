@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>MULTIPLE OPTION</title>
+  <link rel="stylesheet" href="./simulation1.css">
+  <script src="./simulation1.js"></script>
+</head>
+
+<body>
+    <br>
+  <h1>EXAMEN DE SIMULACIÓN COMIPEMS</h1>
+  <br>
+
+  <div id="question-container">
+    <h2 id="question"></h2><br>
+    <ol id="choices"></ol><br>
+  </div><br>
+
+  <section id="score-container" style="text-align: center;" >
+    <p>Tu puntuación es: <span id="score">0</span></p>
+  </section>
+
+  <script>
+    // Asignar el evento de click al cuerpo del documento
+  document.body.addEventListener("click", changeBackgroundColor);
+  
+
+  var currentQuestion = 0;
+  var score = 0;
+
+  function showQuestion() {
+    // Mostrar una pregunta aleatoria
+    var questionIndex = Math.floor(Math.random() * 128);//questions.length);
+    var question = questions[questionIndex];
+    document.getElementById("question").innerHTML = question.question;
+
+    // Mostrar las opciones de respuesta
+    var choices = document.getElementById("choices");
+    choices.innerHTML = " ";
+    for (var i = 0; i < question.choices.length; i++) {
+      var li = document.createElement("li");
+      li.innerHTML = question.choices[i];
+      li.onclick = function() {
+
+        // Verificar si la respuesta es correcta y actualizar la puntuación
+        if (this.innerHTML === question.choices[question.correctAnswer]) {
+          score++;
+          document.getElementById("score").innerHTML = score;
+        }
+
+        // Cambiar a la siguiente pregunta
+        currentQuestion++;
+        if (currentQuestion < 128) {//questions.length) {
+          showQuestion();
+        } else {
+          // Mostrar la puntuación final al final del cuestionario
+          document.getElementById("question-container").style.display = "none";
+          document.getElementById("score-container").style.display = "block";
+        }
+      };
+      choices.appendChild(li);
+    }
+
+    // Eliminar la pregunta seleccionada para evitar repetición
+    questions.splice(questionIndex, 1);
+  }
+
+  // Mostrar la primera pregunta al cargar la página
+  showQuestion();
+  </script>
+</body>
+</html>

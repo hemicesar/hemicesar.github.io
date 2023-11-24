@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KATEX</title>
+
+    <!--<script src="dist/katex-element.umd.js" type="module"></script>-->
+    <script type="module" src="https://unpkg.com/@navsnpm/katex-expression/dist/katex-expression/katex-expression.esm.js"></script>
+    <script nomodule="" src="https://unpkg.com/@navsnpm/katex-expression/dist/katex-expression/katex-expression.js"></script>
+
+    <style>
+        .katex-version {display: none;}
+        .katex-version::after {content:"0.10.2 or earlier";}
+      </style>
+      <span class="katex">
+        <span class="katex-mathml">The KaTeX stylesheet is not loaded!</span>
+        <span class="katex-version rule">KaTeX stylesheet version: </span>
+      </span>
+
+</head>
+<body>
+    <header style="background-color: darkorange; padding: 3rem; text-align: center;">
+        <h2>This is the header section.</h2>
+
+    </header>
+
+    <br>
+    <katex-expression expression='\int \dfrac{(log\ x)^3}{\sqrt{x}^x}\ dx'>
+    </katex-expression>
+    
+    <br>
+    <br>
+    <katex-expression expression='\int \dfrac{(log\ x)^3}{x}\ dx'>
+    </katex-expression>
+
+    <br>
+            
+    <article style="background-color: antiquewhite; padding: 3rem; text-align: center;">
+        <br>
+    <katex-expression expression='\int \dfrac{(log\ x)^3}{\sqrt{x}^x}\ dx'>
+    </katex-expression>
+    
+    <br>
+    <br>
+    <section style="padding: 2rem;">
+        <katex-expression expression='\int \dfrac{(log\ x)^3}{x}\ dx' style="background-color: chartreuse;">Here is
+        </katex-expression>Here don't
+    </section>
+
+    <katex-expression expression = '\ce{KClO3 ->[] KCl + O2}'></katex-expression><br>
+
+    <br>
+    </article>
+    
+    <footer style="background-color: aqua; padding: 2rem;">
+        <span class="katex"><span class="katex-version rule">Powered by: <h5>KaTeX</h5> </span></span>
+    </footer>
+    
+</body>
+</html>

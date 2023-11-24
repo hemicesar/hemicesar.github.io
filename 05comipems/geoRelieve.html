@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    
+    <meta name="description" content="hemicesar">
+    <meta name="keywords" content="ML, DS, Data Science, Machine Learning, English, Mathematics">
+    <meta name="author" content="hemicesar">
+    <!--<meta http-equiv="refresh" content="30">-->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- normalize -->
+    <link rel="stylesheet" href="necolas.github.io/normalize.css/">
+    <!-- Personalized Styles -->
+    <link rel="stylesheet" href="../style.css">
+    <!-- icons -->
+    <link rel="stylesheet" href="https://unpkg.com/jam-icons/css/jam.min.css">
+    <!-- <script src="https://unpkg.com/jam-icons/js/jam.min.js"></script> -->
+
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css" integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV" crossorigin="anonymous">
+
+    <!-- The loading of KaTeX is deferred to speed up page rendering -->
+    <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js" integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8" crossorigin="anonymous"></script>
+
+    <!-- To automatically render math in text elements, include the auto-render extension: -->
+    <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js" integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05" crossorigin="anonymous"
+        onload="renderMathInElement(document.body);"></script>
+
+    <link rel="stylesheet" href="../cv_.css">
+
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+    body, h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif}
+    .w3-row-padding img {margin-bottom: 12px}
+    /* Set the width of the sidebar to 120px */
+    .w3-sidebar {width: 120px;background: rgb(90, 226, 215);}
+    /* Add a left margin to the "page content" that matches the width of the sidebar (120px) */
+    #main {margin-left: 120px}
+    /* Remove margins from "page content" on small screens */
+    @media only screen and (max-width: 600px) {#main {margin-left: 0}}
+
+    .texto-invertido {
+    transform: scaleY(-1);
+    -webkit-transform: scaleY(-1);
+  }
+  .texto-rotado {
+  transform: rotate(180deg);
+  -webkit-transform: rotate(180deg);
+}
+    </style>
+
+    <title>GEOGRAFÍA</title>
+    <link rel="shortcut icon" href="/images/logo.ico" type="image/x-icon">
+
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script type="text/javascript" id="MathJax-script" async
+    src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js">
+    </script>
+    
+</head>
+
+<body class="w3-black">
+    <!-- ICON BAR (Sidebar - hidden on small screens) -->
+    <nav class="w3-sidebar w3-bar-block w3-small w3-hide-small w3-center">
+        <!-- Avatar image in top left corner -->
+        <img src="cv_photo.jpeg" alt="personal photo" style="max-width:100%; height:fit-content"> 
+        <a href="../start.html" class="w3-bar-item w3-button w3-padding-large w3-black">
+        <i class="fa fa-home w3-xxlarge"></i>
+        <p>ISKALIX</p>
+        </a>
+        <a href="#about" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
+        <i class="fa fa-user w3-xxlarge"></i>
+        <p>PERFIL</p>
+        </a>
+        <a href="#projects" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
+        <i class="fa fa-eye w3-xxlarge"></i>
+        <p>MÁS</p>
+        </a>
+        <a href="#contact" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
+        <i class="fa fa-envelope w3-xxlarge"></i>
+        <p>CLASES</p>
+        </a>
+
+        <a class="w3-bar-item w3-button w3-light-grey w3-padding-large w3-section printPage">
+        <i class="fa fa-download"></i>  PDF </a>        
+
+        <script>
+            document.querySelectorAll('.printPage').forEach(function(element) {
+                element.addEventListener('click', function() {
+                    print();
+                });
+            });
+        </script>
+
+    </nav>
+    
+    <!-- Navbar on small screens (Hidden on medium and large screens) -->
+    <div class="w3-top w3-hide-large w3-hide-medium" id="myNavbar">
+        <div class="w3-bar w3-black w3-opacity w3-hover-opacity-off w3-center w3-small">
+        <a href="hemicesarSpa.html" class="w3-bar-item w3-button" style="width:25% !important">ISKALIX</a>
+        <a href="#about" class="w3-bar-item w3-button" style="width:25% !important">PERFIL</a>
+        <a href="#projects" class="w3-bar-item w3-button" style="width:25% !important">MÁS</a>
+        <a href="#contact" class="w3-bar-item w3-button" style="width:25% !important">CLASES</a>
+        <a class="w3-button w3-light-grey w3-padding-large w3-section printPage">
+            <i class="fa fa-download"></i> PDF </a>
+            <script>
+                document.querySelectorAll('.printPage').forEach(function(element) {
+                    element.addEventListener('click', function() {
+                        print();
+                    });
+                });
+            </script>
+        </div>
+        
+    </div>
+    
+    <!-- Page Content -->
+    <div class="w3-padding-large" id="main">
+        <!-- Header/Home -->
+        <header class="w3-container w3-padding-32 w3-center w3-black" id="home">
+        <h1 class="w3-jumbo"><span class="w3-hide-small"></span> Relieves</h1>
+        <h1>Explorando un Mundo de Números y Ecuaciones.</h1><br>
+        <section style="font-size: xx-large;" class="w3-image" width="80%">$$x = {-b \pm \sqrt{b^2-4ac} \over 2a} $$ <br></section>
+
+        <section style="font-size: xx-large;" class="w3-image" width="80%">$$e^{i\pi}+1 = 0 $$ <br></section>
+
+        <!--<section>
+            \begin{figure}[h!]
+		\centering
+		\begin{tikzpicture}[scale=1.2]
+			\begin{axis}[xmin=-5, xmax=5, ymin=-5, ymax=5, axis x line=center, axis y line= center, xlabel=$x$, ylabel=$y$, ]
+				%xlabel style={at{(ticklabel* cs:1.05)}}, ylabel style={at{(ticklabel* cs:1.05)}}]
+				\addplot[red!80!white,thick,samples=200,domain=-3:3] {x^4-0.5*x^3-2*x^2-x+1};
+				\node at (axis cs:3,3){$p(x)$};
+			\end{axis}
+		\end{tikzpicture}
+		
+		\caption[text]{Función: $p(x)=x^4-0.5x^3-2x^2-x+1$}
+	\end{figure}
+        </section>-->
+        </header>
+        <!-- First Section -->
+
+           
+
+        <!--End of the first section-->
+        <div class="w3-content w3-justify w3-text-grey w3-padding-64" id="about">
+
+            
+
+            <section style="font-size: x-large;">
+
+    <p>**Los Movimientos de Rotación y Traslación de la Tierra: Un Viaje por el Cosmos**
+
+    La Tierra, nuestro hogar en el vasto universo, es un planeta fascinante que experimenta dos movimientos fundamentales: la rotación y la traslación. Estos dos procesos cósmicos son esenciales para comprender nuestra vida cotidiana, las estaciones del año, la duración de los días y las noches, y mucho más. En esta introducción, exploraremos estos movimientos y cómo afectan nuestra experiencia en la Tierra.
+    
+    **Rotación de la Tierra: Danza Celestial**
+    
+    La rotación es el movimiento de la Tierra sobre su propio eje. Imagina a la Tierra como una gigantesca peonza que gira sin cesar. Este movimiento es responsable de la sucesión de día y noche. La Tierra completa una rotación completa aproximadamente cada 24 horas, lo que da lugar al ciclo diario que todos experimentamos.
+    
+    El eje de rotación es una línea imaginaria que atraviesa la Tierra desde el Polo Norte hasta el Polo Sur. Este eje inclina ligeramente en relación con su órbita alrededor del Sol, creando así las estaciones del año. Durante su rotación, diferentes partes de la Tierra están expuestas a la luz solar de manera diferente, lo que provoca variaciones en la duración de los días y las noches, así como en la intensidad de la luz solar que llega a la superficie.
+    
+    **Traslación de la Tierra: El Viaje Anual alrededor del Sol**
+    
+    Mientras la Tierra gira sobre su eje, también realiza un movimiento de traslación alrededor del Sol. Este movimiento es lo que nos da las estaciones del año. La órbita de la Tierra es una elipse, lo que significa que su distancia al Sol varía a lo largo del año. Cuando la Tierra está más cerca del Sol, experimentamos el verano; cuando está más alejada, llega el invierno.
+    
+    La traslación de la Tierra demora aproximadamente 365 días y 6 horas, lo que da lugar al año bisiesto cada cuatro años para compensar las horas extras. Este viaje anual alrededor del Sol es esencial para la vida en nuestro planeta, ya que influye en el clima, la temperatura y los patrones meteorológicos en diferentes regiones.
+    
+    **Efectos de la Rotación y Traslación en la Tierra**
+    
+    Estos movimientos cósmicos tienen una serie de efectos profundos en la Tierra y en nuestra vida cotidiana. Algunos de los más notables incluyen:
+    
+    1. **Diferencia entre día y noche:** La rotación de la Tierra crea el ciclo diario de luz y oscuridad que define nuestras actividades diarias.
+    
+    2. **Estaciones del año:** La traslación alrededor del Sol determina las estaciones del año, influyendo en el clima y la vegetación en todo el mundo.
+    
+    3. **Cambio de la duración del día:** A medida que la Tierra se desplaza alrededor del Sol, la duración de los días y las noches varía, dando lugar a días más largos en verano y más cortos en invierno.
+    
+    4. **Inclinación del eje terrestre:** La inclinación del eje de la Tierra crea variaciones estacionales en la cantidad de luz solar que llega a diferentes regiones, lo que afecta a la temperatura y el clima.
+    
+    5. **Circulación atmosférica:** Estos movimientos son responsables de los vientos, las corrientes oceánicas y otros patrones meteorológicos que influyen en el clima global.
+    
+    **Conclusión**
+    
+    Los movimientos de rotación y traslación de la Tierra son procesos fundamentales en nuestro sistema solar que dan forma a nuestro planeta y a nuestra vida cotidiana. Estos movimientos no solo nos brindan la sucesión de día y noche, sino que también determinan las estaciones del año y tienen un profundo impacto en el clima, la geografía y la vida en la Tierra. Comprender estos movimientos es esencial para apreciar el funcionamiento de nuestro planeta y su lugar en el cosmos. A medida que profundizamos en el estudio de estos fenómenos, desvelamos los secretos de nuestro mundo y nos maravillamos ante la majestuosidad del universo en el que vivimos.</p>
+
+<!--\[a^2 + b^2 = c^2\]
+
+                    \(F = m \cdot a \) <br>
+                    \( c^2 = a^2 + b^2 \) <br>
+                    \[2x + 3 = 7\] <br>
+
+
+                    $$m = {y_2 - y_1 \over x_2 - x_1} $$  <br>
+
+                    $$x = {-b \pm \sqrt{b^2-4ac} \over 2a} $$ <br>
+
+                    $$d = { \sqrt{(x_2 - x_1)^2 + (y_2 - y_1)^2} } $$  <br>-->
+<!---->
+</div>
+    </section>
+
+        <h2 class="w3-text-light-grey">Tópicos de Álgebra</h2>
+        <hr style="width:200px" class="w3-opacity">
+        <section style="font-size: x-large;">
+            <ol><li><p>Monomios y Polinomios.</p></li>
+
+                <li><p>Expresiones de Segundo Grado.</p></li>
+
+                <li><p>Expresiones de Orden superior. </p></li>
+
+                <li><p>Factorización</p></li>
+                <li><p>Sistemas de Ecuaciones</p></li>
+                <li><p>División Sintética</p></li>
+                <li><p>Fracciones Parciales</p></li>
+            </ol><br>
+        </section>
+
+        <section class="w3-content w3-justify w3-text-grey w3-padding-64" style="font-size: x-large;">   
+    <h1>Cuestionario sobre los Movimientos de Rotación y Traslación de la Tierra</h1>
+
+    <form id="quizForm">
+        <!-- Pregunta 1 -->
+        <p>1. ¿Cuál es el movimiento de la Tierra alrededor de su propio eje?</p>
+        <input type="radio" name="pregunta1" value="a"> a) Rotación<br>
+        <input type="radio" name="pregunta1" value="b"> b) Traslación<br>
+        <input type="radio" name="pregunta1" value="c"> c) Precesión<br>
+        <input type="radio" name="pregunta1" value="d"> d) Nutación<br>
+        <input type="radio" name="pregunta1" value="e"> e) Revolución<br>
+
+        <!-- Pregunta 2 -->
+        <p>2. ¿Cuánto tiempo tarda la Tierra en completar una rotación?</p>
+        <input type="radio" name="pregunta2" value="a"> a) 12 horas<br>
+        <input type="radio" name="pregunta2" value="b"> b) 24 horas<br>
+        <input type="radio" name="pregunta2" value="c"> c) 30 días<br>
+        <input type="radio" name="pregunta2" value="d"> d) 365 días<br>
+        <input type="radio" name="pregunta2" value="e"> e) 7 años<br>
+
+        <!-- Pregunta 3 -->
+        <p>3. ¿Qué movimiento de la Tierra provoca las estaciones del año?</p>
+        <input type="radio" name="pregunta3" value="a"> a) Rotación<br>
+        <input type="radio" name="pregunta3" value="b"> b) Traslación<br>
+        <input type="radio" name="pregunta3" value="c"> c) Precesión<br>
+        <input type="radio" name="pregunta3" value="d"> d) Nutación<br>
+        <input type="radio" name="pregunta3" value="e"> e) Revolución<br>
+
+        <!-- Pregunta 4 -->
+        <p>4. ¿Cuál es la forma de la órbita de la Tierra alrededor del Sol?</p>
+        <input type="radio" name="pregunta4" value="a"> a) Circular<br>
+        <input type="radio" name="pregunta4" value="b"> b) Triangular<br>
+        <input type="radio" name="pregunta4" value="c"> c) Cuadrada<br>
+        <input type="radio" name="pregunta4" value="d"> d) Elíptica<br>
+        <input type="radio" name="pregunta4" value="e"> e) Rectangular<br>
+
+        <!-- Pregunta 5 -->
+        <p>5. ¿En qué dirección gira la Tierra durante su rotación?</p>
+        <input type="radio" name="pregunta5" value="a"> a) De norte a sur<br>
+        <input type="radio" name="pregunta5" value="b"> b) De este a oeste<br>
+        <input type="radio" name="pregunta5" value="c"> c) De oeste a este<br>
+        <input type="radio" name="pregunta5" value="d"> d) De sur a norte<br>
+        <input type="radio" name="pregunta5" value="e"> e) No gira<br>
+
+        <!-- Pregunta 6 -->
+        <p>6. ¿Cuál de los siguientes fenómenos está relacionado con la precesión de la Tierra?</p>
+        <input type="radio" name="pregunta6" value="a"> a) Cambios en las estaciones del año<br>
+        <input type="radio" name="pregunta6" value="b"> b) Movimiento del eje terrestre con un ciclo de 26,000 años<br>
+        <input type="radio" name="pregunta6" value="c"> c) Variaciones diarias de temperatura<br>
+        <input type="radio" name="pregunta6" value="d"> d) Cambios en la inclinación axial de la Tierra<br>
+        <input type="radio" name="pregunta6" value="e"> e) Ninguna de las anteriores<br>
+
+        <!-- Pregunta 7 -->
+        <p>7. ¿Qué movimiento terrestre causa el fenómeno de la nutación?</p>
+        <input type="radio" name="pregunta7" value="a"> a) Rotación<br>
+        <input type="radio" name="pregunta7" value="b"> b) Traslación<br>
+        <input type="radio" name="pregunta7" value="c"> c) Precesión<br>
+        <input type="radio" name="pregunta7" value="d"> d) Variación en la velocidad orbital<br>
+        <input type="radio" name="pregunta7" value="e"> e) Ninguno de los anteriores<br>
+
+        <br><br>
+        <input type="button" value="Calificar respuestas" onclick="calificarRespuestas()">
+    </form>
+
+
+    <p id="resultado"></p>
+
+    <script>
+        function calificarRespuestas() {
+            const respuestas = {
+                pregunta1: "a",
+                pregunta2: "b",
+                pregunta3: "b",
+                pregunta4: "d",
+                pregunta5: "c",
+                pregunta6: "b",
+                pregunta7: "c"
+            };
+
+            const formulario = document.getElementById("quizForm");
+            let puntuacion = 0;
+
+            for (let pregunta in respuestas) {
+                const respuestaSeleccionada = formulario.elements[pregunta].value;
+                if (respuestaSeleccionada === respuestas[pregunta]) {
+                    puntuacion++;
+                }
+            }
+
+            const resultado = document.getElementById("resultado");
+            resultado.innerHTML = "Puntuación: " + puntuacion + " de 7 respuestas correctas.";
+        }
+    </script>
+
+        </section>             
+              
+    
+        <!--TEXTO INVERTIDO-->
+        <!--<div class="texto-invertido"></div>-->
+
+
+        <!-- Contact Section -->
+        <div class="w3-padding-64 w3-content w3-text-grey" id="contact">
+            <h2 class="w3-text-light-grey">Contacto</h2>
+            <hr style="width:200px" class="w3-opacity">
+        
+            <nav class="menu">
+                <div class="w3-section">
+                    <a href="mailto:hemicesar@outlook.es"><i class="fa fa-envelope fa-fw w3-text-white w3-xxlarge w3-margin-right w3-hover-text-green"> </i></a>
+                    <a href="https://wa.me/525544984457?text=¡Hola!"><i class="fa jam jam-whatsapp fa-fw w3-text-white w3-xxlarge w3-margin-right w3-hover-text-green" style="text-decoration: none;"></i></a> 
+                    <a href="#"><i class="fa fa-instagram fa-fw w3-text-white w3-xxlarge w3-margin-right w3-hover-text-green"></i></a>    
+                </div>
+            </nav><br>
+        </div>
+            
+        <!-- End Contact Section -->
+                 
+        <!-- Footer -->
+        <footer class="w3-content w3-padding-64 w3-text-grey w3-xlarge">
+            <p class="w3-medium"><h2>Visita <a href="https://www.iskalix.com" target="_blank" class="w3-hover-text-green" style="text-decoration: none;"> ISKALIX.COM </a></h2></p>
+            <!--<a href="#" target="_blank" style="text-decoration: none;"></a>-->
+            
+            <!-- <pre>All rights reserved 2023</pre>-->
+            <!--Powered by <a href="#" style = "text-decoration: none; font-size: medium;" target="_blank">hemicesar</a>-->
+        
+        <!-- End footer -->
+        </footer>
+    <!-- END PAGE CONTENT -->
+    </div>
+    </body>
+</html>

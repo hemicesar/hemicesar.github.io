@@ -1,0 +1,3 @@
+genera en lenguaje html un cuestionario interactivo de 7 preguntas con 5 opciones múltiple y con respuestas,  sobre: 
+
+Tablas de frecuencia absoluta y relativa.

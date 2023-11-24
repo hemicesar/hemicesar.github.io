@@ -1,0 +1,286 @@
+/*
+Importamos configuración de estilos comunes
+Importamos colores
+Importamos diseños particulares de la app
+@import "colors"; 
+*/
+html {
+    margin:0px;
+    /*background-color: aquamarine;*/
+    background-color: #e8e8ed;
+    /*second color: 2b364f*/
+    /*third color: 6eed18*/
+    font-family: Verdana;
+    text-align: center;
+}
+
+.dblarrow {
+    font-size: 125%;
+    top: -0.4ex;
+    margin: 0 2px;
+}
+.dblarrow:after {
+    content:"\2190";
+    position: absolute;
+    left: 0;
+    top: 0.5ex;
+}
+
+.pregresp {
+    border: 1px solid #7DA5E0;
+    padding: 10px;
+    margin: 10px;
+    font-family: Arial, Verdana, Helvetica, sans-serif;
+    font-size: 15px;
+    font-weight: bold;
+    }
+    
+    .pregunta {
+    color: #7DA5E0;
+    }
+    
+    .respuestas {
+    color: #000000;
+    }
+
+
+/*
+header {
+    border: 2px solid #102027;
+    background-color: white;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-family: 'Gloria Hallelujah';
+}
+
+nav {
+    background-color: #37474f;
+    display: inline-block;
+}
+
+section {
+    border: 2px solid #102027;
+    background-color: #64dd17;
+    background: linear-gradient(0deg, #9cff57 , #1faa00);
+}
+
+aside {
+    border: 2px solid #102027;
+    background: linear-gradient(0deg, #9cff57 , #1faa00);
+}
+
+footer {
+    border: 2px solid #102027;
+    background-color: #64dd17;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+p {
+    text-align: justify;
+    color: rgb(119, 1, 1);
+    font-size: 1.8em;
+    /*font-weight: bold;
+    font-family: 'Gloria Hallelujah';
+    /*font-family: Verdana, Tahoma, sans-serif;
+}
+
+
+/*color-hex
+flatuicolor.com
+ a{
+    font-family: Verdana, Tahoma, sans-serif; 
+    font-family: 'Gloria Hallelujah';
+    font: bold 15px;
+    margin: 50px;
+ }
+
+.imagen{
+    width:94%;
+    height:auto;
+    position:center;
+    display:inline;
+}
+
+/*Esta sección modifica encabezado 
+#encabezado{
+    width: 30%;
+    height:auto;
+    position:relative;
+    margin:auto;
+    border-radius: 10px;
+    }
+
+.bloq{
+    width:99%;
+    height:auto;
+    position:center;
+    display:inline-block;
+    vertical-align:top;
+    overflow:hidden;
+    border-radius: 10px;
+    background: linear-gradient(0deg, #9cff57 , #1faa00);
+    font-size: 2em;
+}*/
+
+html {
+    /*margin:1%;*/
+    background-color: whitesmoke;
+    font-family: Verdana;
+   /* text-align: center;*/
+}
+
+header {
+    /*margin: 1% 0% 2% 0%;
+    /*padding: 2%;*/
+}
+
+nav {
+    background-color: #424d53;
+    margin-bottom: 0%;
+    padding: 2%;
+    text-align: center;
+    color: whitesmoke;
+}
+
+nav li{
+    display: inline-block;
+    border:1px solid white;
+    margin: 1% 8% 1% 8%;
+    padding: 1% 3% 1% 3%;
+}
+
+div.div-s {
+    display: inline-block;
+    margin: auto;
+    box-align: auto;
+    
+    width:75%;
+    height: auto;
+    
+ /* arriba | izquierda | abajo | derecha */
+    padding: 0% 0% 0% 0%;
+   
+}
+
+.div-a {
+    display: inline-block;
+    margin: auto;
+    box-align: auto;
+    
+    width:auto;
+    height: auto;
+    
+    padding: 0% 0% 0% 0%;
+       
+}
+
+/**/
+
+footer {
+    background-color: #424d53;
+    margin-top: 0%;
+    padding: 2%;
+}
+
+img {
+    width: 100%;
+    display: block;
+    /*margin: 51px auto;*/
+}
+
+
+
+
+
+* {box-sizing:border-box}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+
+/* Hide the images by default */
+.mySlides {
+  display: block;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: 0.6s ease; /*background-color*/
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  animation-name: fade;
+  animation-duration: 1.2s;
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}

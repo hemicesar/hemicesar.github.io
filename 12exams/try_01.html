@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Cuestionario interactivo con JavaScript</title>
+  </head>
+  <body>
+    <h2>Preguntas:</h2>
+    <form>
+      <ol>
+        <li><p>¿Cuál es el océano más grande?</p>
+        <input type="radio" id="p1r1" name="p1" value="artico">
+        <label for="p1r1">Océano Ártico</label><br>
+        <input type="radio" id="p1r2" name="p1" value="atlantico">
+        <label for="p1r2">Océano Atlántico</label><br>
+        <input type="radio" id="p1r3" name="p1" value="indico">
+        <label for="p1r3">Océano Índico</label><br>
+        <input type="radio" id="p1r4" name="p1" value="pacifico">
+        <label for="p1r4">Océano Pacífico</label><br>
+        <input type="radio" id="p1r5" name="p1" value="antartico">
+        <label for="p1r5">Océano Antártico</label><br><br></li>
+
+      <li><p>¿Cuál es la capital de Francia?</p>
+      <input type="radio" id="p1r1" name="p2" value="paris">
+      <label for="p1r1">París</label><br>
+      <input type="radio" id="p1r2" name="p2" value="londres">
+      <label for="p1r2">Londres</label><br>
+      <input type="radio" id="p1r3" name="p2" value="madrid">
+      <label for="p1r3">Madrid</label><br><br></li>
+
+      <li><p>¿Quién pintó La Gioconda?</p>
+      <input type="radio" id="p2r1" name="p2" value="van gogh">
+      <label for="p2r1">Vincent van Gogh</label><br>
+      <input type="radio" id="p2r2" name="p2" value="da vinci">
+      <label for="p2r2">Leonardo da Vinci</label><br>
+      <input type="radio" id="p2r3" name="p2" value="picasso">
+      <label for="p2r3">Pablo Picasso</label><br><br></li>
+
+      <li><p>¿Cuál es el océano más grande?</p>
+        <input type="radio" id="p3r1" name="p3" value="pacifico">
+        <label for="p3r1">Océano Pacífico</label><br>
+        <input type="radio" id="p3r2" name="p3" value="atlantico">
+        <label for="p3r2">Océano Atlántico</label><br>
+        <input type="radio" id="p3r3" name="p3" value="indico">
+        <label for="p3r3">Océano Índico</label><br><br></li>
+
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li></ol>
+      
+      <button type="button" onclick="calcularResultado()">Enviar respuestas</button>
+    </form>
+    
+    <script>
+      function calcularResultado() {
+        const respuestas = document.querySelectorAll("input[type='radio']:checked");
+        let correctas = 0;
+        
+        for (let i = 0; i < respuestas.length; i++) {
+          if (respuestas[i].value === "pacifico" || respuestas[i].value === "paris" 
+          || respuestas[i].value === "da vinci" || respuestas[i].value === "pacifico"
+          || ) {
+            correctas++;
+          }
+        }
+        
+        alert(`Has acertado ${correctas} de 3 preguntas.`);
+      }
+    </script>
+  </body>
+</html>

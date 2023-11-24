@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Visualización de la Ecuación de Pitágoras</title>
+  <meta charset="UTF-8">
+  <style>
+    #triangle {
+      width: 0;
+      height: 0;
+      border-left: 100px solid transparent;
+      border-right: 100px solid transparent;
+      border-bottom: 173.2px solid #1E90FF; /* Altura ajustada para formar un triángulo equilátero */
+      position: relative;
+    }
+
+    #sideA, #sideB, #sideC {
+      width: 100px;
+      height: 2px;
+      background-color: #FF0000;
+      position: absolute;
+      top: 0;
+    }
+
+    #sideA {
+      left: 0;
+    }
+
+    #sideB {
+      left: 100px;
+    }
+
+    #sideC {
+      left: 0;
+      top: 173.2px; /* Altura ajustada para formar un triángulo equilátero */
+    }
+
+    .equation {
+      font-size: 32px;
+      margin-top: 20px;
+      text-align: center;
+      color: floralwhite;  /* #5FA;*/
+      padding-top: 10px;
+    }
+
+    h1 {
+      font-size: 30px;
+      margin-top: 10px;
+      
+      color: floralwhite;  /* #5FA;*/
+      padding-top: 10px;
+    }
+
+    
+  </style>
+</head>
+<body style="background-color: dimgray;">
+  <h1>Ecuaciones de Trigonometría</h1><div class="equation">\( c^2 = a^2 + b^2 \)</div><br>
+  <h1>Ecuación de Einstein</h1><div class="equation">\( E = m  c^2 \)</div><br>
+  
+  <h1>Ecuación de Fuerza</h1><div class="equation">\(F = m a \)</div><br>
+  <h1>Ecuación de ONDA</h1><div class="equation">\( c^2 = a^2 + b^2 \)</div><br>
+  
+  <h1>Ecuación de Pitágoras</h1><div class="equation">\( c^2 = a^2 + b^2 \)</div><br>
+  <h1>Ecuación de Pitágoras</h1><div class="equation">\( c^2 = a^2 + b^2 \)</div><br>
+  
+  <div class="equation">\(  \)</div>
+  <div class="equation">\( F = m a \)</div>
+ 
+ 
+  
+
+  <!-- Importar MathJax -->
+  <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+  <script type="text/javascript" async
+    src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-MML-AM_CHTML">
+  </script>
+
+  <script>
+    const sideA = document.getElementById("sideA");
+    const sideB = document.getElementById("sideB");
+    const sideC = document.getElementById("sideC");
+
+    const triangle = document.getElementById("triangle");
+
+    let movingSide = null;
+    let prevX = 0;
+    let prevY = 0;
+
+    function updateTriangle() {
+      const a = parseFloat(sideA.style.width);
+      const b = parseFloat(sideB.style.left) - parseFloat(sideA.style.left);
+      const c = Math.sqrt(a * a + b * b);
+
+      sideC.style.width = c + "px";
+
+      // Actualizar la ecuación con MathJax
+      const equation = `\\( C^2 = ${a}^2 + ${b}^2 \\)`;
+      document.querySelector('.equation').textContent = '';
+      MathJax.texReset();
+      MathJax.typesetClear();
+      MathJax.typesetPromise([equation]).then(() => {
+        document.querySelector('.equation').textContent = equation;
+      });
+    }
+
+    function onMouseMove(e) {
+      if (movingSide) {
+        e.preventDefault();
+
+        const dx = e.clientX - prevX;
+        const dy = e.clientY - prevY;
+        prevX = e.clientX;
+        prevY = e.clientY;
+
+        movingSide.style.width = parseFloat(movingSide.style.width) + dx + "px";
+        movingSide.style.left = parseFloat(movingSide.style.left) + dx + "px";
+        movingSide.style.top = parseFloat(movingSide.style.top) + dy + "px";
+
+        updateTriangle();
+      }
+    }
+
+    function onMouseUp(e) {
+      movingSide = null;
+    }
+
+    sideA.addEventListener("mousedown", (e) => {
+      movingSide = sideA;
+      prevX = e.clientX;
+      prevY = e.clientY;
+    });
+
+    sideB.addEventListener("mousedown", (e) => {
+      movingSide = sideB;
+      prevX = e.clientX;
+      prevY = e.clientY;
+    });
+
+    document.addEventListener("mousemove", onMouseMove);
+    document.addEventListener("mouseup", onMouseUp);
+  </script>
+</body>
+</html>

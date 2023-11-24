@@ -1,0 +1,1 @@
+alert('Presiona aquí para continuar');

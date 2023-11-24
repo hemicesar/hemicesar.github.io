@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Cuestionario de Química</title>
+</head>
+<body>
+    <h1>Cuestionario sobre Características del Conocimiento Científico: Química</h1>
+    <form id="quiz-form">
+        <ol>
+            <!-- Pregunta 1 -->
+            <li>
+                <h3>¿Qué es la química?</h3>
+                <input type="radio" name="q1" value="a"> La ciencia que estudia los planetas.
+                <input type="radio" name="q1" value="b"> La ciencia que estudia la composición de la materia.
+                <input type="radio" name="q1" value="c"> La ciencia que estudia la historia de la humanidad.
+                <input type="radio" name="q1" value="d"> La ciencia que estudia la biología.
+                <input type="radio" name="q1" value="correcta"> La ciencia que estudia la composición y las propiedades de la materia y las transformaciones que esta experimenta.
+
+            </li>
+
+            <!-- Pregunta 2 -->
+            <li>
+                <h3>¿Cuál es el método científico?</h3>
+                <input type="radio" name="q2" value="a"> Un libro de química famoso.
+                <input type="radio" name="q2" value="b"> Una película de ciencia ficción.
+                <input type="radio" name="q2" value="correcta"> Un proceso sistemático utilizado por los científicos para investigar y comprender fenómenos naturales.
+                <input type="radio" name="q2" value="d"> Una teoría científica.
+
+            </li>
+
+            <!-- Pregunta 3 -->
+            <li>
+                <h3>¿Qué son las leyes de la química?</h3>
+                <input type="radio" name="q3" value="a"> Normas de tráfico.
+                <input type="radio" name="q3" value="correcta"> Principios fundamentales que describen cómo se comportan las sustancias químicas en diferentes condiciones.
+                <input type="radio" name="q3" value="c"> Reglas de etiqueta.
+                <input type="radio" name="q3" value="d"> Leyes legislativas.
+
+            </li>
+
+            <!-- Pregunta 4 -->
+            <li>
+                <h3>¿Qué es una reacción química?</h3>
+                <input type="radio" name="q4" value="a"> Un libro de química famoso.
+                <input type="radio" name="q4" value="b"> Un experimento de laboratorio.
+                <input type="radio" name="q4" value="c"> Una película de ciencia ficción.
+                <input type="radio" name="q4" value="correcta"> Un proceso en el cual las sustancias químicas interactúan y se transforman en otras sustancias.
+
+            </li>
+
+            <!-- Pregunta 5 -->
+            <li>
+                <h3>¿Qué es un elemento químico?</h3>
+                <input type="radio" name="q5" value="a"> Una molécula.
+                <input type="radio" name="q5" value="correcta"> Una sustancia pura que no puede descomponerse en sustancias más simples por medios químicos.
+                <input type="radio" name="q5" value="c"> Un compuesto químico.
+                <input type="radio" name="q5" value="d"> Una reacción química.
+
+            </li>
+
+            <!-- Pregunta 6 -->
+            <li>
+                <h3>¿Qué es un compuesto químico?</h3>
+                <input type="radio" name="q6" value="a"> Un elemento químico.
+                <input type="radio" name="q6" value="b"> Una mezcla homogénea.
+                <input type="radio" name="q6" value="correcta"> Una sustancia formada por la combinación de dos o más elementos en proporciones definidas.
+
+            </li>
+
+            <!-- Pregunta 7 -->
+            <li>
+                <h3>¿Qué papel desempeñan los modelos en la química?</h3>
+                <input type="radio" name="q7" value="a"> Ningún papel, no se usan modelos en química.
+                <input type="radio" name="q7" value="correcta"> Ayudan a simplificar y entender fenómenos químicos complejos al proporcionar representaciones visuales o conceptuales.
+                <input type="radio" name="q7" value="c"> Son sustancias químicas.
+                <input type="radio" name="q7" value="d"> Son instrumentos de laboratorio.
+
+            </li>
+        </ol>
+        <input type="submit" value="Calificar">
+    </form>
+</body>
+</html>

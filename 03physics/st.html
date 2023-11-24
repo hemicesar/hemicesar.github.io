@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>FÍSICA</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<!-- <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css"> -->
+<link rel="stylesheet" href="../style.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+<style>
+body,h1,h5 {font-family: "Raleway", sans-serif}
+body, html {height: 100%}
+.bgimg {
+  background-image: url("../images/fisica.png");
+  min-height: 100%;
+  background-position: center;
+  background-size: cover;
+}
+</style>
+</head>
+<body>
+
+<div class="bgimg w3-display-container w3-text-white">
+  <div class="w3-display-middle w3-jumbo">
+    <a href="https://www.iskalix.com"><p>ISKALIX</p></a>
+  </div>
+  <div class="w3-display-topleft w3-container w3-xlarge">
+    <p><button onclick="document.getElementById('menu').style.display='block'" class="w3-button w3-black">cursos</button></p>
+    <p><button onclick="document.getElementById('contact').style.display='block'" class="w3-button w3-black">registro</button></p>
+  </div>
+  <div class="w3-display-bottomleft w3-container">
+    <p class="w3-xlarge">Lunes - Viernes 08-21 hrs  | Sábado 09-17 hrs</p>
+    <p class="w3-large">desde CDMX, México</p>
+    <p>powered by <a href="https://www.hemicesar.com" target="_blank">hemicesar</a></p>
+  </div>
+</div>
+
+<!-- Menu Modal -->
+<div id="menu" class="w3-modal">
+  <div class="w3-modal-content w3-animate-zoom">
+    <div class="w3-container w3-black w3-display-container">
+      <span onclick="document.getElementById('menu').style.display='none'" class="w3-button w3-display-topright w3-large">x</span>
+      <h1>Secundaria</h1>
+    </div>
+    <div class="w3-container">
+      <h5>Introducción a la Química <b></b></h5>
+      <h5>Químcia Básica <b></b></h5>
+      <h5>La Química en Acción <b></b></h5>
+    </div>
+    <div class="w3-container w3-black">
+      <h1>Media Superior</h1>
+    </div>
+    <div class="w3-container">
+      <h5>Grilled Fish and Potatoes <b></b></h5>
+      <h5>Italian Pizza <b></b></h5>
+      <h5>Veggie Pasta <b></b></h5>
+      <h5>Chicken and Potatoes <b></b></h5>
+      <h5>Deluxe Burger <b></b></h5>
+    </div>
+    <div class="w3-container w3-black">
+      <h1>Superior</h1>
+    </div>
+    <div class="w3-container">
+      <h5>Fruit Salad <b></b></h5>
+      <h5>Ice cream <b></b></h5>
+      <h5>Chocolate Cake <b></b></h5>
+      <h5>Cheese <b></b></h5>
+    </div>
+  </div>
+</div>
+
+<!-- Contact Modal -->
+<div id="contact" class="w3-modal">
+  <div class="w3-modal-content w3-animate-zoom">
+    <div class="w3-container w3-black">
+      <span onclick="document.getElementById('contact').style.display='none'" class="w3-button w3-display-topright w3-large">x</span>
+      <h1>Registro</h1>
+    </div>
+    <div class="w3-container">
+      <p>Registrate en nuestra plataforma, recibe contenido exclusivo:</p>
+      <form action="/action_page.php" target="_blank">
+        <p><input class="w3-input w3-padding-16 w3-border" type="text" placeholder="Nombre" required name="Name"></p>
+        <p><input class="w3-input w3-padding-16 w3-border" type="number" placeholder="Nivel de interés" required name="People"></p>
+        <p><input class="w3-input w3-padding-16 w3-border" type="datetime-local" placeholder="Hora y Fecha" required name="date" value="2023-11-16T16:00"></p>
+        <p><input class="w3-input w3-padding-16 w3-border" type="text" placeholder="Mensaje | Comentarios Adicionales" required name="Message"></p>
+        <p><button class="w3-button" type="submit">ENVIAR MENSAJE</button></p>
+      </form>
+    </div>
+  </div>
+</div>
+
+</body>
+</html>
+

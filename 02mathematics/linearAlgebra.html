@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Áñgebra Lineal</title>
+    <script type="text/x-mathjax-config">
+        MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}});
+    </script>
+    <script type="text/javascript" async
+        src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+    </script>
+</head>
+<body>
+
+    <h1>Ecuaciones Importantes en Álgebra Lineal</h1>
+    <ol>
+      <li>$$\mathbf{Ax} = \mathbf{b}$$</li>
+      <li>$$\mathbf{A}(\mathbf{Bx}) = (\mathbf{AB})\mathbf{x}$$</li>
+      <li>$$\mathbf{A}(\mathbf{B} + \mathbf{C}) = \mathbf{AB} + \mathbf{AC}$$</li>
+      <li>$$\mathbf{A}(\mathbf{B}^T) = (\mathbf{A}^T)(\mathbf{B}^T)$$</li>
+      <li>$$\mathbf{A}^{-1}\mathbf{A} = \mathbf{I}$$</li>
+      <li>$$\text{det}(\mathbf{A}) = \text{det}(\mathbf{A}^T)$$</li>
+      <li>$$\mathbf{A}^T\mathbf{A} = \mathbf{A}\mathbf{A}^T$$</li>
+      <li>$$\text{Rank}(\mathbf{A}) + \text{Rank}(\mathbf{B}) - \text{Rank}(\mathbf{AB}) \leq n$$</li>
+      <li>$$\mathbf{A}^T\mathbf{A}^{-1} = (\mathbf{A}^{-1})^T\mathbf{A}^T = (\mathbf{A}^T\mathbf{A})^{-1}$$</li>
+      <li>$$\text{Rank}(\mathbf{A}) = \text{Rank}(\mathbf{A}^T\mathbf{A})$$</li>
+      <li>$$\mathbf{Ax} = \mathbf{0} \text{ tiene solución única si y solo si } \text{Rank}(\mathbf{A}) = n$$</li>
+      <li>$$\mathbf{A}^{-1} = \frac{1}{\text{det}(\mathbf{A})} \text{adj}(\mathbf{A})$$</li>
+      <li>$$\text{det}(\mathbf{A}^T) = \text{det}(\mathbf{A})$$</li>
+      <li>$$\text{Rank}(\mathbf{A} + \mathbf{B}) \leq \text{Rank}(\mathbf{A}) + \text{Rank}(\mathbf{B})$$</li>
+      <li>$$\text{Rank}(\mathbf{A}^T\mathbf{A}) = \text{Rank}(\mathbf{A})$$</li>
+      <li>$$\text{Rank}(\mathbf{AB}) \geq \text{Rank}(\mathbf{A}) + \text{Rank}(\mathbf{B}) - n$$</li>
+      <li>$$\text{Nullity}(\mathbf{A}) + \text{Rank}(\mathbf{A}) = n$$</li>
+      <li>$$\text{det}(\mathbf{A}^{-1}) = \frac{1}{\text{det}(\mathbf{A})}$$</li>
+      <li>$$\mathbf{A}(\mathbf{A}^T\mathbf{A})^{-1}\mathbf{A}^T = \mathbf{P}_\mathbf{A}$$</li>
+      <li>$$\mathbf{A}^{-1} = \frac{1}{\text{det}(\mathbf{A})}\text{adj}(\mathbf{A})$$</li>
+    </ol>
+
+
+    <h1>Ecuaciones Diferenciales Importantes</h1>
+<ol>
+  <li>$$\frac{dy}{dx} = f(x)$$</li>
+  <li>$$\frac{d^2y}{dx^2} = f(x)$$</li>
+  <li>$$\frac{d^2y}{dx^2} + p(x)\frac{dy}{dx} + q(x)y = 0$$</li>
+  <li>$$\frac{dy}{dt} = k(y - L)$$</li>
+  <li>$$\frac{d^2y}{dt^2} = -g$$</li>
+  <li>$$\frac{d^2y}{dt^2} = -\frac{k}{m}y$$</li>
+  <li>$$\frac{d^2y}{dx^2} = -\omega^2y$$</li>
+  <li>$$\frac{d^2y}{dx^2} + \omega^2y = 0$$</li>
+  <li>$$\frac{d^2y}{dt^2} + \frac{c}{m}\frac{dy}{dt} + \frac{k}{m}y = 0$$</li>
+  <li>$$\frac{d^2y}{dx^2} - p^2y = 0$$</li>
+  <li>$$\frac{d^2y}{dx^2} + a^2y = 0$$</li>
+  <li>$$\frac{d^2y}{dx^2} - \lambda^2y = 0$$</li>
+  <li>$$\frac{d^2y}{dx^2} + \frac{2}{x}\frac{dy}{dx} - \frac{n(n+1)}{x^2}y = 0$$</li>
+  <li>$$\frac{d^2y}{dx^2} - \frac{1}{x}\frac{dy}{dx} + \frac{1}{x^2}y = 0$$</li>
+  <li>$$\frac{d^2y}{dt^2} = c^2\frac{d^2y}{dx^2}$$</li>
+  <li>$$\frac{d^2y}{dt^2} - c^2\frac{d^2y}{dx^2} = 0$$</li>
+  <li>$$\frac{d^2y}{dx^2} + \lambda^2y = \delta(x-a)$$</li>
+  <li>$$\frac{d^2y}{dx^2} - p(x)\frac{dy}{dx} + q(x)y = f(x)$$</li>
+  <li>$$\frac{d^2y}{dt^2} = -k^2y$$</li>
+  <li>$$\frac{d^2y}{dx^2} + k^2y = 0$$</li>
+</ol>
+
+
+
+
+
+
+
+</body>
+</html>

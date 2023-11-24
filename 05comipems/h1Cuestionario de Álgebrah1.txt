@@ -1,0 +1,208 @@
+    <h1>Cuestionario de Álgebra</h1>
+    <form id="algebraQuiz">
+        <ol>
+            <li>
+                <h3>Pregunta 1: ¿Cuál es la fórmula general para resolver una ecuación cuadrática?</h3>
+                <input type="radio" name="q1" value="a"> a = (-b ± √(b² - 4ac)) / (2a)
+                <input type="radio" name="q1" value="b"> b = (2a ± √(b² - 4ac)) / (-b)
+                <input type="radio" name="q1" value="c"> c = (-2b ± √(b² - 4ac)) / (2a)
+                <input type="radio" name="q1" value="d"> d = (-b ± 4ac) / (2a)
+                <input type="radio" name="q1" value="e"> e = (2b ± 4ac) / (-a)
+                <br>
+                Respuesta Correcta: a
+            </li>
+            
+            <li>
+                <h3>Pregunta 2: ¿Cuál es el valor de x en la ecuación 3x + 5 = 17?</h3>
+                <input type="radio" name="q2" value="a"> x = 12
+                <input type="radio" name="q2" value="b"> x = 4
+                <input type="radio" name="q2" value="c"> x = 6
+                <input type="radio" name="q2" value="d"> x = 7
+                <input type="radio" name="q2" value="e"> x = 8
+                <br>
+                Respuesta Correcta: b
+            </li>
+            
+            <li>
+                <h3>Pregunta 3: ¿Cuál es el resultado de (2x + 3)(x - 4) en la multiplicación de binomios?</h3>
+                <input type="radio" name="q3" value="a"> 2x^2 - 5x - 12
+                <input type="radio" name="q3" value="b"> 2x^2 - x - 12
+                <input type="radio" name="q3" value="c"> 2x^2 + 11x - 12
+                <input type="radio" name="q3" value="d"> 2x^2 - 5x + 12
+                <input type="radio" name="q3" value="e"> 2x^2 + 5x - 12
+                <br>
+                Respuesta Correcta: a
+            </li>
+            
+            <li>
+                <h3>Pregunta 4: ¿Cuál es la solución de la ecuación 2x + 8 = 0?</h3>
+                <input type="radio" name="q4" value="a"> x = -4
+                <input type="radio" name="q4" value="b"> x = 0
+                <input type="radio" name="q4" value="c"> x = -8
+                <input type="radio" name="q4" value="d"> x = 4
+                <input type="radio" name="q4" value="e"> x = 2
+                <br>
+                Respuesta Correcta: a
+            </li>
+            
+            <li>
+                <h3>Pregunta 5: ¿Cuál es la suma de los ángulos internos de un triángulo?</h3>
+                <input type="radio" name="q5" value="a"> 90 grados
+                <input type="radio" name="q5" value="b"> 180 grados
+                <input type="radio" name="q5" value="c"> 270 grados
+                <input type="radio" name="q5" value="d"> 360 grados
+                <input type="radio" name="q5" value="e"> 45 grados
+                <br>
+                Respuesta Correcta: b
+            </li>
+            
+            <li>
+                <h3>Pregunta 6: ¿Cuál es el valor de x en la ecuación 4x - 7 = 25?</h3>
+                <input type="radio" name="q6" value="a"> x = 6
+                <input type="radio" name="q6" value="b"> x = 5
+                <input type="radio" name="q6" value="c"> x = 8
+                <input type="radio" name="q6" value="d"> x = 7
+                <input type="radio" name="q6" value="e"> x = 4
+                <br>
+                Respuesta Correcta: c
+            </li>
+            
+            <li>
+                <h3>Pregunta 7: ¿Cuál es la fórmula general para resolver una ecuación lineal?</h3>
+                <input type="radio" name="q7" value="a"> x = (-b ± √(b² - 4ac)) / (2a)
+                <input type="radio" name="q7" value="b"> x = (2a ± √(b² - 4ac)) / (-b)
+                <input type="radio" name="q7" value="c"> x = (-2b ± √(b² - 4ac)) / (2a)
+                <input type="radio" name="q7" value="d"> x = (-b ± 4ac) / (2a)
+                <input type="radio" name="q7" value="e"> x = (2b ± 4ac) / (-a)
+                <br>
+                Respuesta Correcta: d
+            </li>
+        </ol>
+        <input type="submit" value="Calificar">
+    </form>
+
+
+
+
+
+
+Aquí tienes un cuestionario interactivo en HTML sobre ejercicios de álgebra, con 7 preguntas y 5 opciones múltiples cada una, incluyendo las respuestas correctas:
+
+```html
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Cuestionario de Álgebra</title>
+</head>
+
+<body>
+    <h1>Cuestionario de Álgebra</h1>
+
+    <form id="quizForm">
+        <!-- Pregunta 1 -->
+        <p>1. ¿Cuál es la solución de la ecuación x + 3 = 7?</p>
+        <input type="radio" name="pregunta1" value="a"> a) x = 4<br>
+        <input type="radio" name="pregunta1" value="b"> b) x = 10<br>
+        <input type="radio" name="pregunta1" value="c"> c) x = -3<br>
+        <input type="radio" name="pregunta1" value="d"> d) x = 1<br>
+        <input type="radio" name="pregunta1" value="e"> e) x = 5<br>
+
+        <!-- Pregunta 2 -->
+        <p>2. ¿Cuál es el valor de 'y' en la ecuación 2y - 5 = 11?</p>
+        <input type="radio" name="pregunta2" value="a"> a) y = 3<br>
+        <input type="radio" name="pregunta2" value="b"> b) y = 8<br>
+        <input type="radio" name="pregunta2" value="c"> c) y = 6<br>
+        <input type="radio" name="pregunta2" value="d"> d) y = 16<br>
+        <input type="radio" name="pregunta2" value="e"> e) y = -3<br>
+
+        <!-- Pregunta 3 -->
+        <p>3. ¿Cuál es la solución de la ecuación 3x - 4 = 8?</p>
+        <input type="radio" name="pregunta3" value="a"> a) x = 4<br>
+        <input type="radio" name="pregunta3" value="b"> b) x = 12<br>
+        <input type="radio" name="pregunta3" value="c"> c) x = 2<br>
+        <input type="radio" name="pregunta3" value="d"> d) x = -4<br>
+        <input type="radio" name="pregunta3" value="e"> e) x = 5<br>
+
+        <!-- Pregunta 4 -->
+        <p>4. ¿Cuál es el resultado de (2x - 3) * 4 = 20?</p>
+        <input type="radio" name="pregunta4" value="a"> a) x = 5<br>
+        <input type="radio" name="pregunta4" value="b"> b) x = 6<br>
+        <input type="radio" name="pregunta4" value="c"> c) x = 7<br>
+        <input type="radio" name="pregunta4" value="d"> d) x = 8<br>
+        <input type="radio" name="pregunta4" value="e"> e) x = 9<br>
+
+        <!-- Pregunta 5 -->
+        <p>5. ¿Cuál es el valor de 'a' en la ecuación 2(a + 5) = 18?</p>
+        <input type="radio" name="pregunta5" value="a"> a) a = 4<br>
+        <input type="radio" name="pregunta5" value="b"> b) a = 2<br>
+        <input type="radio" name="pregunta5" value="c"> c) a = 3<br>
+        <input type="radio" name="pregunta5" value="d"> d) a = 6<br>
+        <input type="radio" name="pregunta5" value="e"> e) a = 8<br>
+
+        <!-- Pregunta 6 -->
+        <p>6. ¿Cuál es la solución de la ecuación 5x/2 = 10?</p>
+        <input type="radio" name="pregunta6" value="a"> a) x = 4<br>
+        <input type="radio" name="pregunta6" value="b"> b) x = 5<br>
+        <input type="radio" name="pregunta6" value="c"> c) x = 2<br>
+        <input type="radio" name="pregunta6" value="d"> d) x = 10<br>
+        <input type="radio" name="pregunta6" value="e"> e) x = 20<br>
+
+        <!-- Pregunta 7 -->
+        <p>7. ¿Cuál es la solución de la ecuación 3x + 2(4x - 5) = 20?</p>
+        <input type="radio" name="pregunta7" value="a"> a) x = 4<br>
+        <input type="radio" name="pregunta7" value="b"> b) x = 5<br>
+        <input type="radio" name="pregunta7" value="c"> c) x = 2<br>
+        <input type="radio" name="pregunta7" value="d"> d) x = 3<br>
+        <input type="radio" name="pregunta7" value="e"> e) x = 6<br>
+
+        <br><br>
+        <button type="button" onclick="calificarRespuestas()">Calificar respuestas</button>
+    </form>
+
+    <p id="resultado"></p>
+
+    <script>
+        function calificarRespuestas() {
+            const respuestasCorrectas = {
+                pregunta1: "a",
+                pregunta2: "a",
+                pregunta3: "c",
+                pregunta4: "c",
+                pregunta5: "b",
+                pregunta6: "b",
+                pregunta7: "e",
+            };
+
+            const formulario = document.getElementById("quizForm");
+            let puntuacion = 0;
+
+            for (let pregunta in respuestasCorrectas) {
+                const respuestaSeleccionada = formulario.elements[pregunta].value;
+                if (respuestaSeleccionada === respuestasCorrectas[pregunta]) {
+                    puntuacion++;
+                }
+            }
+
+            const resultado = document.getElementById("resultado");
+            resultado.innerHTML = "Puntuación: " + puntuacion + " de 7 respuestas correctas.";
+        }
+    </script>
+
+</body>
+
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+

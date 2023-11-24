@@ -1,0 +1,237 @@
+/*
+Importamos configuración de estilos comunes
+Importamos colores
+Importamos diseños particulares de la app
+@import "colors"; 
+*/
+
+
+h1 {
+    font-size: 6em;
+    font-family: 'Gloria Hallelujah', Verdana, Tahoma, sans-serif;
+    font-weight: bold;
+    text-align: center;
+}
+
+h2 {
+    font-size: 2em;
+    font-family: 'Gloria Hallelujah', Verdana, Tahoma, sans-serif;
+    font-weight: bold;
+    text-align: center;
+    color:whitesmoke;
+}
+
+h3 {
+    font-size: 18px;
+    font-family: 'Gloria Hallelujah', Verdana, Tahoma, sans-serif;
+    font-weight: bold;
+    text-align: center;
+}
+
+h4 {
+    font-size: 12px;
+    font-family: 'Gloria Hallelujah', Verdana, Tahoma, sans-serif;
+    font-weight: bold;
+    text-align: center;
+}
+
+header {
+    border: 2px solid #102027;
+    background-color: white;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-family: 'Gloria Hallelujah';
+}
+footer {
+    border: 1px solid #102027;
+    /*background-color: #64dd17;*/
+    background: linear-gradient(0deg, #9cff57 , #1faa00);
+   /* padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 2px;
+    padding-bottom: 2px;*/
+}
+section {
+    border: 1px solid #102027;
+    background-color: #64dd17;
+    background: linear-gradient(0deg, #9cff57 , #1faa00);
+}
+
+div {
+    background-color: #37474f;
+}
+
+aside {
+    border: 2px solid #102027;
+    background: linear-gradient(0deg, #9cff57 , #1faa00);
+}
+
+html, body {
+    margin:0px;
+    /*background-color: aquamarine;*/
+    background-color: #dbe5e5;
+    font-family: 'Gloria Hallelujah', cursive;
+}
+
+
+ul.navbar {
+        position: absolute;
+        top: 2em;
+        left: 1em;
+        width: 9em;
+}
+
+.main-nav {
+    width: 33px;
+    display: inline-block;
+}
+
+p {
+    text-align: justify;
+    color: white;
+    font-size: 1.8em;
+    /*font-weight: bold;*/
+    font-family: 'Gloria Hallelujah';
+    /*font-family: Verdana, Tahoma, sans-serif;*/
+}
+
+.product img{
+    width: 50px;
+}
+
+.product h5{
+    font-size: 1.7em;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+.card {
+    border-radius: 4px;
+    background-color: white;
+    box-shadow: 0 1px 3px rgba(0,0,0,0,12);
+}
+
+
+
+/*color-hex
+flatuicolor.com*/
+ a{
+    font-family: Verdana, Tahoma, sans-serif; 
+    font-family: 'Gloria Hallelujah';
+    font: bold 15px;
+    margin: 50px;
+ }
+
+ #productos{
+    width: 100%;
+    height:auto;
+    position:center;
+    margin:auto;
+    background-color: #64dd17;
+    border-radius: 8px;
+    }
+
+.card{
+    width:28%;
+    height:auto;
+    position:center;
+    display:inline-block;
+    vertical-align:top;
+    overflow:hidden;
+    border-radius: 10px;
+}
+
+.imagen{
+    width:94%;
+    height:auto;
+    position:center;
+    display:inline;
+}
+
+.texto{
+    height:auto;
+    text-align:center;
+    width:94%;
+}
+
+li {
+    text-align: left;
+    color: #f5f5f5;
+    font-size: 1.2em;
+    /*font-weight: bold;*/
+    font-family: 'Gloria Hallelujah';
+}
+
+
+
+/*Esta sección modifica encabezado */
+#encabezado{
+    width: 30%;
+    height:auto;
+    position:relative;
+    margin:auto;
+    border-radius: 10px;
+    }
+.bloq{
+    width:99%;
+    height:auto;
+    position:center;
+    display:inline-block;
+    vertical-align:top;
+    overflow:hidden;
+    border-radius: 10px;
+    background: linear-gradient(0deg, #9cff57 , #1faa00);
+    font-size: 2em;
+}
+
+/*Esta sección modifica numbers */
+#lista{
+    width: 100%;
+    height:auto;
+    position:center;
+    margin-top: 2em;
+    margin-bottom: 2em;
+    background-color: #64dd17;
+    border-radius: 10px;
+    padding-top: 4em;
+    padding-bottom: 4em;
+    }
+
+.list{
+    width:19%;
+    height:auto;
+    position:center;
+    display:inline-block;
+    vertical-align:top;
+    overflow:hidden;
+    border-radius: 10px;
+    padding-top: 1em;
+    padding-bottom: 1em;
+}
+
+#cursos{
+    width: 100%;
+    height:auto;
+    position:center;
+    margin-top: 2em;
+    margin-bottom: 2em;
+    background-color: #dbe5e5;
+    border-radius: 10px;
+    padding-top: 4em;
+    padding-bottom: 4em;
+    }
+
+.curso{
+    width:19%;
+    height:auto;
+    position:center;
+    display:inline-block;
+    vertical-align:top;
+    overflow:hidden;
+    background-color: #62727b;
+    border-radius: 1.5em;
+    padding-top: 1em;
+    padding-bottom: 1em;  
+}

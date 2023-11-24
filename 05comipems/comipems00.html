@@ -1,0 +1,1734 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>ISKALIX</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<link rel="icon" type="vector" href="vectors/sphere/sphere.svg">
+
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<style>
+body,h1,h2,h3,h4,h5,h6 {font-family: "Raleway", sans-serif}
+
+body, html {
+  height: 100%;
+  line-height: 1.8;
+}
+
+/* Full height image header */
+.bgimg-1 {
+  background-position: center;
+  background-size: cover;
+  background-image: url("/w3images/mac.jpg");
+  min-height: 100%;
+}
+
+.w3-bar .w3-button {
+  padding: 16px;
+}
+
+#contador {
+  font-size: 1rem;
+  font-weight: bold;
+  color: #333;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  background-color: #f5f5f5;
+  border: 2px solid #ccc;
+  border-radius: 5px;
+  text-align: center;
+  margin-top: 10px;
+  margin-right: 5px;
+}
+
+</style>
+</head>
+
+<body>
+
+<header>
+  <!-- Navbar (sit on top) -->
+  <div class="w3-top">
+    <div class="w3-bar w3-green w3-card" id="myNavbar">
+      <a href="index.html" class="w3-bar-item w3-button w3-wide"><b>SKLX</b></a>
+      <!-- Right-sided navbar links -->
+      <div class="w3-right w3-hide-small">
+  
+        <div id="contador"></div> <!--<script src="new.js"></script>-->
+        <script>
+          let segundos = 0;
+        let minutos = 0;
+        let horas = 0;
+        
+        function actualizarContador() {
+          segundos++;
+          if (segundos == 60) {
+            segundos = 0;
+            minutos++;
+          }
+          if (minutos == 60) {
+            minutos = 0;
+            horas++;
+          }
+          document.getElementById("contador").innerHTML = horas.toString().padStart(2, '0') + ":" + minutos.toString().padStart(2, '0') + ":" + segundos.toString().padStart(2, '0');
+        }
+        
+        setInterval(actualizarContador, 1000);
+        </script>
+  
+        <a href="#about" class="w3-bar-item w3-button">SOBRE</a>
+        <a href="#team" class="w3-bar-item w3-button"><i class="fa fa-user"></i> EQUIPO</a>
+        <a href="#work" class="w3-bar-item w3-button"><i class="fa fa-th"></i> TRABAJO</a>
+        <a href="index.html/#pricing" class="w3-bar-item w3-button"><i class="fa fa-usd"></i> PRECIOS</a>
+        <a href="#contact" class="w3-bar-item w3-button"><i class="fa fa-envelope"></i> CONTACTO</a>
+      </div>
+      <!-- Hide right-floated links on small screens and replace them with a menu icon -->
+  
+      <a href="javascript:void(0)" class="w3-bar-item w3-button w3-right w3-hide-large w3-hide-medium" onclick="w3_open()">
+        <i class="fa fa-bars"></i>
+      </a>
+    </div>
+  </div>
+  
+  <!-- Sidebar on small screens when clicking the menu icon -->
+  <!-- Sidebar on small screens when clicking the menu icon -->
+  <!-- Sidebar on small screens when clicking the menu icon -->
+  <nav class="w3-sidebar w3-bar-block w3-black w3-card w3-animate-left w3-hide-medium w3-hide-large" style="display:none" id="mySidebar">
+    <a href="javascript:void(0)" onclick="w3_close()" class="w3-bar-item w3-button w3-large w3-padding-16">Close ×</a>
+    
+    <a href="#about" onclick="w3_close()" class="w3-bar-item w3-button">ABOUT</a>
+    <a href="#team" onclick="w3_close()" class="w3-bar-item w3-button">TEAM</a>
+    <a href="#work" onclick="w3_close()" class="w3-bar-item w3-button">WORK</a>
+    <a href="#pricing" onclick="w3_close()" class="w3-bar-item w3-button">PRICING</a>
+    <a href="#contact" onclick="w3_close()" class="w3-bar-item w3-button">CONTACT</a>
+  </nav>
+</header>
+
+
+<body>
+  <!-- Header --> 
+  <div class="container-card" style="display: inline-flexbox">
+    <div class="tarjeta" style="margin: 2rem; color: #333; text-align: center;">
+      <div class="titulo">Asignatura 1</div>
+      <div class="cuerpo"><img src="../images/img2.jpg" alt="muestra" width="150" height="150" ><br></div>
+      <div class="pie"><a href="#">Química</a></div>
+    </div>
+
+    <div class="tarjeta" style="margin: 2rem; color: #333; text-align: center;">
+      <div class="titulo">Asignatura 2</div>
+      <div class="cuerpo"><img src="../images/img2.jpg" alt="muestra" width="150" height="150" ><br></div>
+      <div class="pie"><a href="#">Mates</a></div>
+    </div>
+
+    <p><a href="#about" class="w3-button w3-white w3-padding-large w3-large w3-margin-top w3-opacity w3-hover-opacity-off">Learn more and start today</a></p>
+  </div>
+
+</body>
+
+<!-- Header with full-height image -->
+<section class="bgimg-1 w3-display-container w3-grayscale-min" id="home" style="margin-top: 20px;">
+  <div class="container-card" style="display: inline-flexbox">
+    <div class="tarjeta" style="margin: 2rem; color: #333; text-align: center;">
+      <div class="titulo">Asignatura 1</div>
+      <div class="cuerpo"><img src="../images/img2.jpg" alt="muestra" width="150" height="150" ><br></div>
+      <div class="pie"><a href="#">Química</a></div>
+    </div>
+
+    <div class="tarjeta" style="margin: 2rem; color: #333; text-align: center;">
+      <div class="titulo">Asignatura 2</div>
+      <div class="cuerpo"><img src="../images/img2.jpg" alt="muestra" width="150" height="150" ><br></div>
+      <div class="pie"><a href="#">Mates</a></div>
+    </div>
+
+    <p><a href="#about" class="w3-button w3-white w3-padding-large w3-large w3-margin-top w3-opacity w3-hover-opacity-off">Learn more and start today</a></p>
+  </div> 
+
+
+  <div class="w3-display-bottomleft w3-text-grey w3-large" style="padding:24px 48px">
+    <i class="fa fa-facebook-official w3-hover-opacity"></i>
+    <i class="fa fa-instagram w3-hover-opacity"></i>
+    <i class="fa fa-snapchat w3-hover-opacity"></i>
+    <i class="fa fa-pinterest-p w3-hover-opacity"></i>
+    <i class="fa fa-twitter w3-hover-opacity"></i>
+    <i class="fa fa-linkedin w3-hover-opacity"></i>
+  </div>
+</section>
+
+
+<!-- About Section -->
+<div class="w3-container" style="padding:128px 16px" id="about">
+  <h3 class="w3-center">ABOUT THE COMPANY</h3>
+  <p class="w3-center w3-large">Key features of our company</p>
+  <div class="w3-row-padding w3-center" style="margin-top:64px">
+    <div class="w3-quarter">
+      <i class="fa fa-desktop w3-margin-bottom w3-jumbo w3-center"></i>
+      <p class="w3-large">Responsive</p>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore.</p>
+    </div>
+    <div class="w3-quarter">
+      <i class="fa fa-heart w3-margin-bottom w3-jumbo"></i>
+      <p class="w3-large">Passion</p>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore.</p>
+    </div>
+    <div class="w3-quarter">
+      <i class="fa fa-diamond w3-margin-bottom w3-jumbo"></i>
+      <p class="w3-large">Design</p>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore.</p>
+    </div>
+    <div class="w3-quarter">
+      <i class="fa fa-cog w3-margin-bottom w3-jumbo"></i>
+      <p class="w3-large">Support</p>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore.</p>
+    </div>
+  </div>
+</div>
+
+
+
+<!-- Promo Section - "We know design" -->
+<div class="w3-container w3-light-grey" style="padding:128px 16px">
+  <div class="w3-row-padding">
+    <div class="w3-col m6">
+      <h3>HABILIDAD VERBAL</h3>
+      <p>Texto de habilidad verbal<br>escrito en 2 líneas.</p>
+      <p><a href="./english/start.html" class="w3-button w3-black"><i class="fa fa-th"> </i> Contenido</a></p>
+    </div>
+    <div class="w3-col m6">
+      <img class="w3-image w3-round-large" src="/w3images/phone_buildings.jpg" alt="Image" width="700" height="394">
+    </div>
+  </div>
+</div>
+
+
+<!-- Promo Section 2 - "We know design" -->
+<!-- Promo Section 2 - "We know design" -->
+<!-- Promo Section 2 - "We know design" -->
+<div class="w3-container w3-green" style="padding:128px 16px">
+  <div class="w3-row-padding">
+    <div class="w3-col m6">
+      <h3>HABILIDAD MATEMÁTICA</h3>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod<br>tempor incididunt ut labore et dolore.</p>
+      <p><a href="hmat.html" class="w3-button w3-black"><i class="fa fa-th"> </i> View Our Works</a></p>
+    </div>
+    <div class="w3-col m6">
+      <img class="w3-image w3-round-large" src="/w3images/phone_buildings.jpg" alt="Buildings" width="700" height="394">
+    </div>
+  </div>
+</div>
+
+<!-- Promo Section - "We know design" -->
+<div class="w3-container w3-light-grey" style="padding:128px 16px">
+    <div class="w3-row-padding">
+      <div class="w3-col m6">
+        <h3>CIENCIAS I BIOLOGÍA</h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod<br>tempor incididunt ut labore et dolore.</p>
+        <p><a href="./comipems/start.html" class="w3-button w3-black"><i class="fa fa-th"> </i> View Our Works</a></p>
+      </div>
+      <div class="w3-col m6">
+        <img class="w3-image w3-round-large" src="/w3images/phone_buildings.jpg" alt="Buildings" width="700" height="394">
+      </div>
+    </div>
+  </div>
+  
+  <!-- Promo Section 2 - "We know design" -->
+  <!-- Promo Section 2 - "We know design" -->
+  <!-- Promo Section 2 - "We know design" -->
+  <div class="w3-container w3-green" style="padding:128px 16px">
+    <div class="w3-row-padding">
+      <div class="w3-col m6">
+        <h3>FORMACIÓN CÍVICA y ÉTICA</h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod<br>tempor incididunt ut labore et dolore.</p>
+        <p><a href="./robotics/start.html" class="w3-button w3-black"><i class="fa fa-th"> </i> View Our Works</a></p>
+      </div>
+      <div class="w3-col m6">
+        <img class="w3-image w3-round-large" src="/w3images/phone_buildings.jpg" alt="Buildings" width="700" height="394">
+      </div>
+    </div>
+  </div>
+
+
+  <!-- Promo Section - "We know design" -->
+<div class="w3-container w3-light-grey" style="padding:128px 16px">
+    <div class="w3-row-padding">
+      <div class="w3-col m6">
+        <h3>ESPAÑOL</h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod<br>tempor incididunt ut labore et dolore.</p>
+        <p><a href="./comipems/start.html" class="w3-button w3-black"><i class="fa fa-th"> </i> View Our Works</a></p>
+      </div>
+      <div class="w3-col m6">
+        <img class="w3-image w3-round-large" src="/w3images/phone_buildings.jpg" alt="Buildings" width="700" height="394">
+      </div>
+    </div>
+  </div>
+  
+  <!-- Promo Section 2 - "We know design" -->
+  <!-- Promo Section 2 - "We know design" -->
+  <!-- Promo Section 2 - "We know design" -->
+  <div class="w3-container w3-green" style="padding:128px 16px">
+    <div class="w3-row-padding">
+      <div class="w3-col m6">
+        <h3>CIENCIAS II FÍSICA</h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod<br>tempor incididunt ut labore et dolore.</p>
+        <p><a href="./robotics/start.html" class="w3-button w3-black"><i class="fa fa-th"> </i> View Our Works</a></p>
+      </div>
+      <div class="w3-col m6">
+        <img class="w3-image w3-round-large" src="/w3images/phone_buildings.jpg" alt="Buildings" width="700" height="394">
+      </div>
+    </div>
+  </div>
+
+
+  <!-- Promo Section - "We know design" -->
+<div class="w3-container w3-light-grey" style="padding:128px 16px">
+    <div class="w3-row-padding">
+      <div class="w3-col m6">
+        <h3>GEOGRAFÍA</h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod<br>tempor incididunt ut labore et dolore.</p>
+        <p><a href="./comipems/start.html" class="w3-button w3-black"><i class="fa fa-th"> </i> View Our Works</a></p>
+      </div>
+      <div class="w3-col m6">
+        <img class="w3-image w3-round-large" src="/w3images/phone_buildings.jpg" alt="Buildings" width="700" height="394">
+      </div>
+    </div>
+  </div>
+  
+  <!-- Promo Section 2 - "We know design" -->
+  <!-- Promo Section 2 - "We know design" -->
+  <!-- Promo Section 2 - "We know design" -->
+  <div class="w3-container w3-green" style="padding:128px 16px">
+    <div class="w3-row-padding">
+      <div class="w3-col m6">
+        <h3>HISTORIA UNIVERSAL</h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod<br>tempor incididunt ut labore et dolore.</p>
+        <p><a href="./robotics/start.html" class="w3-button w3-black"><i class="fa fa-th"> </i> View Our Works</a></p>
+      </div>
+      <div class="w3-col m6">
+        <img class="w3-image w3-round-large" src="/w3images/phone_buildings.jpg" alt="Buildings" width="700" height="394">
+      </div>
+    </div>
+  </div>
+
+
+  <!-- Promo Section - "We know design" -->
+<div class="w3-container w3-light-grey" style="padding:128px 16px">
+    <div class="w3-row-padding">
+      <div class="w3-col m6">
+        <h3>HISTORIA DE MÉXICO</h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod<br>tempor incididunt ut labore et dolore.</p>
+        <p><a href="./comipems/start.html" class="w3-button w3-black"><i class="fa fa-th"> </i> View Our Works</a></p>
+      </div>
+      <div class="w3-col m6">
+        <img class="w3-image w3-round-large" src="/w3images/phone_buildings.jpg" alt="Buildings" width="700" height="394">
+      </div>
+    </div>
+  </div>
+  
+  <!-- Promo Section 2 - "We know design" -->
+  <!-- Promo Section 2 - "We know design" -->
+  <!-- Promo Section 2 - "We know design" -->
+  <div class="w3-container w3-green" style="padding:128px 16px">
+    <div class="w3-row-padding">
+      <div class="w3-col m6">
+        <h3>MATEMÁTICAS</h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod<br>tempor incididunt ut labore et dolore.</p>
+        <p><a href="./robotics/start.html" class="w3-button w3-black"><i class="fa fa-th"> </i> View Our Works</a></p>
+      </div>
+      <div class="w3-col m6">
+        <img class="w3-image w3-round-large" src="/w3images/phone_buildings.jpg" alt="Buildings" width="700" height="394">
+      </div>
+    </div>
+  </div>
+
+    <!-- Promo Section - "We know design" -->
+<div class="w3-container w3-light-grey" style="padding:128px 16px">
+    <div class="w3-row-padding">
+      <div class="w3-col m6">
+        <h3>CIENCIAS III QUÍMICA</h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod<br>tempor incididunt ut labore et dolore.</p>
+        <p><a href="./comipems/start.html" class="w3-button w3-black"><i class="fa fa-th"> </i> View Our Works</a></p>
+      </div>
+      <div class="w3-col m6">
+        <img class="w3-image w3-round-large" src="/w3images/phone_buildings.jpg" alt="Buildings" width="700" height="394">
+      </div>
+    </div>
+  </div>
+
+
+<!-- Team Section -->
+<!-- Team Section -->
+<!-- Team Section -->
+<div class="w3-container" style="padding:128px 16px" id="team">
+  <h3 class="w3-center">EL EQUIPO</h3>
+  <p class="w3-center w3-large">The ones who runs this company</p>
+
+    <div class="w3-row-padding w3-grayscale" style="margin-top:64px">
+        
+        <div class="w3-col l3 m6 w3-margin-bottom">
+        <div class="w3-card">
+            <img src="/w3images/team2.jpg" alt="John" style="width:100%">
+            <div class="w3-container">
+            <h3>César Hernández</h3>
+            <p class="w3-opacity">CEO & Founder</p>
+            <p>Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque elementum.</p>
+            <p><button class="w3-button w3-light-grey w3-block"><i class="fa fa-envelope"></i> Contact</button></p>
+            </div>
+        </div>
+        </div>
+
+
+        <div class="w3-col l3 m6 w3-margin-bottom">
+        <div class="w3-card">
+            <img src="/w3images/team1.jpg" alt="Jane" style="width:100%">
+            <div class="w3-container">
+            <h3>Anja Doe</h3>
+            <p class="w3-opacity">Art Director</p>
+            <p>Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque elementum.</p>
+            <p><button class="w3-button w3-light-grey w3-block"><i class="fa fa-envelope"></i> Contact</button></p>
+            </div>
+        </div>
+        </div>
+
+
+        <div class="w3-col l3 m6 w3-margin-bottom">
+        <div class="w3-card">
+            <img src="/w3images/team3.jpg" alt="Mike" style="width:100%">
+            <div class="w3-container">
+            <h3>Mike Ross</h3>
+            <p class="w3-opacity">Web Designer</p>
+            <p>Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque elementum.</p>
+            <p><button class="w3-button w3-light-grey w3-block"><i class="fa fa-envelope"></i> Contact</button></p>
+            </div>
+        </div>
+        </div>
+
+
+        <div class="w3-col l3 m6 w3-margin-bottom">
+        <div class="w3-card">
+            <img src="/w3images/team4.jpg" alt="Dan" style="width:100%">
+            <div class="w3-container">
+            <h3>Dan Star</h3>
+            <p class="w3-opacity">Designer</p>
+            <p>Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque elementum.</p>
+            <p><button class="w3-button w3-light-grey w3-block"><i class="fa fa-envelope"></i> Contact</button></p>
+            </div>
+        </div>
+        </div>
+    </div>
+
+</div>
+
+<div>
+    <head>COMIPEMS </head>
+    <section><h1>Habilidad Verbal</h1>
+    <ol>
+        <li><a href="hverb10.html"> Comprensión Lectora</a></li>
+        <ol>
+            <p>A partir de un texto:</p>
+            <li><a href="hverb11.html">Reconocer información explícita</a></li>
+            <li><a href="hverb12.html">Inferir hechos</a></li>
+            <li><a href="hverb13.html">Identificar el resumen que contiene las ideas principales</a></li>
+            <li><a href="hverb14.html">Completar un cuadro sinóptico con los conceptos principales</a></li>
+            <li><a href="hverb15.html">Identificar la conclusión</a></li>
+            <li><a href="hverb16.html">Identificar la secuencia de acontecimientos</a></li>
+            <li><a href="hverb17.html">Reconocer distintos tipos de relaciones: causa-consecuencia, oposición-semejanza, general-particular, 
+                ejemplificativas, explicativas, comparativas, analógicas, cronológicas, 
+            </a></li>
+            <li><a href="hverb08.html">Distinguir entre hechos y opiniones</a></li>
+            <li><a href="hverb09.html">Identificar la idea principal y las ideas secundarias.</a></li>
+            <li><a href="hverb10.html">Reconocer el significado de palabras de acuerdo con el contexto o campo semántico</a></li>
+        </ol>
+        <li><a href="hverb20.html"> Manejo de vocabulario</a></li>
+        <ol>
+            <li><a href="hverb21.html">Establecer analogías entre palabras</a></li>
+            <p>A partir de un texto:</p>
+            <li><a href="hverb22.html">Distinguir palabras y expresiones con significado opuesto</a></li>
+            <li><a href="hverb23.html">Distinguir palabras y expresiones con significado similar</a></li>
+        </ol>
+    </ol>
+    </section>
+
+    <section><h1>Habilidad Matemática</h1>
+        <ol>
+            <li><a href="hmat10.html">Sucesiones numéricas</a></li>
+            <li><a href="hmat20.html">Series espaciales</a></li>
+            <li><a href="hmat30.html">Imaginación espacial</a></li>
+            <li><a href="hmat40.html">Problemas de razonamiento</a></li>
+        </ol>
+    </section>
+
+    <section><h1>Ciencias 1 - Biología</h1>
+        <ol>
+            <li><a href="">El valor de la biodiversidad</a></li>
+            <ol>
+                <li><a href="">Características comunes de los seres vivos</a></li>
+                <li><a href="">Aportaciona de Darwin para explicar la evolución de los seres vivos</a></li>
+                <li><a href="">Relación entre adaptación y selección natural</a></li>
+                <li><a href="">Características y factores de riesgo de la biodiversidad en México</a></li>
+                <li><a href="">Importancia de la conservación de los ecosistemas</a></li>
+                <li><a href="">Equidad en el aprovechamiento presente y futuro de los recursos: el desarrollo sustentable</a></li>
+            </ol>
+            <li><a href="">Tecnología y sociedad</a></li>
+            <ol>
+                <li><a href="">Ciencia y tecnología en la interacción ser humano-naturaleza </a></li>
+            </ol>
+
+            <li><a href="">Transformación de materia y energía</a></li>
+            <ol>
+                <li><a href="">La fotosíntesis como proceso de transformación de energía y como base de las cadenas alimenticias </a></li>
+                <li><a href="">Respiración celular</a></li>
+                <li><a href="">Respiración aerobia y anaerobia</a></li>
+                <li><a href="">Fotosíntesis y respiración en el ciclo del carbono</a></li>
+                <li><a href="">Organismos autótrofos y heterótrofos</a></li>
+            </ol>
+
+            <li><a href="">Nutrición y respiración para el cuidado de la salud</a></li>
+            <ol>
+                <li><a href="">Importancia de la alimentación correcta en la salud: diet equilibrada, completa e higiénica</a></li>
+                <li><a href="">Prevención de enfermedades relacionadas con la nutrición</a></li>
+                <li><a href="">Principales causas y consecuencias de la contaminación de la atmósfera y el calentamiento global</a></li>
+                <li><a href="">Prevención de enfermedades respiratorias</a></li>
+            </ol>
+
+            <li><a href="">Reproducción y sexualidad</a></li>
+            <ol>
+                <li><a href="">Características generales de la división celular por mitosis y meiosis</a></li>
+                <li><a href="">Reproducción sexual y asexual</a></li>
+                <li><a href="">Salud reproductiva y anticonceptivos</a></li>
+                <li><a href="">Enfermedades de transmisión sexual. Agentes causales, principales síntomas y medidas de prevención</a></li>
+            </ol>
+
+            <li><a href="">Genética, tecnología y sociedad</a></li>
+            <ol>
+                <li><a href="">Fenotipo, genotipo, cromosomas y genes</a></li>
+                <li><a href="">Métodos, beneficios y riesgos de la manipulación genética</a></li>
+            </ol>
+        </ol>
+    </section>
+
+
+    <section><h1>Formación Cívica y Ética</h1>
+        <ol>
+            <li><a href="">La formación Cívica y Ética  en el desarrollo social y personal</a></li>
+            <ol>
+                <li><a href="">Características de la naturaleza humana. Capacidad para pensar y juzgar las propias acciones</a></li>
+                <li><a href="">Libertad para elegir y decidir responsablemente. Condiciones y límites</a></li>
+                <li><a href="">Características de la autonomía moral. Criterios que justifican acciones y decisiones personales</a></li>
+                <li><a href="">Conciencia moral individual</a></li>
+                <li><a href="">La moral se construye con los demás: la empatía y el diálogo para el desarrollo moral</a></li>
+                <li><a href="">Reglas y tipos de normas en la vida cotidiana. Tipos de normas</a></li>
+            </ol>
+
+            <li><a href="">La dimensión Cívica y Ética de la convivencia</a></li>
+            <ol>
+                <li><a href="">Tipos de valores: económicos, estéticos y morales</a></li>
+            </ol>
+            
+            <li><a href="">Identidad e interculturalidad para una ciudadanía democrática</a></li>
+            <ol>
+                <li><a href="">Elementos que intervienen en la conformación de la identidad personal: grupos de pertenencia, tradicionesm, costumbres, historias compartidas, instituciones sociales y políticas</a></li>
+            </ol>
+            
+            <li><a href="">Los adolescentes y sus contextos de convivencia</a></li>
+            <ol>
+                <li><a href="">Cambios físicos, sociales y afectivos de la adolescencia</a></li>
+                <li><a href="">Derechos de los adolescentes</a></li>
+                <li><a href="">Responsabilidad de los adlescentes en su educación, alimentación, salud, recreación, trabajo y participación social</a></li>
+                <li><a href="">Situaciones de riesgo para la salud: infecciones de transmisión sexual</a></li>
+                <li><a href="">Tipos de violencia hacia los adolescentes</a></li>
+                <li><a href="">Maltrato, abuso y acoso sexual</a></li>
+                <li><a href="">Capacidad para responder asertivamente ante situaciones de riesgo</a></li>
+            </ol>
+            
+            <li><a href="">Principios y valores de la democracia</a></li>
+            <ol>
+                <li><a href="">Los derechos humanos como fuente de valor: dignidad humana, autonomía, libertad de los individuos, convivencia democrática, respeto a las diferencias culturales y justicia social</a></li>
+                <li><a href="">Responsabilidades cuidadanas en la democracia</a></li>
+                <li><a href="">Características de la democracia</a></li>
+            </ol>
+            
+            <li><a href="">Participación y ciudadanía democrática</a></li>
+            <ol>
+                <li><a href="">Componentes del Estado mexicano: población, territorio y gobierno</a></li>
+                <li><a href="">División de poderes del Estado mexicano</a></li>
+                <li><a href="">Derechos fundamentales de los ciudadanos en la Constitución Política de los Estados Unidos Mexicanos y su relación con los Derechos Humanos</a></li>
+                <li><a href="">Mecanismos de representación de los ciudadanos en el gobierno democrático. Partidos políticos</a></li>
+                <li><a href="">Las obligaciones gubernamentales con los ciudadanos en los niveles federal, estatal y municipal</a></li>
+                <li><a href="">Retos de la democracia en las sociedades contemporáneas</a></li>
+                <li><a href="">Participación ciudadana</a></li>
+            </ol>
+            
+            <li><a href="">Hacia una ciudadanía informada, comprometida y participativa</a></li>
+            <ol>
+                <li><a href="">La función social de los medios de comunicación</a></li>
+            </ol>
+            
+            <li><a href="">Compromiso con el entorno natural y social</a></li>
+            <ol>
+                <li><a href="">Importancia de la relación del ser humano con su entorno natural y social</a></li>
+            </ol>
+            
+            <li><a href="">Recursos y condiciones para la solución de conflictos sin violencia</a></li>
+            <ol>
+                <li><a href="">La negociación en la resolución y manejo de conflictos</a></li>
+            </ol>
+        </ol>
+    </section>
+
+
+    <section><h1>Español</h1>
+        <ol>
+            <li><a href="">Obtención de información</a></li>
+            <ol>
+                <li><a href="">Propósitos y características de las fichas bibliográficas</a></li>
+            </ol>
+
+            <li><a href="">Organización de información</a></li>
+            <ol>
+                <li><a href="">Funciones y características de los componentes gráficos del texto: apartados, subapartados, títulos, subtítulos, índices, ilustraciones, gráficas y tablas, subrayado, recuadros</a></li>
+                <li><a href="">Tema, subtema, orden cronológico, problema y su solución</a></li>
+                <li><a href="">Recursos que se utilizan para desarrollar las ideas en los párrafoas: ejemplificaciones, repeticiones, explicaciones o paráfrasis</a></li>
+            </ol>
+
+            <li><a href="">Elementos que intervienen en la coherencia, la cohesión y la adecuación en los textos</a></li>
+            <ol>
+                <li><a href="">Concordancia entre sujeto y predicado</a></li>
+                <p>Nexos y expresiones</p>
+                <li><a href="">Nexos que introducen ideas: además, por ejemplo, en primer lugar, finalmente</a></li>
+                <li><a href="">Nexos que relacionan temporalmente los enunciados: luego, después, primero, antes</a></li>
+                <li><a href="">Expresiones y nexos que encadenan argumentos: pero, aunque, sin embargo, aún, a pesar de</a></li>
+                <li><a href="">Recursos lingüísticos que se utilizan para desarrollar argumentos en los textos: nexos y expresiones con significado casual, concesivo y condicional</a></li>
+                <li><a href="">Expresiones que jerarquizan</a></li>
+                <li><a href=""></a></li>
+                <p>Signos de puntuación</p>
+                <li><a href=""></a></li>
+                <li><a href=""></a></li>
+                <li><a href=""></a></li>
+                <li><a href=""></a></li>
+                <p>Oraciones</p>
+                <li><a href="">Oraciones principales y secundarias</a></li>
+                <li><a href="">Enunciados que introducen información: oraciones temáticas o las definiciones</a></li>
+                <li><a href="">Enunciados que amplían la información: explicaciones y ejemplos</a></li>
+                <li><a href="">Funciones semánticas del presente simple del indicativo: habitual, histórico, atemporal</a></li>
+            </ol>
+
+            <li><a href="">Tipos de textos</a></li>
+            <ol>
+                <p>Recursos lingüísticos</p>
+                <li><a href="">Modos de plantear, explicar y argumentar las ideas en diferentes textos</a></li>
+                <li><a href="">Uso de adjetivos, participativos y aposiciones en la descripción de personajes</a></li>
+                <li><a href="">Uso del tiempo pasado para narrar sucesos</a></li>
+                <li><a href="">Uso del copretérito para describir situaciones del fondo o caracterizar personajes</a></li>
+                <p>Textos informativos</p>
+                <li><a href="">Propósitos de los textos informativos</a></li>
+                <p>Documentos legales y administrativos</p>
+                <li><a href="">Propósito de los textos legales y administrativos</a></li>
+                <li><a href="">Uso y función de los verbos: deber, poder, tener y haber que</a></li>
+                <p>Textos periodísticos</p>
+                <li><a href="">Propósitos de las noticias, reportajes y artículos de opinión</a></li>
+                <li><a href="">Diferencias entre hechos, opiniones, comentarios y valoraciones: expresiones que distinguen la opinión personal: creo que, en mi opinión, pienso que, de acuerdo con, siguiendo la opinión de, se cree que</a></li>
+                <p>Textos publicitarios</p>
+                <li><a href="">Función e impacto de la publicación en la sociedad</a></li>
+                <li><a href="">Exageración de las cualidades del producto</a></li>
+            </ol>
+        </ol>
+    </section>
+
+
+    <section><h1>Ciencias 2 - Física</h1>
+        <ol>
+            <li><a href="">El movimiento. La descripción de los cambios en la naturaleza</a></li>
+            <ol>
+                <li><a href="">Conceptos de velocidad y rapidez</a></li>
+                <li><a href="">Tipos de movimientos de los objetos en gráficas de posición-tiempo</a></li>
+                <li><a href="">Relación entre gráficas posición - tiempo y un conjunto de datos</a></li>
+                <li><a href="">Velocidad, desplazamiento y tiempo</a></li>
+                <li><a href="">El movimiento con velocidad variable: la aceleración</a></li>
+                <li><a href="">El movimiento de los cuerpos que caen</a></li>
+            </ol>
+
+            <li><a href="">Las fuerzas. La explicación de los cambios</a></li>
+            <ol>
+                <li><a href="">Fuerza resultante</a></li>
+                <li><a href="">Las leyes de Newton en la vida cotidiana</a></li>
+                <li><a href="">Pares de fuerzas</a></li>
+                <li><a href="">Las fuerzas que actúan sobre los objetos en reposo o movimiento</a></li>
+                <li><a href="">Ley de Gravitación universal y el peso de los objetos</a></li>
+                <li><a href="">La energía y la descripción de las transformaciones</a></li>
+                <li><a href="">La conservación de la energía mecánica</a></li>
+                <li><a href="">Cargas eléctricas y formas de electrización</a></li>
+                <li><a href="">Imanes y magnetismo terrestre</a></li>
+            </ol>
+            
+            <li><a href="">Las interacciones de la materia. Un modelo para describir lo que no percibimos</a></li>
+            <ol>
+                <li><a href="">El modelo cinético de partículas</a></li>
+                <li><a href="">Calor y temperatura</a></li>
+                <li><a href="">El modelo de patículas y la presión</a></li>
+                <li><a href="">La ecuación del principio de pascal</a></li>
+                <li><a href="">Principio de conservación de la energía</a></li>
+            </ol>
+            
+            <li><a href="">Manifestaciones de la estructura interna de la materia</a></li>
+            <ol>
+                <li><a href="">Estructura interna de la materia</a></li>
+                <li><a href="">Capacidad de los materiales para conducir la corriente eléctrica</a></li>
+                <li><a href="">Campos magnéticos y cargas eléctricas</a></li>
+                <li><a href="">Experimentos de inducción electromagnética</a></li>
+                <li><a href="">Características del movimiento ondulatorio</a></li>
+                <li><a href="">La radiación electromagnética y sus implicaciones tecnológicas</a></li>
+                <li><a href="">Los prismas y la descomposición de la luz</a></li>
+                <li><a href="">La refracción de la luz blanca</a></li>
+                <li><a href="">La luz. Longitud de onda, frecuencia y energía</a></li>
+            </ol>
+        </ol>
+    
+    </section>
+
+
+    <section><h1>Geografía </h1>
+        <ol>
+            <li><a href="">El espacio geográfico y los mapas</a></li>
+            <ol>
+                <li><a href=""></a></li>
+                <li><a href=""></a></li>
+                <li><a href=""></a></li>
+                <li><a href=""></a></li>
+                <li><a href=""></a></li>
+                <li><a href=""></a></li>
+                <li><a href=""></a></li>
+            </ol>
+
+            <li><a href="">Recursos naturales y preservación del ambiente</a></li>
+            <ol>
+                <li><a href=""></a></li>
+                <li><a href=""></a></li>
+                <li><a href=""></a></li>
+                <li><a href=""></a></li>
+                <li><a href=""></a></li>
+                <li><a href=""></a></li>
+                <li><a href=""></a></li>
+                <li><a href=""></a></li>
+                <li><a href=""></a></li>
+                <li><a href=""></a></li>
+            </ol>
+            
+            <li><a href="">Dinámica de la población y riesgos</a></li>
+            <ol>
+                <li><a href=""></a></li>
+                <li><a href=""></a></li>
+                <li><a href=""></a></li>
+                <li><a href=""></a></li>
+                <li><a href=""></a></li>
+            </ol>
+            
+            <li><a href="">Espacios económicos y desigualdad social</a></li>
+            <ol>
+                <li><a href=""></a></li>
+                <li><a href=""></a></li>
+                <li><a href=""></a></li>
+                <li><a href=""></a></li>
+                <li><a href=""></a></li>
+                <li><a href=""></a></li>
+                <li><a href=""></a></li>
+            </ol>
+            
+            <li><a href="">Espacios culturales y políticos</a></li>
+            <ol>
+                <li><a href=""></a></li>
+                <li><a href=""></a></li>
+                <li><a href=""></a></li>
+                <li><a href=""></a></li>
+                <li><a href=""></a></li>
+                <li><a href=""></a></li>
+                <li><a href=""></a></li>
+            </ol>
+        </ol>
+    </section>
+
+
+    <section><h1>Historia</h1></section>
+    <ol>
+        <li><a href="">De principios del siglos XVI a principios del siglo XVIII</a></li>
+        <li><a href="">De mediados del siglos XIX a 1920</a></li>
+        <li><a href="">El mundo entre 1920 y 1960</a></li>
+        <li><a href="">Décadas recientes</a></li>
+        <div>Historia de México</div>
+        <li><a href="">Las culturas prehispánicas y la conformación de la Nueva España</a></li>
+        <li><a href="">De principios del siglos XVI a principios del siglo XVIII</a></li>
+        <li><a href="">De principios del siglos XVI a principios del siglo XVIII</a></li>
+        <li><a href="">De principios del siglos XVI a principios del siglo XVIII</a></li>
+        <li><a href="">De principios del siglos XVI a principios del siglo XVIII</a></li>
+        <li><a href="">De principios del siglos XVI a principios del siglo XVIII</a></li>
+    </ol>
+
+
+    <section><h1>Matemáticas</h1></section>
+        <ol>
+            <li><a href="">Significado y uso de los números</a></li>
+            <ol>
+                <li><a href=""></a></li>
+            </ol>
+            
+            <li><a href="">Álgebra</a></li>
+            <ol>
+                <li><a href=""></a></li>
+            </ol>
+
+            <li><a href="">Manejo de la información estadística</a></li>
+            <ol>
+                <li><a href=""></a></li>
+            </ol>
+            
+            <li><a href="">Formas Geométricas</a></li>
+            <ol>
+                <li><a href=""></a></li>
+            </ol>
+        </ol>
+        <section><h2>11. Matemáticas.</h2>
+          <div><h3>1. Significado y uso de los números.</h3>
+              <hr style="width:200px" class="w3-opacity">
+              <pre>
+                  <b>Números Enteros</b>
+                  1.1. Significado y uso de las operaciones básicas con números enteros.
+                  1.2. Resolución de problemas con operaciones básicas.
+                  
+                  <b>Números fraccionarios y decimales</b>
+                  1.3. Relaciones de proporcionalidad.
+                  1.4. Significado y uso de las operaciones básicas con números fraccinoarios y decimales.
+                  1.5. Porcentajes.
+                  1.6. Potenciación y radicación.
+                  1.7. Resolución de problemas con números fraccionarios o decimales.
+              </pre>
+          </div>
+  
+          <div><h3>2. Álgebra.</h3>
+              <hr style="width:200px" class="w3-opacity">
+              <pre>
+                  2.1. Significado y uso de las literales.
+  
+                  <b>Expresiones algebraicas</b>
+                  2.2. Expresión común de problemas algebraicos de adición y sustracción.
+                  2.3. Resolución de problemas con expresiones algebraicas.
+  
+                  <b>Ecuaciones de primer grado</b>
+                  2.4. Resolución de ecuaciones de primer grado.
+                  2.5. Resolución de problemas con ecuaciones de primer grado.
+  
+                  <b>Sistemas de Ecuaciones Lineales de 2 ecuaciones con 2 incógnitas</b>
+                  2.6. Resolución de sistemas lineales de 2 ecuaciones con 2 incógnitas.
+                  2.7. Resolución de problemas con sistemas de 2 ecuaciones lineales con 2 incógnitas.
+  
+                  <b>Ecuaciones de segundo grado</b>
+                  2.8. Productos notables y factorización.
+                  2.9. Resolución de ecuaciones de segundo grado.
+                  2.10. Relaciones de proporcionalidad directa.
+                  2.11. Relaciones de proporcionalidad en el plano cartesiano.
+              </pre>
+          </div>
+  
+          <div><h3>3. Manejo de la información estadística.</h3>
+              <hr style="width:200px" class="w3-opacity">
+              <pre>
+                  3.1. Análisis de la información estadística: índices.
+                  3.2. Gráficas de barras y circulares.
+                  3.3. Tablas de frecuencia absoluta y relativa.
+                  3.4. Medidas de tendencia central.
+                  3.5. Nociones de probabilidad y muestreo.
+              </pre>
+          </div>
+  
+          <div><h3>4. Formas geométricas.</h3>
+              <hr style="width:200px" class="w3-opacity">
+              <pre>
+                  4.1. Rectas y ángulos.
+                  4.2. Figuras planas.
+                  
+                  <b>Semejanza</b> 
+                  4.3. Semejanza de triángulos.
+                  4.4. Teorema de Pitágoras.
+                  4.5. Razones trigonométricas.
+  
+                  <b>Cuerpos Geométricos</b>
+                  
+                  4.6. Cálculo de perímetros.
+                  4.7. Cálculo de áraes.
+                  4.8. Cálculo de volúmenes.   
+              </pre>
+          </div>
+      </section>
+
+
+    <section><h1>Ciencias 3 - Química</h1>
+        <ol>
+            <li><a href="">Las características de los materiales</a></li>
+            <ol>
+                <li><a href="">Características del conocimiento científico: el caso de la Química</a></li>
+                <li><a href="">Propiedades de los materiales</a></li>
+                <li><a href="">Cambios físicos y químicos</a></li>
+                <li><a href="">Propiedades físicas y caracterización de las sustancias</a></li>
+                <li><a href="">La conservación de la masa en los cambios físicos y químicos</a></li>
+                <li><a href="">La diversidad de las sustancias y los métodos de separación</a></li>
+            </ol>
+            <li><a href="">Estructura y periodicidad de los alimentos</a></li>
+            <ol>
+                <li><a href="">Características de los protones, electrones y neutrones</a></li>
+                <li><a href="">Número atómico y número de masa</a></li>
+                <li><a href="">Iones, moléculas y átomos</a></li>
+                <li><a href="">Estructura de Lewis</a></li>
+                <li><a href="">Estructura y organización de los elementos en la tabla periódica</a></li>
+                <li><a href="">Enlace químico</a></li>
+            </ol>
+            
+            <li><a href="">La Reacción Química</a></li>
+            <ol>
+                <li><a href="">El cambio químico</a></li>
+                <li><a href="">La ecuación química: su interpretación</a></li>
+                <li><a href="">El mol como unidad de medida</a></li>
+                <li><a href="">Ácidos y bases importantes en nuestra vida cotidiana</a></li>
+                <li><a href="">Las reacciones redox</a></li>
+            </ol>
+        </ol>
+    </section>
+
+
+             <section><h2>2. Habilidad Verbal.</h2>
+                <div><h3>1. Comprensión de Lectura.</h3>
+                    <hr style="width:200px" class="w3-opacity">
+                <pre>
+                    <b>A partir de un texto:</b>
+                    1.1. Reconocer información explícita.
+                    1.2. Inferir Hechos.
+                    1.3. Identificar el resumen que contiene las ideas principales.
+                    1.4. Completar un cuadro sinóptico con los conceptos principales.
+                    1.5. Identificar la conclusión.
+                    1.6. Identificar la secuencia de acontecimientos.
+                    1.7. Reconocer distintos tipos de relaciones: causa-consecuencia, oposición-semejanza, 
+                        general-particular, ejemplificatiavs, explicativas, comparativas, analógicas, cronológicas.
+                    1.8. Distinguir entre hechos y opiniones.
+                    1.9. Identificar la idea principal y las ideas secundarias.
+                    1.10. Reconocer el significado de palabras de acuerdo con el contexto o campo semántico.
+                </pre>
+                </div>
+        
+                <div><h3>2. Manejo de Vocabulario.</h3>
+                    <hr style="width:200px" class="w3-opacity">
+                    <pre>
+                        2.1. Establecer analogías entre palabras.
+                        
+                        <b>A partir de un texto:</b>
+                        2.2. Distinguir palabras y expresiones con significado opuesto.
+                        2.3. Distinguir palabras y expresiones con significado similar.
+                    </pre>
+                </div>
+            </section><br>
+        
+            <section><h2>3. Habilidad Matemática.</h2><br>
+                <div><h3>1. Sucesiones Numéricas.</h3>
+                    <hr style="width:200px" class="w3-opacity">
+                    <pre>Ejercicios sobre el tema.
+                    </pre>
+                </div>
+        
+                <div><h3>2. Series Espaciales.</h3>
+                    <hr style="width:200px" class="w3-opacity">
+                    <pre>Ejercicios sobre el tema.
+                    </pre>
+                </div>
+        
+                <div><h3>3. Imaginación Espacial.</h3>
+                    <hr style="width:200px" class="w3-opacity">
+                    <pre>Ejercicios sobre el tema.
+                    </pre>
+                </div>
+                <div><h3>4. Problemas de Razonamiento.</h3>
+                    <hr style="width:200px" class="w3-opacity">
+                    <pre>Ejercicios sobre el tema.
+                    </pre>
+                </div>
+            </section><br>
+        
+            <section><h2>4. Ciencias 1 [Biología]</h2>
+                <div><h3>1. El valor de la biodiversidad.</h3>
+                    <hr style="width:200px" class="w3-opacity">
+                    <pre>
+                        1.1. Características comunes de los seres vivos.
+                        1.2. Aportaciones de Darwin para explicar la evolución de los seres vivos.
+                        1.3. Relación entre adaptación y selección natural.
+                        1.4. Características y factores de riesgo de la biodiversidad en México.
+                        1.5. Importancia de la conservación de los ecosistemas.
+                        1.6. Equidad en el aprovechamiento presente y futuro de los recursos: el desarrollo sustentable. 
+                    </pre>
+                </div>
+        
+                <div><h3>2. Tecnología y Sociedad.</h3>
+                    <hr style="width:200px" class="w3-opacity">
+                    <pre>
+                        2.1. Ciencia y tecnología en la interacción ser humano-naturaleza.
+                    </pre>
+                </div>
+        
+                <div><h3>3. Transformación de Materia y Energía.</h3>
+                    <hr style="width:200px" class="w3-opacity">
+                    <pre>
+                        3.1. La fotosíntesis como proceso de transformación de energía y como base de las cadenas alimenticias.
+                        3.2. Respiración celular.
+                        3.3. Respiración aerobia y anaerobia.
+                        3.4. Fotosíntesis y respiración en el ciclo del carbono.
+                        3.5. Organismos autótrofos y heterótrofos. 
+                    </pre>
+                </div>
+        
+                <div><h3>4. Nutrición y Respiración para el cuidado de la salud.</h3>
+                    <hr style="width:200px" class="w3-opacity">
+                    <pre>
+                        4.1. Importancia de la alimentación correcta en la salud: dieta equilibrada, completa e higiénica.
+                        4.2. Prevención de enfermedades relacionadas con la nutrición.
+                        4.3. Principales causas y consecuencias de la contaminación de la atmósfera y del calentamiento global.
+                        4.4. Prevención de enfermedades respiratorias.
+                    </pre>
+                </div>
+        
+                <div><h3>5. Reproducción y Sexualidad.</h3>
+                    <hr style="width:200px" class="w3-opacity">
+                    <pre>
+                        5.1. Caracteríticas generales de la división celular por mitosis y meiosis.
+                        5.2. Reproducción sexual y asexual.
+                        5.3. Salud reproductiva y anticonceptivos.
+                        5.4. Enfermedades de transmisión sexual. Agentes causales, principales síntomas y medidas de prevención.
+                    </pre>
+                </div>
+        
+                <div><h3>6. Genética, Tecnología y Sociedad.</h3>
+                    <hr style="width:200px" class="w3-opacity">
+                    <pre>
+                        6.1. Fenotipo, genotipo, cromosomas y genes.
+                        6.2. Métodos, beneficios y riesgos de la manipulación genética.
+                    </pre>
+                </div>
+            </section>
+        
+            <section><h2>5. Formación Cívica y Ética.</h2>
+                <div><h3>1. La Formación Cívica y Ética en el Desarrollo Social y personal.</h3>
+                    <hr style="width:200px" class="w3-opacity">
+                    <pre>
+                        1.1. Características de la naturaleza humana. Capacidad para pensar y juzgar las propias acciones.
+                        1.2. Libertad para elegir y decidir responsablemente. Condiciones y límites.
+                        1.3. Características de la autonomía moral. Criterios que justifican acciones y decisiones personales. 
+                        1.4. Conciencia moral individual.
+                        1.5. La moral se construye con los demás: la empatía y el diálogo para el desarrollo moral.
+                        1.6. Reglas y tipo de normas en la vida cotidiana. Tipos de normas.
+                    </pre>
+                </div>
+        
+                <div><h3>2. La Dimensión cívica y ética de la convivencia.</h3>
+                    <hr style="width:200px" class="w3-opacity">
+                    <pre>
+                        2.1. Tipos de vaolres: económicos, estéticos y morales.
+                    </pre>
+                </div>
+        
+                <div><h3>3. Identidad e interculturalidad para una ciudadanía democrática.</h3>
+                    <hr style="width:200px" class="w3-opacity">
+                    <pre>
+                        3.1. Elementos que intervienen en la conformación de la identidad personal: grupos de 
+                        pertenencia, tradiciones, costumbres, historias compartidas, instituciones sociales y políticas.
+        
+                    </pre>
+                </div>
+        
+                <div><h3>4. Los Adolescentes y sus contextos de convivencia.</h3>
+                    <hr style="width:200px" class="w3-opacity">
+                    <pre>
+                        4.1. Cambios físicos, sociales y afectivos de la adolescencia.
+                        4.2. Derechos de los adolescentes.
+                        4.3. Responsabilidades de los adolescentes en su educación, alimentación, salud, recreación, trabajo
+                        y participación social.
+                        4.4. Situaciones de riesgo para la salud: infecciones de transmisión sexual.
+                        4.5. Tipos de violencia hacia los adolescentes.
+                        4.6. Maltrato, abuso y acoso sexual.
+                        4.7. Capacidad para responder asertivamente ante situaciones de riesgo.
+                    </pre>
+                </div>
+        
+                <div><h3>5. Principios y valores de la democracia.</h3>
+                    <hr style="width:200px" class="w3-opacity">
+                    <pre>
+                        5.1. Los derechos humanos como fuente de valor: dignidad humana, autonomía, libertad de los individuos, convivencia democrática, respeto a las diferencias culturales y justicia social.
+                        5.2. Responsabilidades ciudadanas en la democracia.
+                        5.3. Características de la democracia.
+                    </pre>
+                </div>
+        
+                <div><h3>6. Participación y ciudadanía democrática.</h3>
+                    <hr style="width:200px" class="w3-opacity">
+                    <pre>
+                        6.1. Componentes del Estado Mexicano: población, territorio y gobierno.
+                        6.2. División de poderes del Estado mexicano.
+                        6.3. Derechos fundamentales de los ciudadanos en la Constitución Política de los Estados Unidos Mexicanos y su relación con
+                        los Derechos Humanos.
+                        6.4. Mecanismos de representación de los ciudadanos en el gobierno democrático. Partidos políticos.
+                        6.5. Las obligaciones gubernamentales con los ciudadanos en los niveles federal, estatal y municipal.
+                        6.6. Retos de la democracia en las sociedades contemporáneas.
+                        6.7. Participación ciudadana.
+                    </pre>
+                </div>
+        
+                <div><h3>7. Hacia una ciudadanía informada, comprometida y participativa.</h3>
+                    <hr style="width:200px" class="w3-opacity">
+                    <pre>
+                        7.1. La función social de los medios de comunicación.
+                    </pre>
+                </div>
+        
+                <div><h3>8. Compromiso con el entorno natural y social.</h3>
+                    <hr style="width:200px" class="w3-opacity">
+                    <pre>
+                        8.1. Importancia de la relación del ser humano con su entorno natural y social.
+                    </pre>
+                </div>
+        
+                <div><h3>9. Recursos y condiciones para la solución de conflictos sin violencia.</h3>
+                    <hr style="width:200px" class="w3-opacity">
+                    <pre>
+                        9.1. La negociación en la resolución y manejo de conflictos.
+                    </pre>
+                </div>
+            </section>
+        
+            <section><h2>6. Español.</h2>
+                <div><h3>1. Obtención de información.</h3>
+                    <hr style="width:200px" class="w3-opacity">
+                    <pre>
+                        1.1. Propósitos y características de las fichas bibliográficas.
+                    </pre>
+                </div>
+        
+                <div><h3>2. Organización de información.</h3>
+                    <hr style="width:200px" class="w3-opacity">
+                    <pre>
+                        2.1. Funciones y cracterísticas de los componentes gráficos del texto: apartados, subapartados, 
+                        títulos, subtítulos, índices, ilustraciones, gráficas y tablas, subrayado, recuadros.
+                        2.2. Tema, subtema, orden cronológico, problema y su solución.
+                        2.3. Recursos que se utilizan para desarrollar las ideas en los párrafos:
+                        ejemplificaciones, repeticiones, explicaciones o paráfrasis.
+                    </pre>
+                </div>
+        
+                <div><h3>3. Elementos que intervienen en la coherencia, la cohesión y la adecuación en los textos.</h3>
+                    <hr style="width:200px" class="w3-opacity">
+                    <pre>
+                        3.1. Concordancia entre sujeto y predicado.
+        
+                        <b>Nexos y expresiones.</b>
+                        3.2. Nexos que introducen ideas: además, por ejemplo, en primer lugar, finalmente.
+                        3.3. Nexos que relacionan temporalmente los enunciados:
+                            luego, después, primero, antes.
+                        3.4. Expresiones y nexos que encadenan argumentos: pero, aunque, 
+                        sin embargo, aún, a pesar de.
+                        3.5. Recursos lingüísticos que se utilizan para desarrollar argumentos en los textos:
+                            nexos y expresiones con significado casual, concesivo y condicional.
+                        3.6. Expresiones que jerarquizan la información: la razón más importante, 
+                            otra razón por la que, por ejemplo, en primer lugar, finalmente, también.
+                        3.7. Recursos lingüísticos que permiten expresar Sucesión y simultaneidad de las acciones.
+        
+                        <b>Signos de puntuación</b>
+                        3.8. Recursos ortográficos que se usan para citar y/o resaltar información: comillas, dos puntos.
+                        3.9. Uso del punto y seguido y la coma para separar oraciones y párrafos.
+                        3.10. Uso de la coma en la organización de enumeraciones y construcciones coordinadas.
+                        3.11. Uso de signos de puntuación más frecuentes en los textos temáticos: guiones, dos puntos, 
+                            puntos suspensivos, paréntesis, signos de interrogación y de admiración.
+                        
+                        <b>Oraciones</b>
+                        3.12. Oraciones principales y secundarias.
+                        3.13. Enunciados que introducen información: oraciones temáticas o las definiciones.
+                        3.14. Enunciados que amplían la información: explicaciones y ejemplos.
+                        3.15. Funciones semánticas del presente simple del indicativo: habitual, histórico, atemporal.
+                    </pre>
+                </div>
+        
+                <div><h3>4. Tipos de textos.</h3>
+                    <hr style="width:200px" class="w3-opacity">
+                    <pre>
+                        <b>Recursos lingüísticos</b>
+                        4.1. Modos de plantear, explicar y argumentar las ideas en diferentes textos.
+                        4.2. Uso de adjetivos, participativos y aposiciones en la descripción de personajes.
+                        4.3. Uso del tiempo pasado para narrar sucesos.
+                        4.4. Uso del copretérito para describir situaciones del fondo o caracterizar personajes.
+        
+                        <b>Textos informativos</b>
+                        4.5. Propósitos de los textos informativos.
+        
+                        <b>Documentos legales y administrativos</b>
+                        4.6. Propósito de los textos legales y administrativos.
+                        4.7. Uso y función de los verbos: deber, poder, tener y haber que.
+        
+                        <b>Textos periodísticos</b>
+                        4.8. Propósitos de las noticias, reportajes y artículos de opinión.
+                        4.9. Diferencias entre hechos, opiniones, comentarios y valoraciones: expresiones que 
+                            distinguen la opinión personal: creo que, en mi opinión, pienso que, de acuerdo con, 
+                            siguiendo la opinión de, se cree que.
+        
+                        <b>Textos publicitarios</b>
+                        4.10. Función e impacto de la publicidad en la sociedad.
+                        4.11. Exageración de las cualidades del producto.
+        
+        
+                    </pre>
+                </div>
+            </section>
+        
+            <section><h2>7. Ciencias 2 [Física]</h2>
+                <div><h3>1. El movimiento. La descripción de los cambios en la naturaleza.</h3>
+                    <hr style="width:200px" class="w3-opacity">
+                    <pre>
+                        1.1. Conceptos de velocidad y rapidez.
+                        1.2. Tipos de movimientos de los objetos en gráficas de posición-tiempo.
+                        1.3. Relación entre gráficas posición-tiempo y un conjunto de datos.
+                        1.4. Velocidad, desplazamiento y tiempo.
+                        1.5. El movimiento con velocidad variable: la aceleración.
+                        1.6. El movimiento de los cuerpos que caen.
+                    </pre>
+                </div>
+        
+                <div><h3>2. Las fuerzas. La explicación de los cambios.</h3>
+                    <hr style="width:200px" class="w3-opacity">
+                    <pre>
+                        2.1. Fuerza resultante.
+                        2.2. Las leyes de Newton en la vida cotidiana.
+                        2.3. Pares de Fuerzas.
+                        2.4. Las fuerzas que actñuan sobre los objetos en reposo o movimiento.
+                        2.5. Ley de Gravitación Universal y el peso de los objetos.
+                        2.6. La energía y la descripción de las transformaciones.
+                        2.7. La conservación de la energía mecánica.
+                        2.8. Cargas eléctricas y formas de electrización.
+                        2.9. Imanes y magnetismo terrestre.
+                    </pre>
+                </div>
+        
+                <div><h3>3. Las interacciones de la materia. Un modelo para describir lo que no percibimos.</h3>
+                    <hr style="width:200px" class="w3-opacity">
+                    <pre>
+                        3.1. El modelo cinético de partículas.
+                        3.2. Calor y temperatura.
+                        3.3. El modelo de partículas y la presión.
+                        3.4. La ecuación del principio de Pascal.
+                        3.5. Principio de conservación de la energía.
+                    </pre>
+                </div>
+        
+                <div><h3>4. Manifestaciones de la estructura interna de la materia.</h3>
+                    <hr style="width:200px" class="w3-opacity">
+                    <pre>
+                        4.1. Estructura interna de la materia.
+                        4.2. Capacidad de los materiales para conducir la corriente eléctrica.
+                        4.3. Campos magnéticos y cargas eléctricas.
+                        4.4. Experimentos de inducción electromagnética.
+                        4.5. Características del movimineto ondulatorio.
+                        4.6. La radiación electromagnética y sus implicaciones tecnológicas.
+                        4.7. Los prismas y la descomposición de la luz.
+                        4.8. La refracción de la luz blanca.
+                        4.9. La luz. Longitud de onda, frecuencia y energía.
+                    </pre>
+                </div>
+            </section>
+        
+            <section><h2>8. Geografía.</h2>
+                <div><h3>1. El espacio geográfico y los mapas.</h3>
+                    <hr style="width:200px" class="w3-opacity">
+                    <pre>
+                        1.1. Los componentes naturales, sociales y económicos del espacio geográfico.
+                        1.2. Categorías de análisis del espacion geográfico: la región, el pasaje, el medio,
+                            el territorio y el lugar.
+                        1.3. Conceptos básicos en el estudio del espacio geográfico [localización, 
+                            distribución, temporalidad y relación.]
+                        1.4. Círculos y puntos de la superficie terrestre: paralelos, meridianos y polos;
+                            coordenadas geográficas: latitud, longitud y altitud. Husos horarios.
+                        1.5. Características de los diferentes tipos de representación del espacio geográfico 
+                            [croquis, planos, mapas, atlas, globo terráqueo, fotografías aéreas, imágenes de 
+                            satélite y modelos tridimensionales.]
+                        1.6. Sistemas de información Geográfica y Sistema de Posicionamiento Global.
+                        1.7. Los mapas temáticos: naturales, económicos, sociales, culturales y políticos en México.
+                    </pre>
+                </div>
+        
+                <div><h3>2. Recursos naturales y preservación del ambiente.</h3>
+                    <hr style="width:200px" class="w3-opacity">
+                    <pre>
+                        2.1. Movimientos de rotación y traslación de la Tierra.
+                        2.2. Tectónica de placas, vulcanismo y sismicidad.
+                        2.3. Ciclo hidrológico en la distribución de las aguas oceánicas y 
+                            continentales.
+                        2.4. Capas de la Atmósfera. Elementos y factores del clima.
+                        2.5. Distribución y clasificación de los Climas en el mundo.
+                        2.6. Biosfera. Relaciones de la litosfera, atmósfera e hidrósfera con la distribución de la 
+                            vegetación y la fauna. 
+                        2.7. biodiversidad. Especies endémicas y en peligro de extinción; su preservación.
+                        2.8. Recursos naturales del suelo, subsuelo, aire y agua. Desarrollo sustentable.
+                        2.9. Ambiente: deteriori y protección.
+                        2.10. Políticas y educación ambiental. Ecosistemas y ecoturismo.
+                    </pre>
+                </div>
+        
+                <div><h3>3. Dinámica de la población y riesgos.</h3>
+                    <hr style="width:200px" class="w3-opacity">
+                    <pre>
+                        3.1. Crecimiento y distribución de la poablación. Población absoluta, población relativa.
+                        3.2. Ciudades y medio rural; ubicación, rasgos y principales problemas.
+                        3.3. Migración de la población: tipos, principales flujos migratorios, efectos económicos, 
+                            sociales y culturales en los lugares de atracción y expulsión.
+                        3.4. Riesgos y vulnerabilidad de la población. Factores de riesgo para los asentamientos
+                            humanos.
+                        3.5. Zonas de vulnerabilidad para la población.
+                    </pre>
+                </div>
+        
+                <div><h3>4. Espacios económicos y desigualdad social.</h3>
+                    <hr style="width:200px" class="w3-opacity">
+                    <pre>
+                        4.1. Regiones agrícolas, ganaderas, forestales, pesqueras y mineras de México y del Mundo.
+                        4.2. Espacios industriales de México y del Mundo.
+                        4.3. Flujos comerciales, redes de transportes y comunicaciones de México y del Mundo.
+                        4.4. Espacios turísticos.
+                        4.5. Globalización. Organismos económicos internacionales y empresas transnacionales.
+                        4.6. Principales regiones comerciales y ciudades mundiales.
+                        4.7. La desigualdad socioeconómica: diferencias en el Índice de Desarrollo Humano de los países
+                            Centrales, periféricos y semiperiféricos.
+                    </pre>
+                </div>
+        
+                <div><h3>5. Espacios culturales y políticos.</h3>
+                    <hr style="width:200px" class="w3-opacity">
+                    <pre>
+                        5.1. Diversidad cultural de México y del Mundo: etnias, lenguas, religiones y patrimonio cultural.
+                        5.2. Globalización cultural. Influencia de la publicidad que transmiten los medios de comunicación.
+                        5.3. Multiculturalidad e interculturalidad.
+                        5.4. Cambios en el mundo por los intereses económicos y políticos.
+                        5.5. Las fronteras. Zonas de transición y tensión. Espacios internacionales terrestres, aéreos y marítimos.
+                        5.6. Patrimonio cultural de los mexicanos: zonas arqueológicas, ciudades coloniales, pueblos típicos,
+                            monumentos históricos.
+                        5.7. Espacios de soberanía nacional: terrestre, marítima, insular y aérea.
+                    </pre>
+                </div>
+            </section>
+        
+            <section><h2>9. Historia Universal.</h2>
+                <div><h3>1. De principios del siglo XVI a principios del siglo XVIII.</h3>
+                    <hr style="width:200px" class="w3-opacity">
+                    <pre>
+                        1.1. El contexto mundial: las demandas europeas y la necesidad de abrir nuevas rutas.
+                        1.2. Renovación cultural y resistencia en Europa: el humanismo y sus expresiones filosóficas,
+                            literarias y políticas.
+                        1.3. Expediciones marítimas y conquistas [costas de África, India, Indonesia y América]
+                        
+                    </pre>
+                </div>
+        
+                <div><h3>2. De mediados del siglo XVIII a mediados del siglo XIX.</h3>
+                    <hr style="width:200px" class="w3-opacity">
+                    <pre>
+                        2.1. Las nuevas ideas: la ilustración y la enciclopedia.
+                        2.2. El absolutismo europeo y la reorganización administrativa de los imperios.
+                        2.3. La independencia de las trece colonias.
+                        2.4. Causas externas e internas de la Revolución Francesa.
+                        2.5. Consecuencias de la Revolución Francesa en América Latina y el Caribe.
+                        2.6. La revolución industrial, ciudades industriales y condiciones laborales y de vida 
+                            de la clase trabajadora.
+                    </pre>
+                </div>
+        
+                <div><h3>3. De mediados del siglo XIX a 1920.</h3>
+                    <hr style="width:200px" class="w3-opacity">
+                    <pre>
+                        3.1. Nacionalismo.
+                        3.2. El imperialismo y su expansión en el mundo.
+                        3.3. La paz armada y la primera Guerra Mundial.
+                        3.4. La paz de Versalles y sus consecuencias.
+                    </pre>
+                </div>
+        
+                <div><h3>4. El mundo entre 1920 y 1960.</h3>
+                    <hr style="width:200px" class="w3-opacity">
+                    <pre>
+                        4.1. El mundo entre las grandes guerras: socialismo, nacional socialismo y fascismo.
+                        4.2. La pobreza en el mundo.
+                        4.3. Avances científicos y tecnológicos y su impacto en la sociedad.
+                        4.4. La Segunda Guerra Mundial causas y consecuencias.
+                        4.5. Etapas de la Segunda Guerra Mundial.
+                    </pre>
+                </div>
+        
+                <div><h3>5. Décadas recientes.</h3>
+                    <hr style="width:200px" class="w3-opacity">
+                    <pre>
+                        5.1. Características de los bloques capitalista y socialista.
+                        5.2. Los contrastes sociales y económicos. Globalización económica.
+                        5.3. El conflicto del Golfo del Pacífico.
+                    </pre>
+                </div>
+            </section>
+        
+            <section><h2>10. Historia de México.</h2>
+                <div><h3>6. Las culturas prehispánicas y la conformación de la Nueva España.</h3>
+                    <hr style="width:200px" class="w3-opacity">
+                    <pre>
+                        6.1. Mesoamérica y sus áreas culturales.
+                        6.2. El virreinato y la instauración de las audiencias.
+                        6.3. Las instituciones eclesiásticas. La inquisición.
+                        6.4. El criollismo.
+                    </pre>
+                </div>
+        
+                <div><h3>7. Nueva España desde su consolidación hasta la Independencia.</h3>
+                    <hr style="width:200px" class="w3-opacity">
+                    <pre>
+                        7.1. El absolutismo ilustrado.
+                        7.2. El crecimiento de Nueva España: Expansión de la minería, la agricultura
+                            y ganadería.
+                        7.3. Desarrollo y consumación de la independenia.
+                    </pre>
+                </div>
+        
+                <div><h3>8. De la consumación de la Independencia al inicio de la Revolución Mexicana [1821-1911]</h3>
+                    <hr style="width:200px" class="w3-opacity">
+                    <pre>
+                        8.1. El endeudamiento de México y conflictos con los residentes extranjeros.
+                        8.2. La guerra con Estados Unidos.
+                        8.3. La intervención francesa y el Imperio.
+                        8.4. En busca de un sistema político: La Reforma liberal.
+                        8.5. Los gobiernos de la República Restaurada [positivismo, política anticlerical, incorporación de las leyes de Reforma de 1859 a la Constitución]
+                        8.6. Movimientos de oposición al gobierno de Juárez.
+                        8.7. El Porfiriato. La dictadura como medio para conquistar la paz y sus características.
+                        8.8. Disidencias, huelgas y represión.
+        
+                    </pre>
+                </div>
+        
+                <div><h3>9. Instituciones revolucionarias y desarrollo económico [1911-1979]</h3>
+                    <hr style="width:200px" class="w3-opacity">
+                    <pre>
+                        9.1. La insurrección maderista.
+                        9.2. Diversidad regional de los movimientos revolucionarios.
+                        9.3. La Constitución de 1917.
+                        9.4. Guerra cristera, ejército y organizaciones sociales.
+                        9.5. Caudillismo, ejército, partido único.
+                        9.6. Reforma agraria.
+                        9.7. El contexto internacional: La Segunda Guerra Mundial y su impacto en la economía nacional.
+                        9.8. Clasicismo, romanticismo y modernismo en México.
+        
+                    </pre>
+                </div>
+        
+                <div><h3>10. México en la era global [1970-2000]</h3>
+                    <hr style="width:200px" class="w3-opacity">
+                    <pre>
+                        10.1. Instauración del neoliberalismo.
+                        10.2. El Tratado de Libre Comercio.
+                        10.3. La reforma electoral en México y la alternancia en el poder como vía para la democratización.
+                        10.4. Movimientos sociales desde los años 60 como  promotores de la participación ciudadana.
+                    </pre>
+                </div>
+            </section>
+        
+            <section><h2>11. Matemáticas.</h2>
+                <div><h3>1. Significado y uso de los números.</h3>
+                    <hr style="width:200px" class="w3-opacity">
+                    <pre>
+                        <b>Números Enteros</b>
+                        1.1. Significado y uso de las operaciones básicas con números enteros.
+                        1.2. Resolución de problemas con operaciones básicas.
+                        
+                        <b>Números fraccionarios y decimales</b>
+                        1.3. Relaciones de proporcionalidad.
+                        1.4. Significado y uso de las operaciones básicas con números fraccinoarios y decimales.
+                        1.5. Porcentajes.
+                        1.6. Potenciación y radicación.
+                        1.7. Resolución de problemas con números fraccionarios o decimales.
+                    </pre>
+                </div>
+        
+                <div><h3>2. Álgebra.</h3>
+                    <hr style="width:200px" class="w3-opacity">
+                    <pre>
+                        2.1. Significado y uso de las literales.
+        
+                        <b>Expresiones algebraicas</b>
+                        2.2. Expresión común de problemas algebraicos de adición y sustracción.
+                        2.3. Resolución de problemas con expresiones algebraicas.
+        
+                        <b>Ecuaciones de primer grado</b>
+                        2.4. Resolución de ecuaciones de primer grado.
+                        2.5. Resolución de problemas con ecuaciones de primer grado.
+        
+                        <b>Sistemas de Ecuaciones Lineales de 2 ecuaciones con 2 incógnitas</b>
+                        2.6. Resolución de sistemas lineales de 2 ecuaciones con 2 incógnitas.
+                        2.7. Resolución de problemas con sistemas de 2 ecuaciones lineales con 2 incógnitas.
+        
+                        <b>Ecuaciones de segundo grado</b>
+                        2.8. Productos notables y factorización.
+                        2.9. Resolución de ecuaciones de segundo grado.
+                        2.10. Relaciones de proporcionalidad directa.
+                        2.11. Relaciones de proporcionalidad en el plano cartesiano.
+                    </pre>
+                </div>
+        
+                <div><h3>3. Manejo de la información estadística.</h3>
+                    <hr style="width:200px" class="w3-opacity">
+                    <pre>
+                        3.1. Análisis de la información estadística: índices.
+                        3.2. Gráficas de barras y circulares.
+                        3.3. Tablas de frecuencia absoluta y relativa.
+                        3.4. Medidas de tendencia central.
+                        3.5. Nociones de probabilidad y muestreo.
+                    </pre>
+                </div>
+        
+                <div><h3>4. Formas geométricas.</h3>
+                    <hr style="width:200px" class="w3-opacity">
+                    <pre>
+                        4.1. Rectas y ángulos.
+                        4.2. Figuras planas.
+                        
+                        <b>Semejanza</b> 
+                        4.3. Semejanza de triángulos.
+                        4.4. Teorema de Pitágoras.
+                        4.5. Razones trigonométricas.
+        
+                        <b>Cuerpos Geométricos</b>
+                        
+                        4.6. Cálculo de perímetros.
+                        4.7. Cálculo de áraes.
+                        4.8. Cálculo de volúmenes.   
+                    </pre>
+                </div>
+            </section>
+        
+            <section><h2>12. Ciencias 3 [Química]</h2>
+                <div><h3>1. Las características de los materiales.</h3>
+                    <hr style="width:200px" class="w3-opacity">
+                    <pre>
+                        1.1. Características del conocimiento científico: el caso de la Química.
+                        1.2. Propiedades de los materiales.
+                        1.3. Cambios físicos y químicos.
+                        1.4. Propiedades físicas y caracterización de las sustancias.
+                        1.5. La conservación de la masa en los cambios físicos y químicos.
+                        1.6. La diversidad de as sustancias y los métodos de separación.
+                    </pre>
+                </div>
+        
+                <div><h3>2. Estructura y periodicidad de los elementos.</h3>
+                    <hr style="width:200px" class="w3-opacity">
+                    <pre>
+                        2.1. Características de los protones, electrones y neutrones.
+                        2.2. Número atómico y número de masa.
+                        2.3. Iones, moleculas y átomos.
+                        2.4. Estructura de Lewis.
+                        2.5. Estructura y organización de los elementos en la tabla periódica.
+                        2.6. Enlace químico.
+                    </pre>
+                </div>
+        
+                <div><h3>3. La reacción química.</h3>
+                    <hr style="width:200px" class="w3-opacity">
+                    <pre>
+                        3.1. El cambio químico.
+                        3.2. La ecuación química: su interpretación.
+                        3.3. El mol como unidad de medida.
+                        3.4. Ácidos y bases importantes en nuestra vida cotidiana.
+                        3.5. Las reacciones redox.
+                    </pre>
+                </div>
+            </section>
+  
+    
+    
+</div>
+
+
+<!-- Promo Section "Statistics" -->
+<!-- Promo Section "Statistics" -->
+<!-- Promo Section "Statistics" -->
+<!-- Promo Section "Statistics" -->
+<div class="w3-container w3-row w3-center w3-dark-grey w3-padding-64">
+  <section><h1>SKLX</h1></section>
+  <div class="w3-quarter">
+    <span class="w3-xxlarge">14+</span>
+    <br>Partners
+  </div>
+  <div class="w3-quarter">
+    <span class="w3-xxlarge">55+</span>
+    <br>Projects Done
+  </div>
+  <div class="w3-quarter">
+    <span class="w3-xxlarge">89+</span>
+    <br>Happy Clients
+  </div>
+  <div class="w3-quarter">
+    <span class="w3-xxlarge">150+</span>
+    <br>Meetings
+  </div>
+</div>
+
+
+
+
+<!-- Work Section -->
+<!-- Work Section -->
+<!-- Work Section -->
+<!-- Work Section -->
+<div class="w3-container" style="padding:128px 16px" id="work">
+  <h3 class="w3-center">OUR WORK</h3>
+  <p class="w3-center w3-large">What we've done for people</p>
+
+  <div class="w3-row-padding" style="margin-top:64px">
+    <div class="w3-col l3 m6">
+      <img src="/w3images/tech_mic.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="A microphone">
+    </div>
+    <div class="w3-col l3 m6">
+      <img src="/w3images/tech_phone.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="A phone">
+    </div>
+    <div class="w3-col l3 m6">
+      <img src="/w3images/tech_drone.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="A drone">
+    </div>
+    <div class="w3-col l3 m6">
+      <img src="/w3images/tech_sound.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Soundbox">
+    </div>
+  </div>
+
+  <div class="w3-row-padding w3-section">
+    <div class="w3-col l3 m6">
+      <img src="/w3images/tech_tablet.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="A tablet">
+    </div>
+    <div class="w3-col l3 m6">
+      <img src="/w3images/tech_camera.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="A camera">
+    </div>
+    <div class="w3-col l3 m6">
+      <img src="/w3images/tech_typewriter.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="A typewriter">
+    </div>
+    <div class="w3-col l3 m6">
+      <img src="/w3images/tech_tableturner.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="A tableturner">
+    </div>
+  </div>
+</div>
+
+
+
+<!-- Modal for full size images on click-->
+<!-- Modal for full size images on click-->
+<!-- Modal for full size images on click-->
+<div id="modal01" class="w3-modal w3-black" onclick="this.style.display='none'">
+  <span class="w3-button w3-xxlarge w3-black w3-padding-large w3-display-topright" title="Close Modal Image">×</span>
+  <div class="w3-modal-content w3-animate-zoom w3-center w3-transparent w3-padding-64">
+    <img id="img01" class="w3-image">
+    <p id="caption" class="w3-opacity w3-large"></p>
+  </div>
+</div>
+
+
+
+<!-- Skills Section -->
+<!-- Skills Section -->
+<!-- Skills Section -->
+<div class="w3-container w3-light-grey w3-padding-64">
+  <div class="w3-row-padding">
+    <div class="w3-col m6">
+      <h3>Our Skills.</h3>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod<br>
+      tempor incididunt ut labore et dolore.</p>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod<br>
+      tempor incididunt ut labore et dolore.</p>
+    </div>
+    <div class="w3-col m6">
+      <p class="w3-wide"><i class="fa fa-camera w3-margin-right"></i>Photography</p>
+      <div class="w3-grey">
+        <div class="w3-container w3-dark-grey w3-center" style="width:90%">90%</div>
+      </div>
+      <p class="w3-wide"><i class="fa fa-desktop w3-margin-right"></i>Web Design</p>
+      <div class="w3-grey">
+        <div class="w3-container w3-dark-grey w3-center" style="width:85%">85%</div>
+      </div>
+      <p class="w3-wide"><i class="fa fa-photo w3-margin-right"></i>Photoshop</p>
+      <div class="w3-grey">
+        <div class="w3-container w3-dark-grey w3-center" style="width:75%">75%</div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+
+
+<!-- Contact Section -->
+<!-- Contact Section -->
+<!-- Contact Section -->
+<div class="w3-container w3-blue" style="padding:128px 16px" id="contact">
+  <h3 class="w3-center">¿Preguntas Adicionales?</h3>
+  <p class="w3-center w3-large">Lets get in touch. Send us a message:</p>
+  <div style="margin-top:48px">
+    <p><i class="fa fa-map-marker fa-fw w3-xxlarge w3-margin-right"></i> CDMX, MX</p>
+    <p><i class="fa fa-phone fa-fw w3-xxlarge w3-margin-right"></i> Phone: +52 55 4498 4457</p>
+    <p><i class="fa fa-envelope fa-fw w3-xxlarge w3-margin-right"> </i> Email</p>
+    <br>
+    <form action="/action_page.php" target="_blank">
+      <p><input class="w3-input w3-border" type="text" placeholder="Name" required name="Name"></p>
+      <p><input class="w3-input w3-border" type="text" placeholder="Email" required name="Email"></p>
+      <p><input class="w3-input w3-border" type="text" placeholder="Subject" required name="Subject"></p>
+      <p><input class="w3-input w3-border" type="text" placeholder="Message" required name="Message"></p>
+      <p>
+        <button class="w3-button w3-black" type="submit">
+          <i class="fa fa-paper-plane"></i> ENVIAR MENSAJE
+        </button>
+      </p>
+    </form>
+    <!-- Image of location/map -->
+    <img src="/w3images/map.jpg" class="w3-image w3-greyscale" style="width:100%;margin-top:48px">
+  </div>
+</div>
+
+<!-- Footer -->
+<footer class="w3-center w3-black w3-padding-64">
+  <a href="#home" class="w3-button w3-light-grey"><i class="fa fa-arrow-up w3-margin-right"></i>Volver</a>
+  <div class="w3-xlarge w3-section">
+    <i class="fa fa-facebook-official w3-hover-opacity"></i>
+    <i class="fa fa-instagram w3-hover-opacity"></i>
+    <i class="fa fa-snapchat w3-hover-opacity"></i>
+    <i class="fa fa-pinterest-p w3-hover-opacity"></i>
+    <i class="fa fa-twitter w3-hover-opacity"></i>
+    <i class="fa fa-linkedin w3-hover-opacity"></i>
+  </div>
+  <p>Coded by <a href="https://www.hemicesar.com" title="W3.CSS" target="_blank" class="w3-hover-text-green">hemicesar</a></p>
+</footer>
+ 
+<script>
+// Modal Image Gallery
+function onClick(element) {
+  document.getElementById("img01").src = element.src;
+  document.getElementById("modal01").style.display = "block";
+  var captionText = document.getElementById("caption");
+  captionText.innerHTML = element.alt;
+}
+
+
+// Toggle between showing and hiding the sidebar when clicking the menu icon
+var mySidebar = document.getElementById("mySidebar");
+
+function w3_open() {
+  if (mySidebar.style.display === 'block') {
+    mySidebar.style.display = 'none';
+  } else {
+    mySidebar.style.display = 'block';
+  }
+}
+
+// Close the sidebar with the close button
+function w3_close() {
+    mySidebar.style.display = "none";
+}
+</script>
+
+</body>
+</html>

@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Cuestionario sobre Tablas de Frecuencia</title>
+</head>
+<body>
+    <h1>Cuestionario sobre Tablas de Frecuencia Absoluta y Relativa</h1>
+    <form id="quiz-form">
+        <ol>
+            <!-- Pregunta 1 -->
+            <li>
+                <h3>¿Qué es una tabla de frecuencia absoluta?</h3>
+                <input type="radio" name="q1" value="a"> Una tabla que muestra los datos en orden alfabético.
+                <input type="radio" name="q1" value="correcta"> Una tabla que muestra el número de veces que ocurre cada valor en un conjunto de datos.
+                <input type="radio" name="q1" value="c"> Una tabla que muestra los datos en forma gráfica.
+                <input type="radio" name="q1" value="d"> Una tabla que muestra la frecuencia relativa de los datos.
+
+            </li>
+
+            <!-- Pregunta 2 -->
+            <li>
+                <h3>¿Cómo se calcula la frecuencia relativa de un valor en una tabla de frecuencia?</h3>
+                <input type="radio" name="q2" value="a"> Se divide la frecuencia absoluta por 10.
+                <input type="radio" name="q2" value="b"> Se divide la frecuencia absoluta por la cantidad total de datos.
+                <input type="radio" name="q2" value="correcta"> Se divide la frecuencia absoluta por el total de datos y se multiplica por 100.
+                <input type="radio" name="q2" value="d"> Se multiplica la frecuencia absoluta por la cantidad total de datos.
+
+            </li>
+
+            <!-- Pregunta 3 -->
+            <li>
+                <h3>¿Cuál es la suma de todas las frecuencias absolutas en una tabla de frecuencia?</h3>
+                <input type="radio" name="q3" value="a"> 0.
+                <input type="radio" name="q3" value="correcta"> La cantidad total de datos en el conjunto.
+                <input type="radio" name="q3" value="c"> 1.
+                <input type="radio" name="q3" value="d"> No se puede determinar.
+
+            </li>
+
+            <!-- Pregunta 4 -->
+            <li>
+                <h3>¿Para qué se utiliza una tabla de frecuencia?</h3>
+                <input type="radio" name="q4" value="correcta"> Para resumir y presentar datos de manera organizada.
+                <input type="radio" name="q4" value="b"> Para ocultar datos.
+                <input type="radio" name="q4" value="c"> Para eliminar datos.
+                <input type="radio" name="q4" value="d"> Para complicar el análisis de datos.
+
+            </li>
+
+            <!-- Pregunta 5 -->
+            <li>
+                <h3>¿Cuál es la frecuencia absoluta de un valor que no aparece en la tabla de frecuencia?</h3>
+                <input type="radio" name="q5" value="a"> 0.
+                <input type="radio" name="q5" value="correcta"> No se puede determinar a partir de la tabla.
+                <input type="radio" name="q5" value="c"> 1.
+                <input type="radio" name="q5" value="d"> Es igual a la frecuencia relativa.
+
+            </li>
+
+            <!-- Pregunta 6 -->
+            <li>
+                <h3>¿Qué tipo de datos son adecuados para crear una tabla de frecuencia?</h3>
+                <input type="radio" name="q6" value="a"> Solo datos numéricos.
+                <input type="radio" name="q6" value="correcta"> Datos numéricos y categóricos.
+                <input type="radio" name="q6" value="c"> Solo datos categóricos.
+                <input type="radio" name="q6" value="d"> Datos cualitativos.
+
+            </li>
+
+            <!-- Pregunta 7 -->
+            <li>
+                <h3>¿Cuál es la principal ventaja de utilizar una tabla de frecuencia relativa en lugar de una absoluta?</h3>
+                <input type="radio" name="q7" value="a"> Las tablas de frecuencia relativa no tienen ventajas.
+                <input type="radio" name="q7" value="correcta"> Las frecuencias relativas permiten comparar conjuntos de datos de diferentes tamaños de manera más efectiva.
+                <input type="radio" name="q7" value="c"> Las tablas de frecuencia absoluta son siempre más precisas.
+                <input type="radio" name="q7" value="d"> No hay diferencia entre ambas.
+
+            </li>
+        </ol>
+        <input type="submit" value="Calificar">
+    </form>
+</body>
+</html>
